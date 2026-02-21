@@ -222,14 +222,14 @@ allImages08 = [
   "MOIY8677.jpeg", "PILU4051.jpeg", "PRIK2156.jpeg", "XMLP1108.jpeg"
 ]
 
-// Shuffle and pick 6
+// Shuffle and pick 3
 selectedImages08 = {
   const shuffled = [...allImages08].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 6);
+  return shuffled.slice(0, 3);
 }
 
 // Render the gallery in a 2x3 grid
-html`<div class="gallery-grid-2x3">
+html`<div class="gallery-grid">
   ${selectedImages08.map(img => `
     <div class="gallery-item">
       <img src="figures/gecco_ecip_2008/${img}" class="gallery-img" loading="lazy">
