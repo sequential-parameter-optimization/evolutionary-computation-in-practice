@@ -60,10 +60,10 @@ allImages = [
   "IMG_8707.jpeg"
 ]
 
-// Shuffle and pick 9
+// Shuffle and pick 6
 selectedImages = {
   const shuffled = [...allImages].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 9);
+  return shuffled.slice(0, 6);
 }
 
 // Render the gallery

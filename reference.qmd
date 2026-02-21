@@ -11,27 +11,29 @@ format:
 
 # Evolutionary Computation in Practice (ECiP)
 
-As the premier venue for research in natural computation, the Genetic and Evolutionary Computation Conference (GECCO) has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the *Evolutionary Computation in Practice (ECiP)* track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike broader academic tracks that prioritize peer-reviewed proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.
+The *Evolutionary Computation in Practice (ECiP)* track at GECCO has served for over fifteen years as a specialized forum for bridging the gap between theoretical innovation and industrial application. Unlike traditional academic tracks, ECiP focuses on the qualitative and managerial complexities of real-world optimization, bringing together experts who lead large-scale industrial projects and navigate the intricate landscape of academia-industry partnerships.
 
-## Synthesis of Thematic Trends in Industrial Evolutionary Computation
 
-An analysis of fifteen years of ECiP talk titles and abstracts reveals several second- and third-order insights into the evolution of the field. These trends indicate how the focus of industrial EC has shifted in response to broader technological advancements, particularly in machine learning and data science.
-
-* Black-box Optimization: In the early 2010s, the focus was often on treating industrial problems as "black boxes," where the algorithm had no knowledge of the underlying system. However, by the early 2020s, there was a clear shift toward "gray-box" optimization, where domain knowledge and surrogate models are used to enhance the search process. Meinolf Sellmann’s 2022 talk on "Modern Hybrids" is a primary example of this, summarizing 15 years of work on the use of Machine Learning for Search and Optimization.
-
-* Surrogate Models: As real-world optimization problems often involve computationally expensive simulations—such as Computational Fluid Dynamics (CFD) or complex structural analysis—the field has increasingly turned to surrogate models. Contributions highlight the development of acquisition functions designed to minimize the number of objective function evaluations required to find an optimal solution. This trend is a direct causal response to the industrial need for "fast enough" solutions that balance accuracy with computational cost.
-
-* Large Language Models: The most recent data points to a burgeoning interest in the intersection of EC and Large Language Models. The 2024 workshop on "Large Language Models for and with Evolutionary Computation" (LLMfwEC) and tutorials on genetic improvement using search methods indicate that the community is exploring how LLMs can facilitate the generation of code, the discovery of new algorithm variants, and the exploration of prompt spaces. This represents a new frontier for "Practice," where the "coder" is no longer purely human, and the search process is augmented by generative AI.
-
+The Genetic and Evolutionary Computation Conference (GECCO), as the premier venue for research in the field of natural computation, has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the Evolutionary Computation in Practice (ECiP) track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike the broader academic tracks that prioritize peer-reviewed full papers and theoretical proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.
 
 
 ## 2025: Foundations and Applications
 
 The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice.
-Organizers: Thomas Bartz-Beielstein, Richard Schulz.
 
 ::: {.speaker-grid}
 
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bartz-Beielstein</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+*Lead Organizer*
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Richard Schulz</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+*Organizer*
+:::
 
 ::: {.speaker-card}
 <span class="speaker-name">Dr. Roman Kalkreuth</span>
@@ -48,7 +50,7 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz.
 ::: {.speaker-card}
 <span class="speaker-name">Dr. Xavier Bonet-Monroig</span>
 <span class="speaker-affil">Invited Speaker</span>
-<div class="talk-info">Quantum Computing</div>
+<div class="talk-info">Talk Title Pending</div>
 :::
 
 :::
@@ -71,6 +73,12 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
 <span class="speaker-name">Fernando Lezama</span>
 <span class="speaker-affil">Polytechnic of Porto, Portugal</span>
 <div class="talk-info">Industrial Challenge: PV System Placement</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Danial Yazdani</span>
+<span class="speaker-affil">University of Technology Sydney, Australia</span>
+*Organizer*
 :::
 
 :::
@@ -204,6 +212,34 @@ The foundational years that established the Industrial Challenge and built the i
 :::
 
 
+## Impressions from GECCO ECiP 2008
+
+```{ojs}
+//| echo: false
+// List of all images in figures/gecco_ecip_2008/
+allImages08 = [
+  "16072008.jpeg", "CMYM5536.jpeg", "GKZS7546.jpeg", "IALH1928.jpeg", 
+  "MOIY8677.jpeg", "PILU4051.jpeg", "PRIK2156.jpeg", "XMLP1108.jpeg"
+]
+
+// Shuffle and pick 6
+selectedImages08 = {
+  const shuffled = [...allImages08].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 6);
+}
+
+// Render the gallery in a 2x3 grid
+html`<div class="gallery-grid-2x3">
+  ${selectedImages08.map(img => `
+    <div class="gallery-item">
+      <img src="figures/gecco_ecip_2008/${img}" class="gallery-img" loading="lazy">
+    </div>
+  `).join('')}
+</div>`
+```
+
+
+
 ## The ECiP Track: Organizational Continuity and Mission
 
 The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track. The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track's activities, including the management of the Industrial Challenge, which has run annually since 2011.
@@ -220,3 +256,5 @@ The following external archives provide additional depth into the track's evolut
 * [GECCO 2013](https://gecco-2013.sigevo.org/)
 * [GECCO 2012](https://gecco-2012.sigevo.org/)
 * [GECCO 2011](https://gecco-2011.sigevo.org/)
+
+For detailed abstracts and further historical context, please refer to the official ECiP documentation.
