@@ -208,6 +208,14 @@ The foundational years that established the Industrial Challenge and built the i
 
 :::
 
+
+## The ECiP Track: Organizational Continuity and Mission
+
+The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization.8 His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track.8 The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track's activities, including the management of the Industrial Challenge, which has run annually since 2011.
+The primary mission of ECiP is to provide a venue where well-known speakers with outstanding reputations present background information on establishing reliable cooperation with industrial partners. The track targets researchers in academia who are interested in managing industrial projects, offering them valuable hints that extend beyond textbook methodologies. This focus on real-world optimization and project management principles distinguishes ECiP from the Real World Applications (RWA) track, which is more focused on the presentation of peer-reviewed results than on the process of cooperation.
+
+
+
 ## Archives & References
 
 The following external archives provide additional depth into the track's evolution:
