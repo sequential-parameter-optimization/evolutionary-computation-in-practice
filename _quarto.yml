@@ -3,6 +3,7 @@ project:
   resources:
     - figures/gecco_ecip_2025
     - figures/gecco_ecip_2008
+    - figures/gecco_ecip_2010
 
 
 
