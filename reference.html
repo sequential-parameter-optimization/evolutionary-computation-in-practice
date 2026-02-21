@@ -136,6 +136,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#evolutionary-computation-in-practice-ecip" id="toc-evolutionary-computation-in-practice-ecip" class="nav-link active" data-scroll-target="#evolutionary-computation-in-practice-ecip">Evolutionary Computation in Practice (ECiP)</a>
   <ul class="collapse">
+  <li><a href="#synthesis-of-thematic-trends-in-industrial-evolutionary-computation" id="toc-synthesis-of-thematic-trends-in-industrial-evolutionary-computation" class="nav-link" data-scroll-target="#synthesis-of-thematic-trends-in-industrial-evolutionary-computation">Synthesis of Thematic Trends in Industrial Evolutionary Computation</a></li>
   <li><a href="#foundations-and-applications" id="toc-foundations-and-applications" class="nav-link" data-scroll-target="#foundations-and-applications">2025: Foundations and Applications</a></li>
   <li><a href="#energy-and-optimization" id="toc-energy-and-optimization" class="nav-link" data-scroll-target="#energy-and-optimization">2024: Energy and Optimization</a></li>
   <li><a href="#machine-learning-hybrids" id="toc-machine-learning-hybrids" class="nav-link" data-scroll-target="#machine-learning-hybrids">2022–2021: Machine Learning Hybrids</a></li>
@@ -173,16 +174,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="evolutionary-computation-in-practice-ecip" class="level1">
 <h1>Evolutionary Computation in Practice (ECiP)</h1>
 <p>As the premier venue for research in natural computation, the Genetic and Evolutionary Computation Conference (GECCO) has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the <em>Evolutionary Computation in Practice (ECiP)</em> track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike broader academic tracks that prioritize peer-reviewed proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.</p>
+<section id="synthesis-of-thematic-trends-in-industrial-evolutionary-computation" class="level2">
+<h2 class="anchored" data-anchor-id="synthesis-of-thematic-trends-in-industrial-evolutionary-computation">Synthesis of Thematic Trends in Industrial Evolutionary Computation</h2>
+<p>An analysis of fifteen years of ECiP talk titles and abstracts reveals several second- and third-order insights into the evolution of the field. These trends indicate how the focus of industrial EC has shifted in response to broader technological advancements, particularly in machine learning and data science.</p>
+<ul>
+<li><p>Black-box Optimization: In the early 2010s, the focus was often on treating industrial problems as “black boxes,” where the algorithm had no knowledge of the underlying system. However, by the early 2020s, there was a clear shift toward “gray-box” optimization, where domain knowledge and surrogate models are used to enhance the search process. Meinolf Sellmann’s 2022 talk on “Modern Hybrids” is a primary example of this, summarizing 15 years of work on the use of Machine Learning for Search and Optimization.</p></li>
+<li><p>Surrogate Models: As real-world optimization problems often involve computationally expensive simulations—such as Computational Fluid Dynamics (CFD) or complex structural analysis—the field has increasingly turned to surrogate models. Contributions highlight the development of acquisition functions designed to minimize the number of objective function evaluations required to find an optimal solution. This trend is a direct causal response to the industrial need for “fast enough” solutions that balance accuracy with computational cost.</p></li>
+<li><p>Large Language Models: The most recent data points to a burgeoning interest in the intersection of EC and Large Language Models. The 2024 workshop on “Large Language Models for and with Evolutionary Computation” (LLMfwEC) and tutorials on genetic improvement using search methods indicate that the community is exploring how LLMs can facilitate the generation of code, the discovery of new algorithm variants, and the exploration of prompt spaces. This represents a new frontier for “Practice,” where the “coder” is no longer purely human, and the search process is augmented by generative AI.</p></li>
+</ul>
+</section>
 <section id="foundations-and-applications" class="level2">
 <h2 class="anchored" data-anchor-id="foundations-and-applications">2025: Foundations and Applications</h2>
-<p>The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice.</p>
+<p>The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice. Organizers: Thomas Bartz-Beielstein, Richard Schulz.</p>
 <div class="speaker-grid">
-<div class="speaker-card">
-<p><span class="speaker-name">Thomas Bartz-Beielstein</span> <span class="speaker-affil">IDE+A, TH Köln, Germany</span> <em>Lead Organizer</em></p>
-</div>
-<div class="speaker-card">
-<p><span class="speaker-name">Richard Schulz</span> <span class="speaker-affil">IDE+A, TH Köln, Germany</span> <em>Organizer</em></p>
-</div>
 <div class="speaker-card">
 <span class="speaker-name">Dr.&nbsp;Roman Kalkreuth</span> <span class="speaker-affil">RWTH Aachen, Germany</span>
 <div class="talk-info">
@@ -198,7 +202,7 @@ Robust Contextual Preferential Bayesian Optimization for Real-World Applications
 <div class="speaker-card">
 <span class="speaker-name">Dr.&nbsp;Xavier Bonet-Monroig</span> <span class="speaker-affil">Invited Speaker</span>
 <div class="talk-info">
-Talk Title Pending
+Quantum Computing
 </div>
 </div>
 </div>
@@ -219,9 +223,6 @@ Industrial Challenge: Energy Domain Optimization
 <div class="talk-info">
 Industrial Challenge: PV System Placement
 </div>
-</div>
-<div class="speaker-card">
-<p><span class="speaker-name">Danial Yazdani</span> <span class="speaker-affil">University of Technology Sydney, Australia</span> <em>Organizer</em></p>
 </div>
 </div>
 </section>
@@ -344,7 +345,7 @@ Introducing Academic EC Tech to Industry
 </section>
 <section id="the-ecip-track-organizational-continuity-and-mission" class="level2">
 <h2 class="anchored" data-anchor-id="the-ecip-track-organizational-continuity-and-mission">The ECiP Track: Organizational Continuity and Mission</h2>
-<p>The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization.8 His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track.8 The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track’s activities, including the management of the Industrial Challenge, which has run annually since 2011. The primary mission of ECiP is to provide a venue where well-known speakers with outstanding reputations present background information on establishing reliable cooperation with industrial partners. The track targets researchers in academia who are interested in managing industrial projects, offering them valuable hints that extend beyond textbook methodologies. This focus on real-world optimization and project management principles distinguishes ECiP from the Real World Applications (RWA) track, which is more focused on the presentation of peer-reviewed results than on the process of cooperation.</p>
+<p>The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track. The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track’s activities, including the management of the Industrial Challenge, which has run annually since 2011. The primary mission of ECiP is to provide a venue where well-known speakers with outstanding reputations present background information on establishing reliable cooperation with industrial partners. The track targets researchers in academia who are interested in managing industrial projects, offering them valuable hints that extend beyond textbook methodologies. This focus on real-world optimization and project management principles distinguishes ECiP from the Real World Applications (RWA) track, which is more focused on the presentation of peer-reviewed results than on the process of cooperation.</p>
 </section>
 <section id="archives-references" class="level2">
 <h2 class="anchored" data-anchor-id="archives-references">Archives &amp; References</h2>
