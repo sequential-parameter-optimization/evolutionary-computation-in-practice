@@ -109,6 +109,41 @@ This era focused on the emergence of machine learning hybrids for search and opt
 
 :::
 
+
+## Impressions from GECCO ECiP 2018 (Kyoto, Japan)
+
+```{ojs}
+//| echo: false
+// List of all images in figures/gecco_ecip_2018/
+allImages18 = [
+"IMG_3094.jpeg", "IMG_3108.jpeg", "IMG_3116.jpeg", "IMG_3124.jpeg", "IMG_3135.jpeg", "IMG_3143.jpeg", "IMG_3151.jpeg", "IMG_3159.jpeg", "IMG_3168.jpeg", "IMG_3177.jpeg", "IMG_3189.jpeg", "IMG_3199.jpeg", "IMG_3207.jpeg", "IMG_3217.jpeg", "IMG_3226.jpeg",
+"IMG_3099.jpeg", "IMG_3109.jpeg", "IMG_3117.jpeg", "IMG_3125.jpeg", "IMG_3136.jpeg", "IMG_3144.jpeg", "IMG_3152.jpeg", "IMG_3161.jpeg", "IMG_3169.jpeg", "IMG_3178.jpeg", "IMG_3190.jpeg", "IMG_3200.jpeg", "IMG_3208.jpeg", "IMG_3218.jpeg", "IMG_3227.jpeg",
+"IMG_3102.jpeg", "IMG_3110.jpeg", "IMG_3118.jpeg", "IMG_3126.jpeg", "IMG_3137.jpeg", "IMG_3145.jpeg", "IMG_3153.jpeg", "IMG_3162.jpeg", "IMG_3170.jpeg", "IMG_3183.jpeg", "IMG_3191.jpeg", "IMG_3201.jpeg", "IMG_3209.jpeg", "IMG_3219.jpeg", "IMG_3228.jpeg",
+"IMG_3103.jpeg", "IMG_3111.jpeg", "IMG_3119.jpeg", "IMG_3130.jpeg", "IMG_3138.jpeg", "IMG_3146.jpeg", "IMG_3154.jpeg", "IMG_3163.jpeg", "IMG_3171.jpeg", "IMG_3184.jpeg", "IMG_3192.jpeg", "IMG_3202.jpeg", "IMG_3210.jpeg", "IMG_3221.jpeg",
+"IMG_3104.jpeg", "IMG_3112.jpeg", "IMG_3120.jpeg", "IMG_3131.jpeg", "IMG_3139.jpeg", "IMG_3147.jpeg", "IMG_3155.jpeg", "IMG_3164.jpeg", "IMG_3172.jpeg", "IMG_3185.jpeg", "IMG_3193.jpeg", "IMG_3203.jpeg", "IMG_3213.jpeg", "IMG_3222.jpeg",
+"IMG_3105.jpeg", "IMG_3113.jpeg", "IMG_3121.mov", "IMG_3132.jpeg", "IMG_3140.jpeg", "IMG_3148.jpeg", "IMG_3156.jpeg", "IMG_3165.jpeg", "IMG_3173.jpeg", "IMG_3186.jpeg", "IMG_3194.jpeg", "IMG_3204.jpeg", "IMG_3214.jpeg", "IMG_3223.jpeg", "IMG_3106.jpeg", " IMG_3114.jpeg", "IMG_3122.jpeg", "IMG_3133.jpeg", "IMG_3141.jpeg", "IMG_3149.jpeg", "IMG_3157.jpeg", "IMG_3166.jpeg", "IMG_3175.jpeg", "IMG_3187.jpeg", "IMG_3197.jpeg", "IMG_3205.jpeg", "IMG_3215.jpeg", "IMG_3224.jpeg",
+"IMG_3107.jpeg", "IMG_3115.jpeg", "IMG_3123.jpeg", "IMG_3134.jpeg", "IMG_3142.jpeg", "IMG_3150.jpeg", "IMG_3158.jpeg", "IMG_3167.jpeg", "IMG_3176.jpeg", "IMG_3188.jpeg", "IMG_3198.jpeg", "IMG_3206.jpeg", "IMG_3216.jpeg", "IMG_3225.jpeg"
+]
+
+
+// Shuffle and pick 3
+selectedImages18 = {
+  const shuffled = [...allImages18].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 3);
+}
+
+// Render the gallery in a 1x3 grid
+html`<div class="gallery-grid"> 
+  ${selectedImages18.map(img => `
+    <div class="gallery-item">
+      <img src="figures/gecco_ecip_2018/${img}" class="gallery-img" loading="lazy">
+    </div>
+  `).join('')}
+</div>`
+```
+
+
+
 ## 2019–2017: Globalization and Diversity
 
 The maturation of surrogate-assisted optimization and the visualization of benchmark diversity marked this period.
@@ -166,6 +201,62 @@ A focus on the challenges of deploying evolutionary computation in the steel ind
 :::
 
 :::
+
+
+
+## Impressions from GECCO ECiP 2012 (Philadelphia, USA)
+
+```{ojs}
+//| echo: false
+// List of all images in figures/gecco_ecip_2012/
+allImages12 = [
+  "gecco2012c 001.jpeg", "gecco2012c 002.jpeg", "gecco2012c 003.jpeg", 
+  "gecco2012c 004.jpeg", "philadelphiaGecco2012July 276.jpeg"
+]
+
+
+// Shuffle and pick 3
+selectedImages12 = {
+  const shuffled = [...allImages12].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 3);
+}
+
+// Render the gallery in a 1x3 grid
+html`<div class="gallery-grid">
+  ${selectedImages12.map(img => `
+    <div class="gallery-item">
+      <img src="figures/gecco_ecip_2012/${img}" class="gallery-img" loading="lazy">
+    </div>
+  `).join('')}
+</div>`
+```
+
+
+## Impressions from GECCO ECiP 2011
+
+```{ojs}
+//| echo: false
+// List of all images in figures/gecco_ecip_2011/
+allImages11 = [
+  "IMG_0727-2.jpeg", "IMG_0728-2.jpeg", "MBBP4755.jpeg", "MSFS7104.jpeg", "QPIV7730.jpeg"
+]
+
+
+// Shuffle and pick 3
+selectedImages11 = {
+  const shuffled = [...allImages11].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 3);
+}
+
+// Render the gallery in a 1x3 grid
+html`<div class="gallery-grid">
+  ${selectedImages11.map(img => `
+    <div class="gallery-item">
+      <img src="figures/gecco_ecip_2011/${img}" class="gallery-img" loading="lazy">
+    </div>
+  `).join('')}
+</div>`
+```
 
 
 ## 2010
