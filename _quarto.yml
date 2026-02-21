@@ -1,5 +1,9 @@
 project:
   type: website
+  resources:
+    - figures/gecco_ecip_2025
+
+
 
 website:
   title: "Gecco: ECiP"
