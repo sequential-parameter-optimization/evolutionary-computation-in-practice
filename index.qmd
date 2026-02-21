@@ -5,12 +5,12 @@ title: "evolutionary-computation-in-practice"
 ---
 title: "Gecco: Evolutionary Computation in Practice"
 format:
-	html:
-		theme:
-			- cosmo
-			- brand
-		css: styles.css
-		toc: true
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
 ---
 
 ![](https://gecco-2025.sigevo.org/dl214)
@@ -31,9 +31,9 @@ The Evolutionary Computation in Practice (ECiP) track at GECCO brings together w
 GECCO is sponsored by the Association for Computing Machinery Special Interest Group on Genetic and Evolutionary Computation (SIGEVO).
 
 <div style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap;">
-	<img src="https://gecco-2024.sigevo.org/acm_black_hightagline.png" alt="ACM SIGEVO" style="height: 60px;"/>
-	<a href="https://twitter.com/GeccoConf"><img src="https://img.shields.io/twitter/follow/GeccoConf?style=social" alt="Follow on Twitter"/></a>
-	<a href="https://www.linkedin.com/events/gecco20247068155716271796224/"><img src="https://img.shields.io/badge/LinkedIn-Join%20us-blue?logo=linkedin" alt="Join on LinkedIn"/></a>
+  <img src="https://gecco-2024.sigevo.org/acm_black_hightagline.png" alt="ACM SIGEVO" style="height: 60px;"/>
+  <a href="https://twitter.com/GeccoConf"><img src="https://img.shields.io/twitter/follow/GeccoConf?style=social" alt="Follow on Twitter"/></a>
+  <a href="https://www.linkedin.com/events/gecco20247068155716271796224/"><img src="https://img.shields.io/badge/LinkedIn-Join%20us-blue?logo=linkedin" alt="Join on LinkedIn"/></a>
 </div>
 
 ---
