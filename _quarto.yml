@@ -25,10 +25,10 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      - superhero
     css: styles.css
     toc: true
-    number-sections: true
+    number-sections: false
     smooth-scroll: true
 
 execute:

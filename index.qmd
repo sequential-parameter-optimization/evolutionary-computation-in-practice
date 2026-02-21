@@ -3,7 +3,7 @@ title: "Gecco 2026: Evolutionary Computation in Practice"
 ---
 
 ::: {.hero-banner}
-![](https://gecco-2026.sigevo.org/dl214){width="80%"}
+![](figures/gecco-hero.png){width="40%"}
 
 # Welcome to Evolutionary Computation in Practice (ECiP)
 
@@ -58,6 +58,3 @@ GECCO is sponsored by the Association for Computing Machinery Special Interest G
 - [GECCO 2023](https://gecco-2023.sigevo.org/)
 - [GECCO 2022](https://gecco-2022.sigevo.org/)
 
-::: {.callout-tip}
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-:::
