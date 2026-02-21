@@ -1,0 +1,104 @@
+title: "ECiP Speakers & Talks"
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
+---
+title: "ECiP Speakers & Talks"
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+---
+
+# ECiP Speakers & Talks (2025–2010)
+
+## 2025
+- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
+- **Richard Schulz** (IDE+A, TH Köln, Germany)
+
+## 2024
+- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
+- **Richard Schulz** (IDE+A, TH Köln, Germany)
+- **Danial Yazdani** (University of Technology Sydney, Australia)
+
+## 2023
+- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
+- **Bogdan Filipic** (Jozef Stefan Institute, Slovenia)
+- **Richard Schulz** (IDE+A, TH Köln, Germany)
+
+## 2022
+- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
+- **Bogdan Filipic** (Jozef Stefan Institute, Slovenia)
+- **Sowmya Chandrasekaran** (TH Köln, Germany)
+
+## 2021
+- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
+- **Bogdan Filipic** (Jozef Stefan Institute, Slovenia)
+- **Sowmya Chandrasekaran** (TH Köln, Germany)
+
+## 2016
+- **Thomas Bartz-Beielstein** (TH Köln, Germany): “Surrogate Model-based Optimization in Practice”
+- **Maizura Mokhtar, Ian Hunt, Stephen Burns, Dave Ross**: “Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm”
+- **Erik Hemberg, Ignacio Arnaldo, Una-May O’Reilly**: “Multi-Line Batch Scheduling by Similarity”
+- **Abdel-Rahman Hedar, Majid Almaraashi, Alaa Abdel-Hakim**: “Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming”
+- **Silvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria, Miguel Iglesias**: “Criticality of Response Time in the usage of Metaheuristics in Industry”
+- **Silvino Fernández, Pablo Valledor**: “System demonstration, ArcelorMittal Scheduling and Tuning suite“
+- **Bogdan Filipic**: “Challenges of Deploying Evolutionary Computation in Steel Industry”
+- **Carlos A. Coello Coello**: “Evolutionary Multi-Objective Optimization in Real-World Applications”
+- **Michael Affenzeller**: “Heuristic Optimization in Production and Logistics”
+- **Anna Esparcia Alcazar**: “EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR”
+- **Thomas Bäck**: “Intelligent Industry Solutions”
+- **Felipe Campelo**: “EAs for aeronautical optimization – some results and challenges”
+- **Erik Goodman**: “How to Introduce Academic-developed EC Technology to Industry”
+- **Panel Discussion**: Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle
+
+
+## 2015
+- *Speaker and talk information to be added. See [GECCO 2015](http://www.sigevo.org/gecco-2015)*
+
+
+## 2014
+- *Speaker and talk information to be added. See [GECCO 2014](http://www.sigevo.org/gecco-2014)*
+
+
+## 2013
+- *Speaker and talk information to be added. See [GECCO 2013](http://www.sigevo.org/gecco-2013)*
+
+
+## 2012
+- *Speaker and talk information to be added. See [GECCO 2012](http://www.sigevo.org/gecco-2012)*
+
+
+## 2011
+- *Speaker and talk information to be added. See [GECCO 2011](http://www.sigevo.org/gecco-2011)*
+
+## 2010
+- **Speakers and Talks (GECCO 2016 context, for illustration):**
+  - **Thomas Bartz-Beielstein**: “Surrogate Model-based Optimization in Practice”
+  - **Maizura Mokhtar, Ian Hunt, Stephen Burns, Dave Ross**: “Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm”
+  - **Erik Hemberg, Ignacio Arnaldo, Una-May O’Reilly**: “Multi-Line Batch Scheduling by Similarity”
+  - **Abdel-Rahman Hedar, Majid Almaraashi, Alaa Abdel-Hakim**: “Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming”
+  - **Silvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria, Miguel Iglesias**: “Criticality of Response Time in the usage of Metaheuristics in Industry”
+  - **Silvino Fernández, Pablo Valledor**: “System demonstration, ArcelorMittal Scheduling and Tuning suite“
+  - **Bogdan Filipic**: “Challenges of Deploying Evolutionary Computation in Steel Industry”
+  - **Carlos A. Coello Coello**: “Evolutionary Multi-Objective Optimization in Real-World Applications”
+  - **Michael Affenzeller**: “Heuristic Optimization in Production and Logistics”
+  - **Anna Esparcia Alcazar**: “EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR”
+  - **Thomas Bäck**: “Intelligent Industry Solutions”
+  - **Felipe Campelo**: “EAs for aeronautical optimization – some results and challenges”
+  - **Erik Goodman**: “How to Introduce Academic-developed EC Technology to Industry”
+  - **Panel Discussion**: Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle
+
+---
+
+*For detailed talk titles and abstracts, please refer to the [official ECiP pages](https://gecco-2025.sigevo.org/EC-in-Practice) and linked archives for each year.*
