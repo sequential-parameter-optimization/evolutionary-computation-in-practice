@@ -4,14 +4,12 @@ project:
 website:
   title: "Gecco: ECiP"
   description: "Evolutionary Computation in Practice (ECiP) track at GECCO - Bridging Academia and Industry."
-  site-url: https://sequential-parameter-optimization.github.io/evolutionary-computation-in-practice/
+  site-url: "https://sequential-parameter-optimization.github.io/evolutionary-computation-in-practice/"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-<<<<<<< Updated upstream
-=======
       - reference.qmd
     right:
       - icon: github
@@ -23,20 +21,15 @@ website:
   twitter-card:
     card-style: summary_large_image
     creator: "@GeccoConf"
->>>>>>> Stashed changes
 
 format:
   html:
     theme:
       - cosmo
-      - brand
     css: styles.css
     toc: true
-<<<<<<< Updated upstream
-=======
     number-sections: true
     smooth-scroll: true
->>>>>>> Stashed changes
 
-
-
+execute:
+  freeze: auto

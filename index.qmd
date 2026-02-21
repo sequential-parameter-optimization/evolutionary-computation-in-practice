@@ -1,16 +1,5 @@
 ---
-title: "evolutionary-computation-in-practice"
----
-
----
-title: "Gecco: Evolutionary Computation in Practice"
-format:
-  html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
+title: "Gecco 2026: Evolutionary Computation in Practice"
 ---
 
 ::: {.hero-banner}
