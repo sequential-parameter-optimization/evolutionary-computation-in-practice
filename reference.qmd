@@ -198,8 +198,10 @@ A focus on the challenges of deploying evolutionary computation in the steel ind
 //| echo: false
 // List of all images in figures/gecco_ecip_2010/
 allImages10 = [
-  "KIXW7301.jpeg", "KVFR6931.jpeg", "PIEO5782.jpeg", "PTSS5738.jpeg", "QJTC3366.jpeg", "XEOB0830.jpeg", 
+  "KIXW7301.jpeg", "KVFR6931.jpeg", "PIEO5782.jpeg",
+  "PTSS5738.jpeg", "QJTC3366.jpeg", "XEOB0830.jpeg"
 ]
+
 
 // Shuffle and pick 3
 selectedImages10 = {
@@ -207,7 +209,7 @@ selectedImages10 = {
   return shuffled.slice(0, 3);
 }
 
-// Render the gallery in a 2x3 grid
+// Render the gallery in a 1x3 grid
 html`<div class="gallery-grid">
   ${selectedImages10.map(img => `
     <div class="gallery-item">
@@ -216,6 +218,7 @@ html`<div class="gallery-grid">
   `).join('')}
 </div>`
 ```
+
 
 
 
@@ -277,7 +280,7 @@ selectedImages08 = {
   return shuffled.slice(0, 3);
 }
 
-// Render the gallery in a 2x3 grid
+// Render the gallery in a 1x3 grid
 html`<div class="gallery-grid">
   ${selectedImages08.map(img => `
     <div class="gallery-item">
