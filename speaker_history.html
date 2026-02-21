@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>speaker_history – Gecco: ECiP</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b654365ec9f6baf3fdeb64dbed93b847.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Gecco: Evolutionary Computation in Practice">
+<meta property="og:description" content="Bridging Academia and Industry in Evolutionary Computation">
+<meta property="og:image" content="https://gecco-2026.sigevo.org/dl214">
+<meta property="og:site_name" content="Gecco: ECiP">
+<meta name="twitter:title" content="Gecco: ECiP">
+<meta name="twitter:description" content="Evolutionary Computation in Practice (ECiP) track at GECCO - Bridging Academia and Industry.">
+<meta name="twitter:image" content="https://sequential-parameter-optimization.github.io/evolutionary-computation-in-practice/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAYCAYAAABurXSEAAABLklEQVR4Xu2VMUoDQRiF/1Rikc7GQhB7OzshFxA8gJADxBCNoEeIWMQTpA2kCIQcIPfIAUwjgVSpQkD/x8y6+Jw1OzNrQJgPHsu+/8E82H93RRKJf8Wx6pDNXTyqWmzukRPVh9WvjFQbycO338d751xMjyYPiogt3WMjEPTYsllEbOkXNgKZSYkVyYgt3WcjkLqYLs88cBFb+pWNCEq9kAChNpseVFl6IKbPAQ8YhDpsFnDh0NDhZfKhoVqL6TOh2Q8QumOzgGuHpg4vU1muJF+LUiuCQJdND2LX40ZMh5q9x1PH/WkWcIHAA5sexJTGBwDnH5EPb07eFwgjEPPZCi2Np4uzL3mgrMSxImPVUrVQvdnru5hfuy+hpVHqiU3LmZj5PQ+qIrR0IpFI/DGfY+tFdndnp0IAAAAASUVORK5CYII=">
+<meta name="twitter:creator" content="@GeccoConf">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Gecco: ECiP</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./reference.html"> 
+<span class="menu-text">ECiP Speakers &amp; Talks</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/sequential-parameter-optimization/evolutionary-computation-in-practice"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#strategic-synthesis-and-digital-migration-of-the-evolutionary-computation-in-practice-ecip-historical-archive-a-15-year-longitudinal-review-20112025" id="toc-strategic-synthesis-and-digital-migration-of-the-evolutionary-computation-in-practice-ecip-historical-archive-a-15-year-longitudinal-review-20112025" class="nav-link active" data-scroll-target="#strategic-synthesis-and-digital-migration-of-the-evolutionary-computation-in-practice-ecip-historical-archive-a-15-year-longitudinal-review-20112025"><strong>Strategic Synthesis and Digital Migration of the Evolutionary Computation in Practice (ECiP) Historical Archive: A 15-Year Longitudinal Review (2011–2025)</strong></a>
+  <ul class="collapse">
+  <li><a href="#digital-transformation-of-scientific-archives-from-legacy-systems-to-quarto" id="toc-digital-transformation-of-scientific-archives-from-legacy-systems-to-quarto" class="nav-link" data-scroll-target="#digital-transformation-of-scientific-archives-from-legacy-systems-to-quarto"><strong>Digital Transformation of Scientific Archives: From Legacy Systems to Quarto</strong></a>
+  <ul class="collapse">
+  <li><a href="#technical-advantages-of-the-quarto-github-pages-framework" id="toc-technical-advantages-of-the-quarto-github-pages-framework" class="nav-link" data-scroll-target="#technical-advantages-of-the-quarto-github-pages-framework"><strong>Technical Advantages of the Quarto-GitHub Pages Framework</strong></a></li>
+  </ul></li>
+  <li><a href="#the-ecip-track-organizational-continuity-and-mission" id="toc-the-ecip-track-organizational-continuity-and-mission" class="nav-link" data-scroll-target="#the-ecip-track-organizational-continuity-and-mission"><strong>The ECiP Track: Organizational Continuity and Mission</strong></a>
+  <ul class="collapse">
+  <li><a href="#leadership-chronology-and-institutional-context" id="toc-leadership-chronology-and-institutional-context" class="nav-link" data-scroll-target="#leadership-chronology-and-institutional-context"><strong>Leadership Chronology and Institutional Context</strong></a></li>
+  </ul></li>
+  <li><a href="#comprehensive-speaker-registry-and-talk-synthesis-20112025" id="toc-comprehensive-speaker-registry-and-talk-synthesis-20112025" class="nav-link" data-scroll-target="#comprehensive-speaker-registry-and-talk-synthesis-20112025"><strong>Comprehensive Speaker Registry and Talk Synthesis (2011–2025)</strong></a>
+  <ul class="collapse">
+  <li><a href="#the-recent-era-addressing-hybridity-and-emergent-complexity-20212025" id="toc-the-recent-era-addressing-hybridity-and-emergent-complexity-20212025" class="nav-link" data-scroll-target="#the-recent-era-addressing-hybridity-and-emergent-complexity-20212025"><strong>The Recent Era: Addressing Hybridity and Emergent Complexity (2021–2025)</strong></a></li>
+  <li><a href="#the-middle-period-globalization-and-surrogate-models-20162020" id="toc-the-middle-period-globalization-and-surrogate-models-20162020" class="nav-link" data-scroll-target="#the-middle-period-globalization-and-surrogate-models-20162020"><strong>The Middle Period: Globalization and Surrogate Models (2016–2020)</strong></a></li>
+  <li><a href="#the-foundational-era-establishing-the-industrial-interface-20112015" id="toc-the-foundational-era-establishing-the-industrial-interface-20112015" class="nav-link" data-scroll-target="#the-foundational-era-establishing-the-industrial-interface-20112015"><strong>The Foundational Era: Establishing the Industrial Interface (2011–2015)</strong></a></li>
+  </ul></li>
+  <li><a href="#the-gecco-industrial-challenge-a-longitudinal-review" id="toc-the-gecco-industrial-challenge-a-longitudinal-review" class="nav-link" data-scroll-target="#the-gecco-industrial-challenge-a-longitudinal-review"><strong>The GECCO Industrial Challenge: A Longitudinal Review</strong></a></li>
+  <li><a href="#synthesis-of-thematic-trends-in-industrial-evolutionary-computation" id="toc-synthesis-of-thematic-trends-in-industrial-evolutionary-computation" class="nav-link" data-scroll-target="#synthesis-of-thematic-trends-in-industrial-evolutionary-computation"><strong>Synthesis of Thematic Trends in Industrial Evolutionary Computation</strong></a>
+  <ul class="collapse">
+  <li><a href="#from-black-box-to-gray-box-optimization" id="toc-from-black-box-to-gray-box-optimization" class="nav-link" data-scroll-target="#from-black-box-to-gray-box-optimization"><strong>From Black-Box to Gray-Box Optimization</strong></a></li>
+  <li><a href="#the-rise-of-surrogate-assisted-optimization" id="toc-the-rise-of-surrogate-assisted-optimization" class="nav-link" data-scroll-target="#the-rise-of-surrogate-assisted-optimization"><strong>The Rise of Surrogate-Assisted Optimization</strong></a></li>
+  <li><a href="#the-emerging-synergy-with-large-language-models-llms" id="toc-the-emerging-synergy-with-large-language-models-llms" class="nav-link" data-scroll-target="#the-emerging-synergy-with-large-language-models-llms"><strong>The Emerging Synergy with Large Language Models (LLMs)</strong></a></li>
+  </ul></li>
+  <li><a href="#technical-implementation-creating-a-scientifically-attractive-archive" id="toc-technical-implementation-creating-a-scientifically-attractive-archive" class="nav-link" data-scroll-target="#technical-implementation-creating-a-scientifically-attractive-archive"><strong>Technical Implementation: Creating a Scientifically Attractive Archive</strong></a>
+  <ul class="collapse">
+  <li><a href="#quarto-project-structure-and-yaml-metadata" id="toc-quarto-project-structure-and-yaml-metadata" class="nav-link" data-scroll-target="#quarto-project-structure-and-yaml-metadata"><strong>Quarto Project Structure and YAML Metadata</strong></a></li>
+  <li><a href="#latex-for-algorithmic-rigor" id="toc-latex-for-algorithmic-rigor" class="nav-link" data-scroll-target="#latex-for-algorithmic-rigor"><strong>LaTeX for Algorithmic Rigor</strong></a></li>
+  </ul></li>
+  <li><a href="#strategic-outlook-the-future-of-evolutionary-computation-in-industry" id="toc-strategic-outlook-the-future-of-evolutionary-computation-in-industry" class="nav-link" data-scroll-target="#strategic-outlook-the-future-of-evolutionary-computation-in-industry"><strong>Strategic Outlook: The Future of Evolutionary Computation in Industry</strong></a>
+  <ul class="collapse">
+  <li><a href="#the-shift-toward-interpretable-control" id="toc-the-shift-toward-interpretable-control" class="nav-link" data-scroll-target="#the-shift-toward-interpretable-control"><strong>The Shift Toward Interpretable Control</strong></a></li>
+  <li><a href="#sustainability-and-computational-efficiency" id="toc-sustainability-and-computational-efficiency" class="nav-link" data-scroll-target="#sustainability-and-computational-efficiency"><strong>Sustainability and Computational Efficiency</strong></a></li>
+  <li><a href="#final-conclusion-the-enduring-value-of-the-ecip-interface" id="toc-final-conclusion-the-enduring-value-of-the-ecip-interface" class="nav-link" data-scroll-target="#final-conclusion-the-enduring-value-of-the-ecip-interface"><strong>Final Conclusion: The Enduring Value of the ECiP Interface</strong></a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="strategic-synthesis-and-digital-migration-of-the-evolutionary-computation-in-practice-ecip-historical-archive-a-15-year-longitudinal-review-20112025" class="level1">
+<h1><strong>Strategic Synthesis and Digital Migration of the Evolutionary Computation in Practice (ECiP) Historical Archive: A 15-Year Longitudinal Review (2011–2025)</strong></h1>
+<p>The Genetic and Evolutionary Computation Conference (GECCO), as the premier venue for research in the field of natural computation, has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the Evolutionary Computation in Practice (ECiP) track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts.1 Unlike the broader academic tracks that prioritize peer-reviewed full papers and theoretical proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.1</p>
+<p>As the digital infrastructure of GECCO evolves, there is an urgent need to consolidate the institutional memory of the ECiP track. This involves not only updating the historical registry of speakers and their contributions but also modernizing the delivery of this data to meet the aesthetic and functional standards of the contemporary scientific community. The transition from legacy content management systems to modern, version-controlled platforms such as GitHub Pages and Quarto Markdown represents a significant opportunity to enhance the accessibility and visual appeal of this historical archive. This report provides a comprehensive longitudinal analysis of the ECiP track from 2011 to 2025, synthesized with a technical roadmap for its digital migration.</p>
+<section id="digital-transformation-of-scientific-archives-from-legacy-systems-to-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="digital-transformation-of-scientific-archives-from-legacy-systems-to-quarto"><strong>Digital Transformation of Scientific Archives: From Legacy Systems to Quarto</strong></h2>
+<p>The technical evolution of the GECCO web presence is a microcosm of the broader shifts in scientific communication. For over a decade, the conference utilized the Tiki Wiki CMS Groupware system, a platform that served its purpose for early collaborative editing but eventually accumulated significant technical debt.6 Legacy systems like Tiki Wiki often present challenges in terms of mobile responsiveness, search engine optimization (SEO), and the integration of modern design frameworks. The move toward GitHub Pages and Quarto Markdown is not merely a change in hosting but a fundamental shift toward “Documentation as Code,” where content is managed with the same rigor and version control as the software it describes.</p>
+<p>A scientifically attractive design for an academic archive must prioritize clarity, information density, and the seamless integration of different data types. Quarto, as a multi-language, next-generation version of R Markdown, provides the ideal toolkit for this task. It allows for the production of high-quality static websites that integrate LaTeX for mathematical rigor, responsive Markdown tables for structured data, and customizable CSS/SASS for branding that aligns with the SIGEVO identity.</p>
+<section id="technical-advantages-of-the-quarto-github-pages-framework" class="level3">
+<h3 class="anchored" data-anchor-id="technical-advantages-of-the-quarto-github-pages-framework"><strong>Technical Advantages of the Quarto-GitHub Pages Framework</strong></h3>
+<p>The architectural shift to Quarto facilitates a “living archive” approach. By utilizing YAML-based metadata for speaker profiles and talk descriptions, the archive becomes easily searchable and extensible. The use of CSS variables allows for a design that is both professional and visually engaging, incorporating the color palettes and typography expected by the academic community. Furthermore, the integration with GitHub Actions enables automated deployment pipelines, ensuring that the ECiP registry is updated in real-time as new information becomes available.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Legacy Tiki Wiki System</th>
+<th style="text-align: left;">Modern Quarto + GitHub Pages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Version Control</td>
+<td style="text-align: left;">Limited to page-level history</td>
+<td style="text-align: left;">Comprehensive Git-based versioning</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Math Rendering</td>
+<td style="text-align: left;">Variable plugin support</td>
+<td style="text-align: left;">Native, high-quality LaTeX support</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Responsiveness</td>
+<td style="text-align: left;">Often poor on mobile devices</td>
+<td style="text-align: left;">Built-in Bootstrap 5 responsiveness</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Data Integration</td>
+<td style="text-align: left;">Manual table entry</td>
+<td style="text-align: left;">Automated listings from YAML/CSV data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Aesthetic Control</td>
+<td style="text-align: left;">Constrained by CMS themes</td>
+<td style="text-align: left;">Full SASS/CSS customization</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sustainability</td>
+<td style="text-align: left;">Requires server maintenance</td>
+<td style="text-align: left;">Serverless, static hosting on GitHub</td>
+</tr>
+</tbody>
+</table>
+<p>In the context of the ECiP track, this digital modernization allows for a more nuanced presentation of the “insider information” that the track is known for. Instead of fragmented summaries, the Quarto framework can support integrated narratives that connect historical speakers with the specific industrial challenges they addressed, creating a rich educational resource for researchers looking to establish their own industrial partnerships.1</p>
+</section>
+</section>
+<section id="the-ecip-track-organizational-continuity-and-mission" class="level2">
+<h2 class="anchored" data-anchor-id="the-ecip-track-organizational-continuity-and-mission"><strong>The ECiP Track: Organizational Continuity and Mission</strong></h2>
+<p>The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization.8 His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track.8 The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track’s activities, including the management of the Industrial Challenge, which has run annually since 2011.1</p>
+<p>The primary mission of ECiP is to provide a venue where well-known speakers with outstanding reputations present background information on establishing reliable cooperation with industrial partners.1 The track targets researchers in academia who are interested in managing industrial projects, offering them valuable hints that extend beyond textbook methodologies.1 This focus on real-world optimization and project management principles distinguishes ECiP from the Real World Applications (RWA) track, which is more focused on the presentation of peer-reviewed results than on the process of cooperation.1</p>
+<section id="leadership-chronology-and-institutional-context" class="level3">
+<h3 class="anchored" data-anchor-id="leadership-chronology-and-institutional-context"><strong>Leadership Chronology and Institutional Context</strong></h3>
+<p>The organizational structure of the ECiP track has evolved to reflect the global nature of the GECCO community. While Thomas Bartz-Beielstein has remained a constant, he has been joined by various co-organizers who bring diverse regional and technical expertise.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Era</th>
+<th style="text-align: left;">Key Organizers</th>
+<th style="text-align: left;">Affiliations and Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2023-2025</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani</td>
+<td style="text-align: left;">IDE+A, TH Köln; University of Technology Sydney 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-2022</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein, Bogdan Filipic, Sowmya Chandrasekaran</td>
+<td style="text-align: left;">TH Köln; Jozef Stefan Institute, Slovenia 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2011-2020</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein, Joern Mehnen, David Davis</td>
+<td style="text-align: left;">TH Köln; Cranfield University; VGO Associates 8</td>
+</tr>
+</tbody>
+</table>
+<p>This institutional continuity has allowed the track to maintain a high standard for invited speakers. The organizers’ professional networks have been instrumental in bringing “high calibre speakers from several industry areas to GECCO,” creating what has been described as a “magical place where academia and industry can meet”.14</p>
+</section>
+</section>
+<section id="comprehensive-speaker-registry-and-talk-synthesis-20112025" class="level2">
+<h2 class="anchored" data-anchor-id="comprehensive-speaker-registry-and-talk-synthesis-20112025"><strong>Comprehensive Speaker Registry and Talk Synthesis (2011–2025)</strong></h2>
+<p>The following analysis updates and completes the list of speakers for the ECiP track, drawing from historical archives, conference booklets, and professional profiles. This registry highlights the track’s ability to attract leaders from diverse sectors, including automotive manufacturing, energy management, logistics, and software engineering.</p>
+<section id="the-recent-era-addressing-hybridity-and-emergent-complexity-20212025" class="level3">
+<h3 class="anchored" data-anchor-id="the-recent-era-addressing-hybridity-and-emergent-complexity-20212025"><strong>The Recent Era: Addressing Hybridity and Emergent Complexity (2021–2025)</strong></h3>
+<p>The period from 2021 to 2025 has been marked by two significant shifts: the transition to hybrid conference models and a renewed focus on the “antagonism” between academic foundations and industrial applications.1 The 2025 program, in particular, highlights a critical reflection on why advanced methods proposed in research often fail to achieve practical relevance while simpler strategies succeed.5</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Year</th>
+<th style="text-align: left;">Speaker</th>
+<th style="text-align: left;">Talk Title</th>
+<th style="text-align: left;">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2025</td>
+<td style="text-align: left;">Dr.&nbsp;Roman Kalkreuth</td>
+<td style="text-align: left;">On the antagonism between foundations and applications in graph-based genetic programming</td>
+<td style="text-align: left;">RWTH Aachen, Germany 5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2025</td>
+<td style="text-align: left;">Dr.&nbsp;Farha Anjum Khan</td>
+<td style="text-align: left;">Robust Contextual Preferential Bayesian Optimization for Real-World Applications with Biased Data</td>
+<td style="text-align: left;">Continental-Corporation 5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2025</td>
+<td style="text-align: left;">Dr.&nbsp;Xavier Bonet-Monroig</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">[Affiliation Pending]5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">Meinolf Sellmann</td>
+<td style="text-align: left;">Modern Hybrids: Machine Learning for Search and Optimization</td>
+<td style="text-align: left;">InsideOpt (CTO) 16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021</td>
+<td style="text-align: left;">Joshua Tenenbaum</td>
+<td style="text-align: left;">Reverse-engineering core common sense with the tools of probabilistic programs</td>
+<td style="text-align: left;">MIT, USA 17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021</td>
+<td style="text-align: left;">Marc Mézard</td>
+<td style="text-align: left;">Statistical Physics and Statistical Inference</td>
+<td style="text-align: left;">École Normale Supérieure, France 17</td>
+</tr>
+</tbody>
+</table>
+<p>Roman Kalkreuth’s 2025 contribution is particularly noteworthy for its pedagogical value. He addresses the gap where “relatively simple 1+lambda search strategies” originally proposed as base algorithms for Cartesian Genetic Programming (CGP) have been more successful in real-world applications than the more complex genetic variation methods proposed in recent years.5 This aligns with the ECiP mission to look beyond textbooks and understand the specific properties that make an algorithm “practice-ready.”</p>
+</section>
+<section id="the-middle-period-globalization-and-surrogate-models-20162020" class="level3">
+<h3 class="anchored" data-anchor-id="the-middle-period-globalization-and-surrogate-models-20162020"><strong>The Middle Period: Globalization and Surrogate Models (2016–2020)</strong></h3>
+<p>During this period, the ECiP track matured alongside the rise of surrogate-assisted evolutionary optimization (SAEOpt). As real-world simulations became increasingly expensive, the need for data-driven models to guide the search process became a primary industrial requirement.16 This period also saw GECCO’s expansion into Asia (Kyoto 2018) and the consolidation of the “Industrial Challenge” as a key engagement tool.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Year</th>
+<th style="text-align: left;">Speaker</th>
+<th style="text-align: left;">Contribution Context</th>
+<th style="text-align: left;">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2019</td>
+<td style="text-align: left;">Markus Wagner</td>
+<td style="text-align: left;">Invited Speaker (Optimising Wave Energy Converters)</td>
+<td style="text-align: left;">University of Adelaide 22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein</td>
+<td style="text-align: left;">Event Chair and Tutorial (EC in Practice)</td>
+<td style="text-align: left;">TH Köln 8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017</td>
+<td style="text-align: left;">Kate Smith-Miles</td>
+<td style="text-align: left;">Keynote/Invited (Visualising diversity of benchmark instances)</td>
+<td style="text-align: left;">University of Melbourne 23</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016</td>
+<td style="text-align: left;">Iñaki Hidalgo</td>
+<td style="text-align: left;">Workshop/Track Leadership (Practice focus)</td>
+<td style="text-align: left;">Universidad Complutense de Madrid 20</td>
+</tr>
+</tbody>
+</table>
+<p>The work of Markus Wagner in 2019 exemplifies the interdisciplinary nature of the track. His focus on “Optimising the Wave Energy Converters” involved not just metaheuristic methods but also the use of adaptive neuro-surrogate-based optimization to handle the high costs associated with placing power take-off units.22 This project received a Best Paper Award in the RWA track, highlighting how the principles discussed in the ECiP track translate into award-winning academic output.22</p>
+</section>
+<section id="the-foundational-era-establishing-the-industrial-interface-20112015" class="level3">
+<h3 class="anchored" data-anchor-id="the-foundational-era-establishing-the-industrial-interface-20112015"><strong>The Foundational Era: Establishing the Industrial Interface (2011–2015)</strong></h3>
+<p>The early years of the ECiP track were critical for defining the scope of industrial EC. Thomas Bartz-Beielstein, Joern Mehnen, and David Davis worked to ensure that GECCO was not just a theoretical gathering but a “magical place where academia and industry can meet”.14 This era established the “Industrial Challenge,” which allowed participants to tackle real-world problems provided by companies such as ArcelorMittal.20</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Year</th>
+<th style="text-align: left;">Organizers/Key Contributors</th>
+<th style="text-align: left;">Primary Industrial Focus</th>
+<th style="text-align: left;">Affiliations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2014</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein, Joern Mehnen</td>
+<td style="text-align: left;">Logistics and Manufacturing</td>
+<td style="text-align: left;">TH Köln; Cranfield University 8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2012</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein, David Davis</td>
+<td style="text-align: left;">Statistics for EC: A Visual Approach</td>
+<td style="text-align: left;">TH Köln; VGO Associates 8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2011</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein, Joern Mehnen, David Davis</td>
+<td style="text-align: left;">Establishing industry-academia cooperation</td>
+<td style="text-align: left;">TH Köln; Cranfield; VGO 14</td>
+</tr>
+</tbody>
+</table>
+<p>In 2011, the organizers were praised for bringing speakers from diverse industry areas, a tradition that has continued for over a decade.14 The focus during this time was often on the “Practice of Evolution,” teaching attendees how to manage the lifecycle of an optimization project, from the initial client meeting to final deployment.</p>
+</section>
+</section>
+<section id="the-gecco-industrial-challenge-a-longitudinal-review" class="level2">
+<h2 class="anchored" data-anchor-id="the-gecco-industrial-challenge-a-longitudinal-review"><strong>The GECCO Industrial Challenge: A Longitudinal Review</strong></h2>
+<p>A vital component of the ECiP track is the Industrial Challenge, an annual competition that provides a bridge between real-world data and academic algorithms. Since its inception in 2011, the challenge has invited researchers to solve optimization problems defined by actual industrial partners, often using anonymized data from manufacturing, logistics, or energy sectors.8</p>
+<p>The 2024 and 2025 editions of the challenge continue this tradition, focusing on complex problems such as the optimal placement of PV systems in energy domains and dynamic stacking optimization in uncertain environments.11 These competitions are organized by the same core team that leads the ECiP track, ensuring that the lessons learned from the track are directly applied in a competitive setting.11</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Competition Year</th>
+<th style="text-align: left;">Focus / Topic</th>
+<th style="text-align: left;">Lead Organizers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">Evolutionary Computation in the Energy Domain (PV Systems)</td>
+<td style="text-align: left;">Joao Soares, Fernando Lezama, Zita Vale 25</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020</td>
+<td style="text-align: left;">Industrial Challenge (Dynamic Stacking Optimization)</td>
+<td style="text-align: left;">Frederik Rehbach, Thomas Bartz-Beielstein 11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019</td>
+<td style="text-align: left;">Online Event Detection for Water Quality Control</td>
+<td style="text-align: left;">Frederik Rehbach, Steffen Moritz, T. Bartz-Beielstein 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2011-Present</td>
+<td style="text-align: left;">GECCO Industrial Challenge Series</td>
+<td style="text-align: left;">Thomas Bartz-Beielstein (Founder/Organizer) 8</td>
+</tr>
+</tbody>
+</table>
+<p>The Industrial Challenge has a significant impact on the field, as it provides a rare opportunity for researchers to test their algorithms on “dirty” data—datasets that include noise, missing values, and non-standard constraints that are rarely found in textbook benchmarks.1 The success of this series underscores the track’s commitment to extending EC practice beyond theoretical ideals.</p>
+</section>
+<section id="synthesis-of-thematic-trends-in-industrial-evolutionary-computation" class="level2">
+<h2 class="anchored" data-anchor-id="synthesis-of-thematic-trends-in-industrial-evolutionary-computation"><strong>Synthesis of Thematic Trends in Industrial Evolutionary Computation</strong></h2>
+<p>An analysis of fifteen years of ECiP talk titles and abstracts reveals several second- and third-order insights into the evolution of the field. These trends indicate how the focus of industrial EC has shifted in response to broader technological advancements, particularly in machine learning and data science.</p>
+<section id="from-black-box-to-gray-box-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="from-black-box-to-gray-box-optimization"><strong>From Black-Box to Gray-Box Optimization</strong></h3>
+<p>In the early 2010s, the focus was often on treating industrial problems as “black boxes,” where the algorithm had no knowledge of the underlying system.15 However, by the early 2020s, there was a clear shift toward “gray-box” optimization, where domain knowledge and surrogate models are used to enhance the search process.16 Meinolf Sellmann’s 2022 talk on “Modern Hybrids” is a primary example of this, summarizing 15 years of work on the use of Machine Learning for Search and Optimization.16</p>
+</section>
+<section id="the-rise-of-surrogate-assisted-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="the-rise-of-surrogate-assisted-optimization"><strong>The Rise of Surrogate-Assisted Optimization</strong></h3>
+<p>As real-world optimization problems often involve computationally expensive simulations—such as Computational Fluid Dynamics (CFD) or complex structural analysis—the field has increasingly turned to surrogate models.16 The 2017 SAEOpt workshop and subsequent contributions highlight the development of acquisition functions designed to minimize the number of objective function evaluations required to find an optimal solution.20 This trend is a direct causal response to the industrial need for “fast enough” solutions that balance accuracy with computational cost.</p>
+</section>
+<section id="the-emerging-synergy-with-large-language-models-llms" class="level3">
+<h3 class="anchored" data-anchor-id="the-emerging-synergy-with-large-language-models-llms"><strong>The Emerging Synergy with Large Language Models (LLMs)</strong></h3>
+<p>The most recent data points to a burgeoning interest in the intersection of EC and Large Language Models. The 2024 workshop on “Large Language Models for and with Evolutionary Computation” (LLMfwEC) and tutorials on genetic improvement using search methods indicate that the community is exploring how LLMs can facilitate the generation of code, the discovery of new algorithm variants, and the exploration of prompt spaces.21 This represents a new frontier for “Practice,” where the “coder” is no longer purely human, and the search process is augmented by generative AI.</p>
+</section>
+</section>
+<section id="technical-implementation-creating-a-scientifically-attractive-archive" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation-creating-a-scientifically-attractive-archive"><strong>Technical Implementation: Creating a Scientifically Attractive Archive</strong></h2>
+<p>As an experienced web designer tasked with managing this archive via GitHub Pages and Quarto, the implementation must follow rigorous structural and aesthetic principles. A scientifically attractive design is characterized by its ability to present complex information without overwhelming the user. In the case of the ECiP track, this involves the careful use of data visualization and structured content.</p>
+<section id="quarto-project-structure-and-yaml-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-project-structure-and-yaml-metadata"><strong>Quarto Project Structure and YAML Metadata</strong></h3>
+<p>To ensure the archive is maintainable, a Quarto project should utilize a data-driven approach. Instead of hard-coding speaker lists into HTML, the data should be stored in YAML or CSV files. This allows for the use of Quarto’s listings feature to automatically generate speaker galleries, talk summaries, and chronological registries.</p>
+<p>YAML</p>
+<p># Example _quarto.yml for ECiP Archive<br>
+project:<br>
+type: website</p>
+<p>website:<br>
+title: “GECCO ECiP Historical Archive”<br>
+navbar:<br>
+left:<br>
+- text: “Home”<br>
+href: index.qmd<br>
+- text: “Speakers”<br>
+href: speakers.qmd<br>
+- text: “Industrial Challenge”<br>
+href: industrial-challenge.qmd<br>
+- text: “Chronology”<br>
+href: chronology.qmd</p>
+<p>format:<br>
+html:<br>
+theme:<br>
+light: [cosmo, custom.scss]<br>
+dark: [darkly, custom.scss]<br>
+toc: true<br>
+number-sections: true<br>
+code-fold: true</p>
+<p>The use of a custom SCSS file (custom.scss) is essential for “scientifically attractive” design. This allows for the definition of typography that prioritizes readability (e.g., sans-serif headers with serif body text) and a color palette that reflects the professionalism of the ACM SIGEVO community.</p>
+</section>
+<section id="latex-for-algorithmic-rigor" class="level3">
+<h3 class="anchored" data-anchor-id="latex-for-algorithmic-rigor"><strong>LaTeX for Algorithmic Rigor</strong></h3>
+<p>In a professional scientific report, algorithmic descriptions must be presented with mathematical precision. Quarto’s native support for MathJax and LaTeX allows for the seamless inclusion of the formulas that define the strategies discussed by ECiP speakers. For instance, a discussion of the <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAYCAYAAABurXSEAAABLklEQVR4Xu2VMUoDQRiF/1Rikc7GQhB7OzshFxA8gJADxBCNoEeIWMQTpA2kCIQcIPfIAUwjgVSpQkD/x8y6+Jw1OzNrQJgPHsu+/8E82H93RRKJf8Wx6pDNXTyqWmzukRPVh9WvjFQbycO338d751xMjyYPiogt3WMjEPTYsllEbOkXNgKZSYkVyYgt3WcjkLqYLs88cBFb+pWNCEq9kAChNpseVFl6IKbPAQ8YhDpsFnDh0NDhZfKhoVqL6TOh2Q8QumOzgGuHpg4vU1muJF+LUiuCQJdND2LX40ZMh5q9x1PH/WkWcIHAA5sexJTGBwDnH5EPb07eFwgjEPPZCi2Np4uzL3mgrMSxImPVUrVQvdnru5hfuy+hpVHqiU3LmZj5PQ+qIrR0IpFI/DGfY+tFdndnp0IAAAAASUVORK5CYII=" class="img-fluid"> strategy mentioned in Roman Kalkreuth’s talk can be formally defined as:</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmwAAAA5CAYAAACLSXdIAAAHvUlEQVR4Xu3dC4htdRXH8aXmOyVRs64VWiGFllmUBlpITyzJwCJR0yx8RRqVkpiiYib2AMkeJna9FSJ6TYsQIVHRfBRSZClqaWJpD9PSyIuW5f/H/i9nzZq95+w5c87MvnO/H1js/V//c+buPXMu58/+v8wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACmaOucWIS7cwIAAACL86dU3jyVR1lVYquU2y2VAQAAMKYvltgh5f6fyqPsb3MbbP9NZQAAAIwpNs5eUOKjJe61hXWRtjXYLijxlpQDlssHS5yck/P4Z04AALCcYoNtsxJ3lTikxCYhP0pbg+3tJS5MOWBadrTms/xwrihebO35Ub6QEwAALJfc/RnLryyxriPWhtepwbZNKMuLSvwq5YBp0ed223rM2nJ93FriqzkJAMByyF9m/0vlPtRg05dl9DprukWBpZA/x05d++oOHYeeMnf9XAAAllT+QvqyNd2Zfe1lzXuOL7FnyH+txBtCeX2xkK5gDIO64/Pn2HXl+1rs+wEA6OUHJX5pzRfPASUeKvF0qL/KZj8dUzfoJDyTE1OkBqbu7yxr/l112bpna51Cy5c8UOKYUK/Xq+tW9WtKfLeeD9H7beZe5C/W3N81tay/699K/KOW3WdKfL3EOda8d79Q5z9P8eYSHwrll4XXDVW8/vi7cbnsfl7iD9b8/uTOer7T869o6POwXcoBADBRsXvzjhInltjY5n6JxQbOpLw6Jzp8vyMuKbG6xMUlLrL514a70mbf0xXWNE6cxtd5/c7WdNeKcp+r514euk9Yc53HhZzKv0/lH4byn0vsE8pt96mcZgnr8/HWVDd0/yqxR05ad5em/h84b+Tp96PjR0KdqPyxlAMAYKIOCudtX1zRpjmxCL/IiSX2lRJXh7LGMbXdv3Lqyo3loTvS5l6nyh9O5RtDOXqJzX2/vMaaBr4/cVqftN2P7GrtdbmRrqfQskXIu71LnJuTAABMg56ctH1xrRQnWHN/WgRYtBzDj2aqOxts51uT11Oln5Z4Ynb1IB1qc+9FZXV3x/JNoby6xKPWfA4kv98p31U3ZF3X/ELrrnOj6t9d4vScBABgkl5vTWPkNJv9xaTGyVBo3FWfeLm/oYXu7dJQ1li2H1tz/9LVYFNO3WaaNPHaVDdUh9vce2lrsN1cz19Vy5GXPxVyet2WtU5Lsqwv3mtz7y9qq9sonMd6jd/T/5dI4x21mDQAAFOjL6Pd69G/mDSAeqUNota9XRvK/ynxmxJn1HJbo0XUBfi4NU+jflLivNnVg/RZa+5Fixw7leM4K5V/W89fWsvunlDWwHu5PeRE5+8M5SG739r/tq6tTjk1TjUZx8d5aobzZc+/YoY+RwAATJUaLv6FpZmEOteA/pVGExy0d6nuz58e6vyb1swC1WzKP5b4qzUTFJwG5ut1OYbqQGtW7Ne9aCKBPFbLyu9rzQB8lTUjVo1ReY/N3Nv2Jd5X4ne17klrXqvZpfLtEo/U3PU1N2S6J3+a2ObBnCi+Yc373lXivnre1e055M8DAAAbhLYxa/qC/k5OYrD099LEgC7az1YNs3Go65QGGwAAy6zty1i5N+YkBkd/p5OseWo6StvfuQ+9b5ecBAAAS+ttNtOldks9p7G2ftDfSt2ZfbzJ+r82OjknAADAyqbB8T5ObD472uxJIVqKw2e7LpTvgBAt9yKwcTau1knLLrfpjZ3Tnrd9xfX5AADABuLonOjw65bzuGtBX2r4iPZ61cxQpzXr4rIWS0ETIpxm48ZdKw4O5+5Mm7l+AACAidKG91qgVrMz8xZH70jlNmpMuetK3BDKCxXXpcs0a3Yp5cZq3MtWM5kzrTX3s5wEAADoy/chzYvL/j2Vs7buuFfUo++DGXdn0Ib0fWm7KefbK8232Ou4g/BH0Wbx8VpET/j8Pl389+P6ee6QErflJAAAQB966iXe4PBGmtZCm89hqfzpetSgdj1F08/TWLXY9dn3KdipNnM92rRda7BJ17pisi4nJihei2j8nSZ3uLgJvcTuWreNTa9RCQAANhC5MaEN09UIiuFdonrtt+p5psVvtU6Y076V/oRMa8SdHerm49ejBuWx9fzWetzNmhmS99ayrA3nkxT37vTGrZxTj0+F3Jp6zL9LpwV+fRcCAACA3rRzgny+Hi+ox/nGiznvSpUPlNjJZhorGrPlfAeCKA7ad96wE+1kILHxo67ItlmY/gQuUkPLbRvOnbZx6kPduG3Xclw4z3xD+kj7g96dkwAAAKNoDJq6L88t8UmbPdNRRi3ZEcewqTGjMXDeqFkd6iQ2tLTMR3aUzW4QnVZi05QTbzyNEt+Xf8ahLbk7rdmjVL5X4uP1XJMmdC0X2tz3tOla805PJ7UuHgAAwFRoyQw15vLSGerunKQj6/GselxlzaD/ceySEwt0RD16N+i/bfxrEf28aa3FBgAA0GnSC9beWI96krWVLW68V1uX6zi0B6uu5Uu5YoFOKXFlTgIAAEybGkU35eSEaFblEGhJj8Vey/k23jZSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFaO5wAo2JVW/n1DvgAAAABJRU5ErkJggg==" class="img-fluid"><br>
+where <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAAYCAYAAADjwDPQAAADNklEQVR4Xu2ZS8hNURiGP5eI3ClFykDKNUwk5TaSAWGAzFxKEn5JDCgTEyTCAPmHFHKNMDVwyWWCiAwkyi1JSm7f217b/s571trnP5d9fmf/+6m3s793nb3WOd/ae+211hapjTdseHjLRhdggmoimx76q1axWQ832FCmqu6yqTxiI8f0UJ0hr5vqp2o1+WCdaiybtcKdskt1RPydclXVh82c8oQNx2zVHzYdv9mohYuqoWwqu8XfKYNUl9nMKaHEA5ThrmEeSHSH1UWo4VCngNA5eaKfqp1Nw0PVcTaVlartbFZLKMHolHtsOkLn5ImFqjY2DePEn4fJqnNsVouvYoBOuc+mI3ROntinWsqmY5jqtkR5GEJlGN5xF9VFKMHoFIyPPkLn5IkNqk1sKqNUH93xadUtUwYmqQ6TV8Ix1Vo2lenmOJRgdEpo+hs6p1XAEHNKNZj8nhJd6WCmRPmzjJHS2RUe6JyLZarF5P3jhyQnzTX+GufFXFMNMDH4pvqk+qD6ItGPjcED8KaJW415qv3in9YifmniX+YY8PfBZ9V8E2NY8y4ZTkoyLUNFC0wZEm0rx0r0vIkrgcVU3VO+TiT+7+3mOAbxehMjV9USXKfsdJ97xd8wd8ILitMIzchahTnuE3l4ZvxpzrNrj76qEyauxHKJhrhU0Mg7E8fDGbZQmI7sa9m6WhkkG3nAvlbMFecxs1Sj2fTQS7WVTR9oZImJtzmvq3NQyvOAGM+HTBku5Q3joc1eI0Gn20kBM0JSZiYO7LulMUVKZ48+KtXxVMrzgHgLeZmAhjD9A9h+RnwhKW4oGyWq/ysXGFDOybDEz8C0xVelOvC8RDk2TkNgHWHruOPi7sbLjHj6Cx1yn+NLvtFYXkm0rR0Ce0JpFwXustcSLdBCYOjh9YMFK+z3kt5x4LEkucFFUOn7DQFDheW6NKfhZrTRETBUh8BMy4LfzO9NGg5WqmjoqIsxzUNsFzlZ0Fv8O6fNBi+asFvrA1N6e+EcoDgzRqq+u+OBEjW6IinODF4BdxbBBZzyXLXDHePtIXLTtMXwDNVZ1R4uyBBswfwP+F4+WTarLqkWcUFBQUFBQQl/AXQirUzEVcrcAAAAAElFTkSuQmCC" class="img-fluid"> are the offspring generated via mutation of the current best solution <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAABMklEQVR4Xu2UsUtCURTGT7QUNbS5RCBtLkJT/QGuNto/4ChuCRHODi6NzREEjYFLW5uIkYK7g2DQ1iK02Hfeu493/LovfE/H94MPzvndyz3vPeWKZGfCwjBnsQkzFuCA+g/qM3GM3LAES+p7yD651HyxAJfIiNwR8kIuNfwG2tvw2kb4DvA5Jcmvje8An1OS/NrwAVVkTC6C965wh9RN30FuTa/wAW9IzdUtuyB/9wYUJH66BvIj8cYh0nW18m1q5QSZIo/kD5FXcgH2CXST9mXk3NVXZv0CaZo+iWdkl6VyZuprWR2+Z+qIBQsPAxY+9DN5vzXRZ2H4ZJGEDnpguS30WtEBpxL/XiWz/t/tnpp7CQfopfnu6qJb0z/Jk6u3wo6EAzQVCd8w6ttmX05OTjZ+AbUSP5QzbrN8AAAAAElFTkSuQmCC" class="img-fluid">.5 This level of detail ensures that the archive serves not just as a historical record but as a technical resource for future researchers.</p>
+</section>
+</section>
+<section id="strategic-outlook-the-future-of-evolutionary-computation-in-industry" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-outlook-the-future-of-evolutionary-computation-in-industry"><strong>Strategic Outlook: The Future of Evolutionary Computation in Industry</strong></h2>
+<p>The longitudinal review of the ECiP track suggests that the next decade of industrial EC will be defined by the need for robustness, interpretability, and ethical scaling. As evolutionary systems are increasingly deployed in critical infrastructure, the lessons shared by ECiP speakers will become even more relevant.</p>
+<section id="the-shift-toward-interpretable-control" class="level3">
+<h3 class="anchored" data-anchor-id="the-shift-toward-interpretable-control"><strong>The Shift Toward Interpretable Control</strong></h3>
+<p>The 2024 “Interpretable Control Competition” and the emphasis on explainable AI (XAI) indicate that industrial clients are no longer satisfied with “black-box” decisions.12 Future ECiP speakers will likely focus on how to evolve controllers and models that are not only performant but also “human-readable,” allowing engineers to understand why a specific optimization decision was made.12</p>
+</section>
+<section id="sustainability-and-computational-efficiency" class="level3">
+<h3 class="anchored" data-anchor-id="sustainability-and-computational-efficiency"><strong>Sustainability and Computational Efficiency</strong></h3>
+<p>With the growing focus on the environmental impact of AI, the ECiP track is well-positioned to lead the discussion on sustainable optimization.13 The appointment of SIGEVO’s first-ever Sustainability Officer and the inclusion of sustainability grants at GECCO 2024 suggest that the future of practice will involve a focus on algorithms that minimize carbon footprints while maximizing industrial efficiency.13</p>
+</section>
+<section id="final-conclusion-the-enduring-value-of-the-ecip-interface" class="level3">
+<h3 class="anchored" data-anchor-id="final-conclusion-the-enduring-value-of-the-ecip-interface"><strong>Final Conclusion: The Enduring Value of the ECiP Interface</strong></h3>
+<p>The Evolutionary Computation in Practice track has demonstrated remarkable resilience and relevance over the previous fifteen years. By providing a dedicated space for the discussion of project management, industrial scaling, and the “messy” realities of real-world data, the track has ensured that evolutionary computation remains a vital tool for industrial innovation.1</p>
+<p>The update and completion of the speaker registry, when integrated into a modern digital framework like Quarto and GitHub Pages, will provide the GECCO community with a powerful asset. It will serve as both a testament to the track’s historical achievements and a roadmap for future researchers who seek to bridge the gap between foundations and applications. As we look toward GECCO 2025 and beyond, the ECiP track will undoubtedly continue to be the “magical place” where theory meets practice, guided by the experts who run the companies and projects that shape our world.1</p>
+<p>The meticulous curation of this 15-year history—spanning from the early contributions of David Davis and Joern Mehnen to the modern insights of Meinolf Sellmann and Roman Kalkreuth—highlights a consistent trajectory of growth, globalization, and technological sophistication.5 By documenting these contributions in a scientifically attractive, data-driven archive, the community honors the “insider information” that has made evolutionary computation a pillar of modern industrial optimization.</p>
+<section id="referenzen" class="level4">
+<h4 class="anchored" data-anchor-id="referenzen"><strong>Referenzen</strong></h4>
+<ol type="1">
+<li>EC in Practice - GECCO 2024, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/EC-in-Practice.html">https://gecco-2024.sigevo.org/EC-in-Practice.html</a><br>
+</li>
+<li>Evolutionary Computation in Practice (ECiP) - gecco 2021, Zugriff am Februar 21, 2026, <a href="https://gecco-2021.sigevo.org/EC-in-Practice.html">https://gecco-2021.sigevo.org/EC-in-Practice.html</a><br>
+</li>
+<li>EC in Practice - GECCO 2022, Zugriff am Februar 21, 2026, <a href="https://gecco-2022.sigevo.org/EC-in-Practice.html">https://gecco-2022.sigevo.org/EC-in-Practice.html</a><br>
+</li>
+<li>EC in Practice - GECCO 2025, Zugriff am Februar 21, 2026, <a href="https://gecco-2025.sigevo.org/EC-in-Practice">https://gecco-2025.sigevo.org/EC-in-Practice</a><br>
+</li>
+<li>Evolutionary Computation in Practice at ACM GECCO - spotseven.de, Zugriff am Februar 21, 2026, <a href="https://www.spotseven.de/?page_id=508">https://www.spotseven.de/?page_id=508</a><br>
+</li>
+<li>Call for Papers - gecco 2024 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Call-for-Papers.html">https://gecco-2024.sigevo.org/Call-for-Papers.html</a><br>
+</li>
+<li>Competition Proposals - gecco 2025 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2025.sigevo.org/Competition-Proposals">https://gecco-2025.sigevo.org/Competition-Proposals</a><br>
+</li>
+<li>Program Tracks - GECCO 2018, Zugriff am Februar 21, 2026, <a href="http://gecco-2018.sigevo.org/index.html/Program+Tracks">http://gecco-2018.sigevo.org/index.html/Program+Tracks</a><br>
+</li>
+<li>Competitions - gecco 2018 - sigevo, Zugriff am Februar 21, 2026, <a href="http://gecco-2018.sigevo.org/index.html/tiki-index3aa7.html?page=Competitions">http://gecco-2018.sigevo.org/index.html/tiki-index3aa7.html?page=Competitions</a><br>
+</li>
+<li>Competitions - gecco 2019 - sigevo, Zugriff am Februar 21, 2026, <a href="http://gecco-2019.sigevo.org/index.html/Competitions">http://gecco-2019.sigevo.org/index.html/Competitions</a><br>
+</li>
+<li>Competitions - gecco 2020 - sigevo, Zugriff am Februar 21, 2026, <a href="http://gecco-2020.sigevo.org/index.html/Competitions">http://gecco-2020.sigevo.org/index.html/Competitions</a><br>
+</li>
+<li>Tracks - gecco 2025 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2025.sigevo.org/Tracks">https://gecco-2025.sigevo.org/Tracks</a><br>
+</li>
+<li>Genetic and Evolutionary Computation Conference 2024, Zugriff am Februar 21, 2026, <a href="http://www0.cs.ucl.ac.uk/staff/W.Langdon/gecco2024/GECCO_2024_Booklet_Professional_10July.pdf">http://www0.cs.ucl.ac.uk/staff/W.Langdon/gecco2024/GECCO_2024_Booklet_Professional_10July.pdf</a><br>
+</li>
+<li>Sharp bounds by probability-generating functions and variable drift - SciSpace, Zugriff am Februar 21, 2026, <a href="https://scispace.com/pdf/sharp-bounds-by-probability-generating-functions-and-jbqaj8qzk9.pdf">https://scispace.com/pdf/sharp-bounds-by-probability-generating-functions-and-jbqaj8qzk9.pdf</a><br>
+</li>
+<li>Professional Report - International Society for Genetic and Evolutionary Computation ISGEC, Zugriff am Februar 21, 2026, <a href="http://www.isgec.org/gecco-2009/docs/gecco09-conference-program-final-plus2.pdf">http://www.isgec.org/gecco-2009/docs/gecco09-conference-program-final-plus2.pdf</a><br>
+</li>
+<li>Keynotes - GECCO 2022, Zugriff am Februar 21, 2026, <a href="https://gecco-2022.sigevo.org/Keynotes.html">https://gecco-2022.sigevo.org/Keynotes.html</a><br>
+</li>
+<li>Keynotes - GECCO 2021, Zugriff am Februar 21, 2026, <a href="https://gecco-2021.sigevo.org/Keynotes.html">https://gecco-2021.sigevo.org/Keynotes.html</a><br>
+</li>
+<li>Organizers - gecco 2022 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2022.sigevo.org/Organizers.html">https://gecco-2022.sigevo.org/Organizers.html</a><br>
+</li>
+<li>Tutorials - gecco 2018 - sigevo, Zugriff am Februar 21, 2026, <a href="http://gecco-2018.sigevo.org/index.html/tiki-indexc467.html?page=Tutorials">http://gecco-2018.sigevo.org/index.html/tiki-indexc467.html?page=Tutorials</a><br>
+</li>
+<li>Workshops - gecco 2017 - sigevo, Zugriff am Februar 21, 2026, <a href="http://gecco-2017.sigevo.org/index.html/Workshops.html">http://gecco-2017.sigevo.org/index.html/Workshops.html</a><br>
+</li>
+<li>Workshops - gecco 2024 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Workshops.html">https://gecco-2024.sigevo.org/Workshops.html</a><br>
+</li>
+<li>APrf Markus Wagner - Researcher Profiles - The University of Adelaide, Zugriff am Februar 21, 2026, <a href="https://researchers.adelaide.edu.au/profile/markus.wagner">https://researchers.adelaide.edu.au/profile/markus.wagner</a><br>
+</li>
+<li>in this issue - SIGEVOlution, Zugriff am Februar 21, 2026, <a href="https://evolution.sigevo.org/issues/SIGEVOlution0704.pdf">https://evolution.sigevo.org/issues/SIGEVOlution0704.pdf</a><br>
+</li>
+<li>Organizers - gecco 2025 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2025.sigevo.org/Organizers">https://gecco-2025.sigevo.org/Organizers</a><br>
+</li>
+<li>Call for Competition Entries - gecco 2024, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Call-for-Competition-Entries.html">https://gecco-2024.sigevo.org/Call-for-Competition-Entries.html</a><br>
+</li>
+<li>Competitions - gecco 2024 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Competitions.html">https://gecco-2024.sigevo.org/Competitions.html</a><br>
+</li>
+<li>Tutorials - gecco 2019 - sigevo, Zugriff am Februar 21, 2026, <a href="http://gecco-2019.sigevo.org/index.html/Tutorials">http://gecco-2019.sigevo.org/index.html/Tutorials</a><br>
+</li>
+<li>Accepted Workshop Papers - gecco 2024 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Accepted-Workshop-Papers.html">https://gecco-2024.sigevo.org/Accepted-Workshop-Papers.html</a><br>
+</li>
+<li>Tutorials - gecco 2024 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Tutorials.html">https://gecco-2024.sigevo.org/Tutorials.html</a><br>
+</li>
+<li>Main Achievements - School of Computer and Mathematical Sciences - The University of Adelaide, Zugriff am Februar 21, 2026, <a href="https://cs.adelaide.edu.au/users/markus/pub/MarkusWagner-CV-220722.pdf">https://cs.adelaide.edu.au/users/markus/pub/MarkusWagner-CV-220722.pdf</a><br>
+</li>
+<li>Organizers - gecco 2024 - sigevo, Zugriff am Februar 21, 2026, <a href="https://gecco-2024.sigevo.org/Organizers.html">https://gecco-2024.sigevo.org/Organizers.html</a></li>
+</ol>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sequential-parameter-optimization\.github\.io\/evolutionary-computation-in-practice\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
