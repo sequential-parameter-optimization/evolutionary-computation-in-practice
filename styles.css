@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-/* css styles */
-=======
 /* Modern Scientific Design System */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -112,6 +109,65 @@ blockquote {
   border-color: var(--primary);
 }
 
+/* Speaker Grid Styling */
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.speaker-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+}
+
+.speaker-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: var(--surface);
+  border: 3px solid var(--border);
+}
+
+.speaker-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.speaker-affil {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.talk-info {
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  width: 100%;
+  color: var(--text);
+}
+
 /* Images */
 img {
   border-radius: 16px;
@@ -130,4 +186,3 @@ a:hover {
   color: var(--primary-dark);
   text-decoration: underline;
 }
->>>>>>> Stashed changes

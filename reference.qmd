@@ -1,14 +1,3 @@
-title: "ECiP Speakers & Talks"
-format:
-  html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
-
-
-
 ---
 title: "ECiP Speakers & Talks"
 format:
@@ -22,83 +11,130 @@ format:
 
 # ECiP Speakers & Talks (2025–2010)
 
+The **Evolutionary Computation in Practice (ECiP)** track at GECCO bridges the gap between theoretical research and industrial application. Below is a historical archive of the track's chairs, organizers, and invited speakers.
+
 ## 2025
-- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
-- **Richard Schulz** (IDE+A, TH Köln, Germany)
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bartz-Beielstein</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Richard Schulz</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+:::
+
+:::
 
 ## 2024
-- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
-- **Richard Schulz** (IDE+A, TH Köln, Germany)
-- **Danial Yazdani** (University of Technology Sydney, Australia)
 
-## 2023
-- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
-- **Bogdan Filipic** (Jozef Stefan Institute, Slovenia)
-- **Richard Schulz** (IDE+A, TH Köln, Germany)
+Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani. 
 
-## 2022
-- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
-- **Bogdan Filipic** (Jozef Stefan Institute, Slovenia)
-- **Sowmya Chandrasekaran** (TH Köln, Germany)
+::: {.speaker-grid}
 
-## 2021
-- **Thomas Bartz-Beielstein** (IDE+A, TH Köln, Germany)
-- **Bogdan Filipic** (Jozef Stefan Institute, Slovenia)
-- **Sowmya Chandrasekaran** (TH Köln, Germany)
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bartz-Beielstein</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Richard Schulz</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Danial Yazdani</span>
+<span class="speaker-affil">University of Technology Sydney, Australia</span>
+:::
+
+:::
+
+## 2023–2021
+
+Organizers for these years included Thomas Bartz-Beielstein, Bogdan Filipic, Richard Schulz, and Sowmya Chandrasekaran. 
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bartz-Beielstein</span>
+<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Bogdan Filipic</span>
+<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Sowmya Chandrasekaran</span>
+<span class="speaker-affil">TH Köln, Germany</span>
+:::
+
+:::
 
 ## 2016
-- **Thomas Bartz-Beielstein** (TH Köln, Germany): “Surrogate Model-based Optimization in Practice”
-- **Maizura Mokhtar, Ian Hunt, Stephen Burns, Dave Ross**: “Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm”
-- **Erik Hemberg, Ignacio Arnaldo, Una-May O’Reilly**: “Multi-Line Batch Scheduling by Similarity”
-- **Abdel-Rahman Hedar, Majid Almaraashi, Alaa Abdel-Hakim**: “Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming”
-- **Silvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria, Miguel Iglesias**: “Criticality of Response Time in the usage of Metaheuristics in Industry”
-- **Silvino Fernández, Pablo Valledor**: “System demonstration, ArcelorMittal Scheduling and Tuning suite“
-- **Bogdan Filipic**: “Challenges of Deploying Evolutionary Computation in Steel Industry”
-- **Carlos A. Coello Coello**: “Evolutionary Multi-Objective Optimization in Real-World Applications”
-- **Michael Affenzeller**: “Heuristic Optimization in Production and Logistics”
-- **Anna Esparcia Alcazar**: “EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR”
-- **Thomas Bäck**: “Intelligent Industry Solutions”
-- **Felipe Campelo**: “EAs for aeronautical optimization – some results and challenges”
-- **Erik Goodman**: “How to Introduce Academic-developed EC Technology to Industry”
-- **Panel Discussion**: Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle
 
+::: {.speaker-grid}
 
-## 2015
-- *Speaker and talk information to be added. See [GECCO 2015](http://www.sigevo.org/gecco-2015)*
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bartz-Beielstein</span>
+<span class="speaker-affil">TH Köln, Germany</span>
+<div class="talk-info">“Surrogate Model-based Optimization in Practice” </div>
+:::
 
+::: {.speaker-card}
+<span class="speaker-name">Maizura Mokhtar et al.</span>
+<span class="speaker-affil">Cranfield University / Tata Steel</span>
+<div class="talk-info">“Optimising a Waste Heat Recovery System using MOEA” </div>
+:::
 
-## 2014
-- *Speaker and talk information to be added. See [GECCO 2014](http://www.sigevo.org/gecco-2014)*
+::: {.speaker-card}
+<span class="speaker-name">Bogdan Filipic</span>
+<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
+<div class="talk-info">“Challenges of Deploying EC in Steel Industry” </div>
+:::
 
+::: {.speaker-card}
+<span class="speaker-name">Carlos A. Coello Coello</span>
+<span class="speaker-affil">CINVESTAV-IPN, Mexico</span>
+<div class="talk-info">“EMO in Real-World Applications” </div>
+:::
 
-## 2013
-- *Speaker and talk information to be added. See [GECCO 2013](http://www.sigevo.org/gecco-2013)*
-
-
-## 2012
-- *Speaker and talk information to be added. See [GECCO 2012](http://www.sigevo.org/gecco-2012)*
-
-
-## 2011
-- *Speaker and talk information to be added. See [GECCO 2011](http://www.sigevo.org/gecco-2011)*
+:::
 
 ## 2010
-- **Speakers and Talks (GECCO 2016 context, for illustration):**
-  - **Thomas Bartz-Beielstein**: “Surrogate Model-based Optimization in Practice”
-  - **Maizura Mokhtar, Ian Hunt, Stephen Burns, Dave Ross**: “Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm”
-  - **Erik Hemberg, Ignacio Arnaldo, Una-May O’Reilly**: “Multi-Line Batch Scheduling by Similarity”
-  - **Abdel-Rahman Hedar, Majid Almaraashi, Alaa Abdel-Hakim**: “Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming”
-  - **Silvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria, Miguel Iglesias**: “Criticality of Response Time in the usage of Metaheuristics in Industry”
-  - **Silvino Fernández, Pablo Valledor**: “System demonstration, ArcelorMittal Scheduling and Tuning suite“
-  - **Bogdan Filipic**: “Challenges of Deploying Evolutionary Computation in Steel Industry”
-  - **Carlos A. Coello Coello**: “Evolutionary Multi-Objective Optimization in Real-World Applications”
-  - **Michael Affenzeller**: “Heuristic Optimization in Production and Logistics”
-  - **Anna Esparcia Alcazar**: “EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR”
-  - **Thomas Bäck**: “Intelligent Industry Solutions”
-  - **Felipe Campelo**: “EAs for aeronautical optimization – some results and challenges”
-  - **Erik Goodman**: “How to Introduce Academic-developed EC Technology to Industry”
-  - **Panel Discussion**: Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle
 
----
+::: {.speaker-grid}
 
-*For detailed talk titles and abstracts, please refer to the [official ECiP pages](https://gecco-2025.sigevo.org/EC-in-Practice) and linked archives for each year.*
+::: {.speaker-card}
+<span class="speaker-name">Michael Affenzeller</span>
+<span class="speaker-affil">UAS Upper Austria</span>
+<div class="talk-info">“Heuristic Optimization in Production and Logistics” </div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bäck</span>
+<span class="speaker-affil">Leiden University / divis</span>
+<div class="talk-info">“Intelligent Industry Solutions” </div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Erik Goodman</span>
+<span class="speaker-affil">Michigan State University</span>
+<div class="talk-info">“Introducing Academic EC Tech to Industry” </div>
+:::
+
+:::
+
+## Archives & References
+
+- [GECCO 2015](https://gecco-2015.sigevo.org/)
+- [GECCO 2014](https://gecco-2014.sigevo.org/)
+- [GECCO 2013](https://gecco-2013.sigevo.org/)
+- [GECCO 2012](https://gecco-2012.sigevo.org/)
+- [GECCO 2011](https://gecco-2011.sigevo.org/)
+
+For detailed abstracts, see the official ECiP pages.
