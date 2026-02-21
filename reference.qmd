@@ -1,13 +1,7 @@
 ---
 title: "ECiP Speakers & Talks"
-format:
-  html:
-    theme:
-      - superhero
-    css: styles.css
-    toc: true
-    number-sections: false
 ---
+
 
 # Evolutionary Computation in Practice (ECiP)
 
@@ -173,7 +167,33 @@ A focus on the challenges of deploying evolutionary computation in the steel ind
 
 :::
 
-## 2011–2015: Establishing the Interface
+
+## 2010
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Michael Affenzeller</span>
+<span class="speaker-affil">UAS Upper Austria</span>
+<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bäck</span>
+<span class="speaker-affil">Leiden University / divis</span>
+<div class="talk-info">Intelligent Industry Solutions</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Erik Goodman</span>
+<span class="speaker-affil">Michigan State University</span>
+<div class="talk-info">Introducing Academic EC Tech to Industry</div>
+:::
+
+:::
+
+
+## 2008–2009: Establishing the Interface
 
 The foundational years that established the Industrial Challenge and built the interface between academia and industry.
 
@@ -210,6 +230,9 @@ The foundational years that established the Industrial Challenge and built the i
 :::
 
 :::
+
+
+
 
 
 ## Impressions from GECCO ECiP 2008
@@ -251,10 +274,39 @@ The primary mission of ECiP is to provide a venue where well-known speakers with
 
 The following external archives provide additional depth into the track's evolution:
 
-* [GECCO 2015](https://gecco-2015.sigevo.org/)
-* [GECCO 2014](https://gecco-2014.sigevo.org/)
-* [GECCO 2013](https://gecco-2013.sigevo.org/)
-* [GECCO 2012](https://gecco-2012.sigevo.org/)
-* [GECCO 2011](https://gecco-2011.sigevo.org/)
+::: {.archive-list}
 
-For detailed abstracts and further historical context, please refer to the official ECiP documentation.
+[GECCO 2026](https://gecco-2026.sigevo.org/)
+
+[GECCO 2025](https://gecco-2025.sigevo.org/)
+
+[GECCO 2024](https://gecco-2024.sigevo.org/)
+
+[GECCO 2023](https://gecco-2023.sigevo.org/)
+
+[GECCO 2022](https://gecco-2022.sigevo.org/)
+
+[GECCO 2021](https://gecco-2021.sigevo.org/)
+
+[GECCO 2020](https://gecco-2020.sigevo.org/)
+
+[GECCO 2019](https://gecco-2019.sigevo.org/)
+
+[GECCO 2018](https://gecco-2018.sigevo.org/)
+
+[GECCO 2017](https://gecco-2017.sigevo.org/)
+
+[GECCO 2016](https://gecco-2016.sigevo.org/)
+
+[GECCO 2015](https://gecco-2015.sigevo.org/)
+
+[GECCO 2014](https://gecco-2014.sigevo.org/)
+
+[GECCO 2013](https://gecco-2013.sigevo.org/)
+
+[GECCO 2012](https://gecco-2012.sigevo.org/)
+
+[GECCO 2011](https://gecco-2011.sigevo.org/)
+
+:::
+

@@ -30,7 +30,7 @@ website:
 format:
   html:
     theme:
-      - superhero
+      - litera
     css: styles.css
     toc: true
     number-sections: false
