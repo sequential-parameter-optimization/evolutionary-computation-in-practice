@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "Gecco: Evolutionary Computation in Practice"
@@ -8,14 +9,17 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/sequential-parameter-optimization/evolutionary-computation-in-practice
 
 format:
   html:
     theme:
       - cosmo
-      - brand
     css: styles.css
     toc: true
+    number-sections: true
 
 execute:
   freeze: auto
