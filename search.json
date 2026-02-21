@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gecco 2026: Evolutionary Computation in Practice",
+    "section": "",
+    "text": "Bridging Academia and Industry in Evolutionary Computation\nThe Evolutionary Computation in Practice (ECiP) track at GECCO brings together world-renowned experts from academia and industry to share their insights on real-world optimization and successful collaborations. ECiP is the place to learn how evolutionary computation is applied beyond textbooks, with a focus on practical, impactful projects and industrial partnerships."
+  },
+  {
+    "objectID": "index.html#about-gecco",
+    "href": "index.html#about-gecco",
+    "title": "Gecco 2026: Evolutionary Computation in Practice",
+    "section": "1.1 About GECCO",
+    "text": "1.1 About GECCO\nGECCO is sponsored by the Association for Computing Machinery Special Interest Group on Genetic and Evolutionary Computation (SIGEVO)."
+  },
+  {
+    "objectID": "index.html#explore-more",
+    "href": "index.html#explore-more",
+    "title": "Gecco 2026: Evolutionary Computation in Practice",
+    "section": "1.2 Explore More",
+    "text": "1.2 Explore More\n\nReference: ECiP Speakers & Talks\nGECCO 2025\nGECCO 2024\nGECCO 2023\nGECCO 2022\n\n\n\n\n\n\n\nTip\n\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "reference.html",
+    "href": "reference.html",
+    "title": "ECiP Speakers & Talks",
+    "section": "",
+    "text": "title: “ECiP Speakers & Talks” format: html: theme: - cosmo - brand css: styles.css toc: true"
+  },
+  {
+    "objectID": "reference.html#section",
+    "href": "reference.html#section",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.1 2025",
+    "text": "1.1 2025\n\nThomas Bartz-Beielstein (IDE+A, TH Köln, Germany)\nRichard Schulz (IDE+A, TH Köln, Germany)"
+  },
+  {
+    "objectID": "reference.html#section-1",
+    "href": "reference.html#section-1",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.2 2024",
+    "text": "1.2 2024\n\nThomas Bartz-Beielstein (IDE+A, TH Köln, Germany)\nRichard Schulz (IDE+A, TH Köln, Germany)\nDanial Yazdani (University of Technology Sydney, Australia)"
+  },
+  {
+    "objectID": "reference.html#section-2",
+    "href": "reference.html#section-2",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.3 2023",
+    "text": "1.3 2023\n\nThomas Bartz-Beielstein (IDE+A, TH Köln, Germany)\nBogdan Filipic (Jozef Stefan Institute, Slovenia)\nRichard Schulz (IDE+A, TH Köln, Germany)"
+  },
+  {
+    "objectID": "reference.html#section-3",
+    "href": "reference.html#section-3",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.4 2022",
+    "text": "1.4 2022\n\nThomas Bartz-Beielstein (IDE+A, TH Köln, Germany)\nBogdan Filipic (Jozef Stefan Institute, Slovenia)\nSowmya Chandrasekaran (TH Köln, Germany)"
+  },
+  {
+    "objectID": "reference.html#section-4",
+    "href": "reference.html#section-4",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.5 2021",
+    "text": "1.5 2021\n\nThomas Bartz-Beielstein (IDE+A, TH Köln, Germany)\nBogdan Filipic (Jozef Stefan Institute, Slovenia)\nSowmya Chandrasekaran (TH Köln, Germany)"
+  },
+  {
+    "objectID": "reference.html#section-5",
+    "href": "reference.html#section-5",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.6 2016",
+    "text": "1.6 2016\n\nThomas Bartz-Beielstein (TH Köln, Germany): “Surrogate Model-based Optimization in Practice”\nMaizura Mokhtar, Ian Hunt, Stephen Burns, Dave Ross: “Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm”\nErik Hemberg, Ignacio Arnaldo, Una-May O’Reilly: “Multi-Line Batch Scheduling by Similarity”\nAbdel-Rahman Hedar, Majid Almaraashi, Alaa Abdel-Hakim: “Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming”\nSilvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria, Miguel Iglesias: “Criticality of Response Time in the usage of Metaheuristics in Industry”\nSilvino Fernández, Pablo Valledor: “System demonstration, ArcelorMittal Scheduling and Tuning suite“\nBogdan Filipic: “Challenges of Deploying Evolutionary Computation in Steel Industry”\nCarlos A. Coello Coello: “Evolutionary Multi-Objective Optimization in Real-World Applications”\nMichael Affenzeller: “Heuristic Optimization in Production and Logistics”\nAnna Esparcia Alcazar: “EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR”\nThomas Bäck: “Intelligent Industry Solutions”\nFelipe Campelo: “EAs for aeronautical optimization – some results and challenges”\nErik Goodman: “How to Introduce Academic-developed EC Technology to Industry”\nPanel Discussion: Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle"
+  },
+  {
+    "objectID": "reference.html#section-6",
+    "href": "reference.html#section-6",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.7 2015",
+    "text": "1.7 2015\n\nSpeaker and talk information to be added. See GECCO 2015"
+  },
+  {
+    "objectID": "reference.html#section-7",
+    "href": "reference.html#section-7",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.8 2014",
+    "text": "1.8 2014\n\nSpeaker and talk information to be added. See GECCO 2014"
+  },
+  {
+    "objectID": "reference.html#section-8",
+    "href": "reference.html#section-8",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.9 2013",
+    "text": "1.9 2013\n\nSpeaker and talk information to be added. See GECCO 2013"
+  },
+  {
+    "objectID": "reference.html#section-9",
+    "href": "reference.html#section-9",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.10 2012",
+    "text": "1.10 2012\n\nSpeaker and talk information to be added. See GECCO 2012"
+  },
+  {
+    "objectID": "reference.html#section-10",
+    "href": "reference.html#section-10",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.11 2011",
+    "text": "1.11 2011\n\nSpeaker and talk information to be added. See GECCO 2011"
+  },
+  {
+    "objectID": "reference.html#section-11",
+    "href": "reference.html#section-11",
+    "title": "ECiP Speakers & Talks",
+    "section": "1.12 2010",
+    "text": "1.12 2010\n\nSpeakers and Talks (GECCO 2016 context, for illustration):\n\nThomas Bartz-Beielstein: “Surrogate Model-based Optimization in Practice”\nMaizura Mokhtar, Ian Hunt, Stephen Burns, Dave Ross: “Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm”\nErik Hemberg, Ignacio Arnaldo, Una-May O’Reilly: “Multi-Line Batch Scheduling by Similarity”\nAbdel-Rahman Hedar, Majid Almaraashi, Alaa Abdel-Hakim: “Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming”\nSilvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria, Miguel Iglesias: “Criticality of Response Time in the usage of Metaheuristics in Industry”\nSilvino Fernández, Pablo Valledor: “System demonstration, ArcelorMittal Scheduling and Tuning suite“\nBogdan Filipic: “Challenges of Deploying Evolutionary Computation in Steel Industry”\nCarlos A. Coello Coello: “Evolutionary Multi-Objective Optimization in Real-World Applications”\nMichael Affenzeller: “Heuristic Optimization in Production and Logistics”\nAnna Esparcia Alcazar: “EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR”\nThomas Bäck: “Intelligent Industry Solutions”\nFelipe Campelo: “EAs for aeronautical optimization – some results and challenges”\nErik Goodman: “How to Introduce Academic-developed EC Technology to Industry”\nPanel Discussion: Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle\n\n\n\nFor detailed talk titles and abstracts, please refer to the official ECiP pages and linked archives for each year."
+  }
+]
