@@ -13,36 +13,62 @@ format:
     toc: true
 ---
 
-![](https://gecco-2025.sigevo.org/dl214)
+::: {.hero-banner}
+![](https://gecco-2026.sigevo.org/dl214){width="80%"}
 
 # Welcome to Evolutionary Computation in Practice (ECiP)
 
-> **Bridging Academia and Industry in Evolutionary Computation**
+**Bridging Academia and Industry in Evolutionary Computation**
+:::
+
+---
 
 The Evolutionary Computation in Practice (ECiP) track at GECCO brings together world-renowned experts from academia and industry to share their insights on real-world optimization and successful collaborations. ECiP is the place to learn how evolutionary computation is applied beyond textbooks, with a focus on practical, impactful projects and industrial partnerships.
 
-## Why Attend ECiP?
-- **Learn from the best:** Hear from speakers with decades of experience in both academic and industrial settings.
-- **Real-world impact:** Discover how evolutionary computation solves real optimization problems for clients and industry partners.
-- **Project management:** Gain valuable tips for managing and executing successful projects.
-- **Networking:** Connect with experts and peers in a hybrid event format.
+::: {.feature-grid}
+
+::: {.feature-card}
+### 🧠 Learn from the best
+Hear from speakers with decades of experience in both academic and industrial settings.
+:::
+
+::: {.feature-card}
+### 🌍 Real-world impact
+Discover how evolutionary computation solves real optimization problems for clients and industry partners.
+:::
+
+::: {.feature-card}
+### 📈 Project management
+Gain valuable tips for managing and executing successful projects.
+:::
+
+::: {.feature-card}
+### 🤝 Networking
+Connect with experts and peers in a hybrid event format.
+:::
+
+:::
 
 ## About GECCO
+
 GECCO is sponsored by the Association for Computing Machinery Special Interest Group on Genetic and Evolutionary Computation (SIGEVO).
 
-<div style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap;">
-  <img src="https://gecco-2024.sigevo.org/acm_black_hightagline.png" alt="ACM SIGEVO" style="height: 60px;"/>
-  <a href="https://twitter.com/GeccoConf"><img src="https://img.shields.io/twitter/follow/GeccoConf?style=social" alt="Follow on Twitter"/></a>
-  <a href="https://www.linkedin.com/events/gecco20247068155716271796224/"><img src="https://img.shields.io/badge/LinkedIn-Join%20us-blue?logo=linkedin" alt="Join on LinkedIn"/></a>
+<div style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap; margin-top: 2rem;">
+  <img src="https://gecco-2024.sigevo.org/acm_black_hightagline.png" alt="ACM SIGEVO" style="height: 50px; box-shadow: none; border-radius: 0;"/>
+  <a href="https://twitter.com/GeccoConf"><img src="https://img.shields.io/twitter/follow/GeccoConf?style=social" alt="Follow on Twitter" style="box-shadow: none;"/></a>
+  <a href="https://www.linkedin.com/events/gecco20247068155716271796224/"><img src="https://img.shields.io/badge/LinkedIn-Join%20us-blue?logo=linkedin" alt="Join on LinkedIn" style="box-shadow: none;"/></a>
 </div>
 
 ---
 
 ## Explore More
-- [Reference: ECiP Speakers & Talks](reference.qmd)
+
+- [**Reference:** ECiP Speakers & Talks](reference.qmd)
 - [GECCO 2025](https://gecco-2025.sigevo.org/)
 - [GECCO 2024](https://gecco-2024.sigevo.org/)
 - [GECCO 2023](https://gecco-2023.sigevo.org/)
 - [GECCO 2022](https://gecco-2022.sigevo.org/)
 
+::: {.callout-tip}
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+:::

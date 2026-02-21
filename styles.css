@@ -1,1 +1,133 @@
+<<<<<<< Updated upstream
 /* css styles */
+=======
+/* Modern Scientific Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #64748b;
+  --accent: #3b82f6;
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --border: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --glass: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--glass) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 0.75rem 0;
+}
+
+.navbar-title {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text) !important;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.04em;
+  margin-top: 2rem;
+}
+
+#title-block-header.quarto-title-block.default .quarto-title .title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero Section Styling (Manual in QMD) */
+.hero-banner {
+  padding: 4rem 0;
+  text-align: center;
+  background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 100%);
+  border-radius: 24px;
+  margin-bottom: 3rem;
+}
+
+/* Cards & Components */
+blockquote {
+  border: none;
+  border-left: 4px solid var(--primary);
+  background: var(--surface);
+  padding: 1.5rem 2rem;
+  font-style: italic;
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  border-radius: 0 12px 12px 0;
+  margin: 2.5rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+/* Images */
+img {
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+>>>>>>> Stashed changes
