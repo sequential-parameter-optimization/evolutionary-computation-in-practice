@@ -9,6 +9,9 @@ on:
 jobs:
   render-publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
