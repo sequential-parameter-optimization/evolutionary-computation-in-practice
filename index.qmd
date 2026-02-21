@@ -14,6 +14,10 @@ title: "Gecco 2026: Evolutionary Computation in Practice"
 
 The Evolutionary Computation in Practice (ECiP) track at GECCO brings together world-renowned experts from academia and industry to share their insights on real-world optimization and successful collaborations. ECiP is the place to learn how evolutionary computation is applied beyond textbooks, with a focus on practical, impactful projects and industrial partnerships.
 
+---
+
+
+
 ::: {.feature-grid}
 
 ::: {.feature-card}
@@ -37,6 +41,40 @@ Connect with experts and peers in a hybrid event format.
 :::
 
 :::
+
+## Impressions from GECCO ECiP 2025
+
+```{ojs}
+//| echo: false
+// List of all images in gecco_ecip_2025/
+allImages = [
+  "IMG_3918.jpeg", "IMG_3919.jpeg", "IMG_3920.jpeg", "IMG_3921.jpeg", "IMG_3922.jpeg", 
+  "IMG_3924.jpeg", "IMG_3925.jpeg", "IMG_3944.jpeg", "IMG_3946.jpeg", "IMG_3947.jpeg", 
+  "IMG_3948.jpeg", "IMG_3949.jpeg", "IMG_3950.jpeg", "IMG_3951.jpeg", "IMG_3953.jpeg", 
+  "IMG_3955.jpeg", "IMG_3957.jpeg", "IMG_3958.jpeg", "IMG_3959.jpeg", "IMG_3960.jpeg", 
+  "IMG_3962.jpeg", "IMG_3963.jpeg", "IMG_3964.jpeg", "IMG_3965.jpeg", "IMG_3968.jpeg", 
+  "IMG_3970.jpeg", "IMG_3972.jpeg", "IMG_3975.jpeg", "IMG_3976.jpeg", "IMG_3977.jpeg", 
+  "IMG_3978.jpeg", "IMG_3979.jpeg", "IMG_3980.jpeg", "IMG_3981.jpeg", "IMG_3982.jpeg", 
+  "IMG_3983.jpeg", "IMG_3985.jpeg", "IMG_3986.jpeg", "IMG_3987.jpeg", "IMG_3988.jpeg", 
+  "IMG_3989.jpeg", "IMG_3991.jpeg", "IMG_8700.jpeg", "IMG_8702.jpeg", "IMG_8704.jpeg", 
+  "IMG_8707.jpeg"
+]
+
+// Shuffle and pick 10
+selectedImages = {
+  const shuffled = [...allImages].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 10);
+}
+
+// Render the gallery
+html`<div class="gallery-grid">
+  ${selectedImages.map(img => `
+    <div class="gallery-item">
+      <img src="gecco_ecip_2025/${img}" class="gallery-img" loading="lazy">
+    </div>
+  `).join('')}
+</div>`
+```
 
 ## About GECCO
 
