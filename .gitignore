@@ -1,0 +1,4 @@
+/.quarto/
+**/*.quarto_ipynb
+GITHUB_PAGES_SETUP.md
+/_site/
