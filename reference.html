@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +104,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -136,13 +173,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#evolutionary-computation-in-practice-ecip" id="toc-evolutionary-computation-in-practice-ecip" class="nav-link active" data-scroll-target="#evolutionary-computation-in-practice-ecip">Evolutionary Computation in Practice (ECiP)</a>
   <ul class="collapse">
-  <li><a href="#synthesis-of-thematic-trends-in-industrial-evolutionary-computation" id="toc-synthesis-of-thematic-trends-in-industrial-evolutionary-computation" class="nav-link" data-scroll-target="#synthesis-of-thematic-trends-in-industrial-evolutionary-computation">Synthesis of Thematic Trends in Industrial Evolutionary Computation</a></li>
   <li><a href="#foundations-and-applications" id="toc-foundations-and-applications" class="nav-link" data-scroll-target="#foundations-and-applications">2025: Foundations and Applications</a></li>
   <li><a href="#energy-and-optimization" id="toc-energy-and-optimization" class="nav-link" data-scroll-target="#energy-and-optimization">2024: Energy and Optimization</a></li>
   <li><a href="#machine-learning-hybrids" id="toc-machine-learning-hybrids" class="nav-link" data-scroll-target="#machine-learning-hybrids">2022–2021: Machine Learning Hybrids</a></li>
   <li><a href="#globalization-and-diversity" id="toc-globalization-and-diversity" class="nav-link" data-scroll-target="#globalization-and-diversity">2019–2017: Globalization and Diversity</a></li>
   <li><a href="#industry-challenges" id="toc-industry-challenges" class="nav-link" data-scroll-target="#industry-challenges">2016: Industry Challenges</a></li>
   <li><a href="#establishing-the-interface" id="toc-establishing-the-interface" class="nav-link" data-scroll-target="#establishing-the-interface">2011–2015: Establishing the Interface</a></li>
+  <li><a href="#impressions-from-gecco-ecip-2008" id="toc-impressions-from-gecco-ecip-2008" class="nav-link" data-scroll-target="#impressions-from-gecco-ecip-2008">Impressions from GECCO ECiP 2008</a></li>
   <li><a href="#the-ecip-track-organizational-continuity-and-mission" id="toc-the-ecip-track-organizational-continuity-and-mission" class="nav-link" data-scroll-target="#the-ecip-track-organizational-continuity-and-mission">The ECiP Track: Organizational Continuity and Mission</a></li>
   <li><a href="#archives-references" id="toc-archives-references" class="nav-link" data-scroll-target="#archives-references">Archives &amp; References</a></li>
   </ul></li>
@@ -173,20 +210,18 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="evolutionary-computation-in-practice-ecip" class="level1">
 <h1>Evolutionary Computation in Practice (ECiP)</h1>
-<p>As the premier venue for research in natural computation, the Genetic and Evolutionary Computation Conference (GECCO) has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the <em>Evolutionary Computation in Practice (ECiP)</em> track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike broader academic tracks that prioritize peer-reviewed proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.</p>
-<section id="synthesis-of-thematic-trends-in-industrial-evolutionary-computation" class="level2">
-<h2 class="anchored" data-anchor-id="synthesis-of-thematic-trends-in-industrial-evolutionary-computation">Synthesis of Thematic Trends in Industrial Evolutionary Computation</h2>
-<p>An analysis of fifteen years of ECiP talk titles and abstracts reveals several second- and third-order insights into the evolution of the field. These trends indicate how the focus of industrial EC has shifted in response to broader technological advancements, particularly in machine learning and data science.</p>
-<ul>
-<li><p>Black-box Optimization: In the early 2010s, the focus was often on treating industrial problems as “black boxes,” where the algorithm had no knowledge of the underlying system. However, by the early 2020s, there was a clear shift toward “gray-box” optimization, where domain knowledge and surrogate models are used to enhance the search process. Meinolf Sellmann’s 2022 talk on “Modern Hybrids” is a primary example of this, summarizing 15 years of work on the use of Machine Learning for Search and Optimization.</p></li>
-<li><p>Surrogate Models: As real-world optimization problems often involve computationally expensive simulations—such as Computational Fluid Dynamics (CFD) or complex structural analysis—the field has increasingly turned to surrogate models. Contributions highlight the development of acquisition functions designed to minimize the number of objective function evaluations required to find an optimal solution. This trend is a direct causal response to the industrial need for “fast enough” solutions that balance accuracy with computational cost.</p></li>
-<li><p>Large Language Models: The most recent data points to a burgeoning interest in the intersection of EC and Large Language Models. The 2024 workshop on “Large Language Models for and with Evolutionary Computation” (LLMfwEC) and tutorials on genetic improvement using search methods indicate that the community is exploring how LLMs can facilitate the generation of code, the discovery of new algorithm variants, and the exploration of prompt spaces. This represents a new frontier for “Practice,” where the “coder” is no longer purely human, and the search process is augmented by generative AI.</p></li>
-</ul>
-</section>
+<p>The <em>Evolutionary Computation in Practice (ECiP)</em> track at GECCO has served for over fifteen years as a specialized forum for bridging the gap between theoretical innovation and industrial application. Unlike traditional academic tracks, ECiP focuses on the qualitative and managerial complexities of real-world optimization, bringing together experts who lead large-scale industrial projects and navigate the intricate landscape of academia-industry partnerships.</p>
+<p>The Genetic and Evolutionary Computation Conference (GECCO), as the premier venue for research in the field of natural computation, has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the Evolutionary Computation in Practice (ECiP) track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike the broader academic tracks that prioritize peer-reviewed full papers and theoretical proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.</p>
 <section id="foundations-and-applications" class="level2">
 <h2 class="anchored" data-anchor-id="foundations-and-applications">2025: Foundations and Applications</h2>
-<p>The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice. Organizers: Thomas Bartz-Beielstein, Richard Schulz.</p>
+<p>The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice.</p>
 <div class="speaker-grid">
+<div class="speaker-card">
+<p><span class="speaker-name">Thomas Bartz-Beielstein</span> <span class="speaker-affil">IDE+A, TH Köln, Germany</span> <em>Lead Organizer</em></p>
+</div>
+<div class="speaker-card">
+<p><span class="speaker-name">Richard Schulz</span> <span class="speaker-affil">IDE+A, TH Köln, Germany</span> <em>Organizer</em></p>
+</div>
 <div class="speaker-card">
 <span class="speaker-name">Dr.&nbsp;Roman Kalkreuth</span> <span class="speaker-affil">RWTH Aachen, Germany</span>
 <div class="talk-info">
@@ -202,7 +237,7 @@ Robust Contextual Preferential Bayesian Optimization for Real-World Applications
 <div class="speaker-card">
 <span class="speaker-name">Dr.&nbsp;Xavier Bonet-Monroig</span> <span class="speaker-affil">Invited Speaker</span>
 <div class="talk-info">
-Quantum Computing
+Talk Title Pending
 </div>
 </div>
 </div>
@@ -223,6 +258,9 @@ Industrial Challenge: Energy Domain Optimization
 <div class="talk-info">
 Industrial Challenge: PV System Placement
 </div>
+</div>
+<div class="speaker-card">
+<p><span class="speaker-name">Danial Yazdani</span> <span class="speaker-affil">University of Technology Sydney, Australia</span> <em>Organizer</em></p>
 </div>
 </div>
 </section>
@@ -343,6 +381,51 @@ Introducing Academic EC Tech to Industry
 </div>
 </div>
 </section>
+<section id="impressions-from-gecco-ecip-2008" class="level2">
+<h2 class="anchored" data-anchor-id="impressions-from-gecco-ecip-2008">Impressions from GECCO ECiP 2008</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="220" data-source-offset="-50"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 219;"><span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>allImages08 <span class="op">=</span> [</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>  <span class="st">"16072008.jpeg"</span><span class="op">,</span> <span class="st">"CMYM5536.jpeg"</span><span class="op">,</span> <span class="st">"GKZS7546.jpeg"</span><span class="op">,</span> <span class="st">"IALH1928.jpeg"</span><span class="op">,</span> </span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>  <span class="st">"MOIY8677.jpeg"</span><span class="op">,</span> <span class="st">"PILU4051.jpeg"</span><span class="op">,</span> <span class="st">"PRIK2156.jpeg"</span><span class="op">,</span> <span class="st">"XMLP1108.jpeg"</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="co">// Shuffle and pick 6</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>selectedImages08 <span class="op">=</span> {</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> shuffled <span class="op">=</span> [<span class="op">...</span>allImages08]<span class="op">.</span><span class="fu">sort</span>(() <span class="kw">=&gt;</span> <span class="fl">0.5</span> <span class="op">-</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>())<span class="op">;</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> shuffled<span class="op">.</span><span class="fu">slice</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">6</span>)<span class="op">;</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="co">// Render the gallery in a 2x3 grid</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div class="gallery-grid-2x3"&gt;</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="vs">  </span><span class="sc">${</span>selectedImages08<span class="op">.</span><span class="fu">map</span>(img <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="gallery-item"&gt;</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;img src="figures/gecco_ecip_2008/</span><span class="sc">${</span>img<span class="sc">}</span><span class="vs">" class="gallery-img" loading="lazy"&gt;</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">''</span>)<span class="sc">}</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="the-ecip-track-organizational-continuity-and-mission" class="level2">
 <h2 class="anchored" data-anchor-id="the-ecip-track-organizational-continuity-and-mission">The ECiP Track: Organizational Continuity and Mission</h2>
 <p>The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track. The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track’s activities, including the management of the Industrial Challenge, which has run annually since 2011. The primary mission of ECiP is to provide a venue where well-known speakers with outstanding reputations present background information on establishing reliable cooperation with industrial partners. The track targets researchers in academia who are interested in managing industrial projects, offering them valuable hints that extend beyond textbook methodologies. This focus on real-world optimization and project management principles distinguishes ECiP from the Real World Applications (RWA) track, which is more focused on the presentation of peer-reviewed results than on the process of cooperation.</p>
@@ -357,12 +440,24 @@ Introducing Academic EC Tech to Industry
 <li><a href="https://gecco-2012.sigevo.org/">GECCO 2012</a></li>
 <li><a href="https://gecco-2011.sigevo.org/">GECCO 2011</a></li>
 </ul>
+<p>For detailed abstracts and further historical context, please refer to the official ECiP documentation.</p>
 
 
 </section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIExpc3Qgb2YgYWxsIGltYWdlcyBpbiBmaWd1cmVzL2dlY2NvX2VjaXBfMjAwOC9cbmFsbEltYWdlczA4ID0gW1xuICBcIjE2MDcyMDA4LmpwZWdcIiwgXCJDTVlNNTUzNi5qcGVnXCIsIFwiR0taUzc1NDYuanBlZ1wiLCBcIklBTEgxOTI4LmpwZWdcIiwgXG4gIFwiTU9JWTg2NzcuanBlZ1wiLCBcIlBJTFU0MDUxLmpwZWdcIiwgXCJQUklLMjE1Ni5qcGVnXCIsIFwiWE1MUDExMDguanBlZ1wiXG5dXG5cbi8vIFNodWZmbGUgYW5kIHBpY2sgNlxuc2VsZWN0ZWRJbWFnZXMwOCA9IHtcbiAgY29uc3Qgc2h1ZmZsZWQgPSBbLi4uYWxsSW1hZ2VzMDhdLnNvcnQoKCkgPT4gMC41IC0gTWF0aC5yYW5kb20oKSk7XG4gIHJldHVybiBzaHVmZmxlZC5zbGljZSgwLCA2KTtcbn1cblxuLy8gUmVuZGVyIHRoZSBnYWxsZXJ5IGluIGEgMngzIGdyaWRcbmh0bWxgPGRpdiBjbGFzcz1cImdhbGxlcnktZ3JpZC0yeDNcIj5cbiAgJHtzZWxlY3RlZEltYWdlczA4Lm1hcChpbWcgPT4gYFxuICAgIDxkaXYgY2xhc3M9XCJnYWxsZXJ5LWl0ZW1cIj5cbiAgICAgIDxpbWcgc3JjPVwiZmlndXJlcy9nZWNjb19lY2lwXzIwMDgvJHtpbWd9XCIgY2xhc3M9XCJnYWxsZXJ5LWltZ1wiIGxvYWRpbmc9XCJsYXp5XCI+XG4gICAgPC9kaXY+XG4gIGApLmpvaW4oJycpfVxuPC9kaXY+YFxuIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
