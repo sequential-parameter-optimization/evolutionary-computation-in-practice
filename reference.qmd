@@ -3,138 +3,217 @@ title: "ECiP Speakers & Talks"
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - superhero
     css: styles.css
     toc: true
+    number-sections: false
 ---
 
-# ECiP Speakers & Talks (2025–2010)
+# Evolutionary Computation in Practice (ECiP)
 
-The **Evolutionary Computation in Practice (ECiP)** track at GECCO bridges the gap between theoretical research and industrial application. Below is a historical archive of the track's chairs, organizers, and invited speakers.
+As the premier venue for research in natural computation, the Genetic and Evolutionary Computation Conference (GECCO) has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the *Evolutionary Computation in Practice (ECiP)* track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike broader academic tracks that prioritize peer-reviewed proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.
 
-## 2025
 
-::: {.speaker-grid}
+## 2025: Foundations and Applications
 
-::: {.speaker-card}
-<span class="speaker-name">Thomas Bartz-Beielstein</span>
-<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Richard Schulz</span>
-<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
-:::
-
-:::
-
-## 2024
-
-Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani. 
+The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice.
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
 <span class="speaker-name">Thomas Bartz-Beielstein</span>
 <span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+*Lead Organizer*
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Richard Schulz</span>
 <span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+*Organizer*
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Dr. Roman Kalkreuth</span>
+<span class="speaker-affil">RWTH Aachen, Germany</span>
+<div class="talk-info">On the antagonism between foundations and applications in graph-based genetic programming</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Dr. Farha Anjum Khan</span>
+<span class="speaker-affil">Continental-Corporation</span>
+<div class="talk-info">Robust Contextual Preferential Bayesian Optimization for Real-World Applications with Biased Data</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Dr. Xavier Bonet-Monroig</span>
+<span class="speaker-affil">Invited Speaker</span>
+<div class="talk-info">Talk Title Pending</div>
+:::
+
+:::
+
+## 2024: Energy and Optimization
+
+The 2024 track emphasized evolutionary computation in the energy domain, particularly focusing on PV systems and dynamic optimization.
+
+Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Joao Soares</span>
+<span class="speaker-affil">Polytechnic of Porto, Portugal</span>
+<div class="talk-info">Industrial Challenge: Energy Domain Optimization</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Fernando Lezama</span>
+<span class="speaker-affil">Polytechnic of Porto, Portugal</span>
+<div class="talk-info">Industrial Challenge: PV System Placement</div>
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Danial Yazdani</span>
 <span class="speaker-affil">University of Technology Sydney, Australia</span>
+*Organizer*
 :::
 
 :::
 
-## 2023–2021
+## 2022–2021: Machine Learning Hybrids
 
-Organizers for these years included Thomas Bartz-Beielstein, Bogdan Filipic, Richard Schulz, and Sowmya Chandrasekaran. 
+This era focused on the emergence of machine learning hybrids for search and optimization, and reverse-engineering core common sense.
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
-<span class="speaker-name">Thomas Bartz-Beielstein</span>
-<span class="speaker-affil">IDE+A, TH Köln, Germany</span>
+<span class="speaker-name">Meinolf Sellmann</span>
+<span class="speaker-affil">InsideOpt (CTO)</span>
+<div class="talk-info">Modern Hybrids: Machine Learning for Search and Optimization</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Joshua Tenenbaum</span>
+<span class="speaker-affil">MIT, USA</span>
+<div class="talk-info">Reverse-engineering core common sense with the tools of probabilistic programs</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Marc Mézard</span>
+<span class="speaker-affil">École Normale Supérieure, France</span>
+<div class="talk-info">Statistical Physics and Statistical Inference</div>
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Bogdan Filipic</span>
 <span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
+*Organizer*
+:::
+
+:::
+
+## 2019–2017: Globalization and Diversity
+
+The maturation of surrogate-assisted optimization and the visualization of benchmark diversity marked this period.
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Markus Wagner</span>
+<span class="speaker-affil">University of Adelaide, Australia</span>
+<div class="talk-info">Optimising Wave Energy Converters</div>
 :::
 
 ::: {.speaker-card}
-<span class="speaker-name">Sowmya Chandrasekaran</span>
+<span class="speaker-name">Kate Smith-Miles</span>
+<span class="speaker-affil">University of Melbourne, Australia</span>
+<div class="talk-info">Visualising diversity of benchmark instances</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Frederik Rehbach</span>
 <span class="speaker-affil">TH Köln, Germany</span>
+<div class="talk-info">Industrial Challenge: Online Event Detection</div>
 :::
 
 :::
 
-## 2016
+## 2016: Industry Challenges
+
+A focus on the challenges of deploying evolutionary computation in the steel industry and other heavy industrial sectors.
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
 <span class="speaker-name">Thomas Bartz-Beielstein</span>
 <span class="speaker-affil">TH Köln, Germany</span>
-<div class="talk-info">“Surrogate Model-based Optimization in Practice” </div>
+<div class="talk-info">Surrogate Model-based Optimization in Practice</div>
 :::
 
 ::: {.speaker-card}
-<span class="speaker-name">Maizura Mokhtar et al.</span>
+<span class="speaker-name">Maizura Mokhtar</span>
 <span class="speaker-affil">Cranfield University / Tata Steel</span>
-<div class="talk-info">“Optimising a Waste Heat Recovery System using MOEA” </div>
+<div class="talk-info">Optimising a Waste Heat Recovery System using MOEA</div>
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Bogdan Filipic</span>
 <span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
-<div class="talk-info">“Challenges of Deploying EC in Steel Industry” </div>
+<div class="talk-info">Challenges of Deploying EC in Steel Industry</div>
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Carlos A. Coello Coello</span>
 <span class="speaker-affil">CINVESTAV-IPN, Mexico</span>
-<div class="talk-info">“EMO in Real-World Applications” </div>
+<div class="talk-info">EMO in Real-World Applications</div>
 :::
 
 :::
 
-## 2010
+## 2011–2015: Establishing the Interface
+
+The foundational years that established the Industrial Challenge and built the interface between academia and industry.
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<span class="speaker-name">David Davis</span>
+<span class="speaker-affil">VGO Associates</span>
+<div class="talk-info">Statistics for EC: A Visual Approach</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Joern Mehnen</span>
+<span class="speaker-affil">Cranfield University, UK</span>
+<div class="talk-info">Logistics and Manufacturing Applications</div>
+:::
+
+::: {.speaker-card}
 <span class="speaker-name">Michael Affenzeller</span>
 <span class="speaker-affil">UAS Upper Austria</span>
-<div class="talk-info">“Heuristic Optimization in Production and Logistics” </div>
+<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Thomas Bäck</span>
 <span class="speaker-affil">Leiden University / divis</span>
-<div class="talk-info">“Intelligent Industry Solutions” </div>
+<div class="talk-info">Intelligent Industry Solutions</div>
 :::
 
 ::: {.speaker-card}
 <span class="speaker-name">Erik Goodman</span>
 <span class="speaker-affil">Michigan State University</span>
-<div class="talk-info">“Introducing Academic EC Tech to Industry” </div>
+<div class="talk-info">Introducing Academic EC Tech to Industry</div>
 :::
 
 :::
 
 ## Archives & References
 
-- [GECCO 2015](https://gecco-2015.sigevo.org/)
-- [GECCO 2014](https://gecco-2014.sigevo.org/)
-- [GECCO 2013](https://gecco-2013.sigevo.org/)
-- [GECCO 2012](https://gecco-2012.sigevo.org/)
-- [GECCO 2011](https://gecco-2011.sigevo.org/)
+The following external archives provide additional depth into the track's evolution:
 
-For detailed abstracts, see the official ECiP pages.
+* [GECCO 2015](https://gecco-2015.sigevo.org/)
+* [GECCO 2014](https://gecco-2014.sigevo.org/)
+* [GECCO 2013](https://gecco-2013.sigevo.org/)
+* [GECCO 2012](https://gecco-2012.sigevo.org/)
+* [GECCO 2011](https://gecco-2011.sigevo.org/)
