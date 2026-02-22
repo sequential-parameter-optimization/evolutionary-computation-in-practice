@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.spotseven.de/xmlrpc.php">
+<title>Evolutionary Computation in Practice at ACM GECCO &#8211; spotseven.de</title>
+<meta name='robots' content='max-image-preview:large' />
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link rel='dns-prefetch' href='//www.spotseven.de' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='preconnect' href='//i0.wp.com' />
+<link rel='preconnect' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="spotseven.de &raquo; Feed" href="https://www.spotseven.de/?feed=rss2" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.spotseven.de/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fwww.spotseven.de%2F%3Fpage_id%3D508" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.spotseven.de/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fwww.spotseven.de%2F%3Fpage_id%3D508&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='papercite_css-css' href='https://www.spotseven.de/wp-content/plugins/papercite/papercite.css?ver=6.9.1' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='wp-block-heading-inline-css' type='text/css'>
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://c0.wp.com/c/6.9.1/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id='wp-block-image-inline-css' type='text/css'>
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://c0.wp.com/c/6.9.1/wp-includes/blocks/image/style.min.css */
+</style>
+<style id='wp-block-search-inline-css' type='text/css'>
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{height:1.25em;min-height:24px;min-width:24px;width:1.25em;fill:currentColor;vertical-align:text-bottom}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=https://c0.wp.com/c/6.9.1/wp-includes/blocks/search/style.min.css */
+</style>
+<style id='wp-block-group-inline-css' type='text/css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://c0.wp.com/c/6.9.1/wp-includes/blocks/group/style.min.css */
+</style>
+<style id='wp-block-paragraph-inline-css' type='text/css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://c0.wp.com/c/6.9.1/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id='wp-block-table-inline-css' type='text/css'>
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:initial;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:#0000}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:initial}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:initial}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=https://c0.wp.com/c/6.9.1/wp-includes/blocks/table/style.min.css */
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='font-awesome-css' href='https://www.spotseven.de/wp-content/themes/rebalance/font-awesome/font-awesome.css?ver=20151022' type='text/css' media='all' />
+<link rel='stylesheet' id='rebalance-style-css' href='https://www.spotseven.de/wp-content/themes/rebalance/style.css?ver=6.9.1' type='text/css' media='all' />
+<style id='rebalance-style-inline-css' type='text/css'>
+.entry-meta .author { clip: rect(1px, 1px, 1px, 1px); height: 1px; position: absolute; overflow: hidden; width: 1px; }
+/*# sourceURL=rebalance-style-inline-css */
+</style>
+<style id='jetpack_likes-inline-css' type='text/css'>
+#jp-post-flair{padding-top:.5em}#content div.sharedaddy,#main div.sharedaddy,div.sharedaddy{clear:both}div.sharedaddy h3.sd-title{display:inline-block;font-size:9pt;font-weight:700;line-height:1.2;margin:0 0 1em}div.sharedaddy h3.sd-title:before{border-top:1px solid #dcdcde;content:"";display:block;margin-bottom:1em;min-width:30px;width:100%}div.jetpack-likes-widget-wrapper{min-height:50px;position:relative;width:100%}div.jetpack-likes-widget-wrapper .sd-link-color{font-size:12px}div.jetpack-comment-likes-widget-wrapper{min-height:31px;position:relative;width:100%}div.jetpack-comment-likes-widget-wrapper iframe{margin-bottom:0}#likes-other-gravatars{background-color:#fff;border:1px solid #dcdcde;border-radius:4px;box-shadow:none;display:none;height:auto;max-height:240px;min-width:220px;overflow:auto;padding:9px 12px 10px;position:absolute;z-index:1000}#likes-other-gravatars *{line-height:normal}#likes-other-gravatars .likes-text{color:#101517;font-size:12px;font-weight:500;padding-bottom:8px}#likes-other-gravatars li,#likes-other-gravatars ul{list-style-type:none;margin:0;padding:0;text-indent:0}#likes-other-gravatars li:before{content:""}#likes-other-gravatars ul.wpl-avatars{display:block;max-height:190px;overflow:auto}#likes-other-gravatars ul.wpl-avatars li{float:none;height:28px;margin:0 0 4px;width:196px}#likes-other-gravatars ul.wpl-avatars li a{align-items:center;border-bottom:none!important;display:flex;gap:8px;margin:0 2px 0 0;text-decoration:none}#likes-other-gravatars ul.wpl-avatars li a span{color:#2c3338;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#likes-other-gravatars ul.wpl-avatars li a img{background:none;border:none;border-radius:50%;box-sizing:border-box;margin:0!important;padding:1px!important;position:static}div.sd-box{border-top:1px solid #00000021}.jetpack-likes-widget-loaded iframe,.jetpack-likes-widget-loading .likes-widget-placeholder,.jetpack-likes-widget-unloaded .likes-widget-placeholder{display:block}.jetpack-likes-widget-loaded .likes-widget-placeholder,.jetpack-likes-widget-loading iframe,.jetpack-likes-widget-unloaded iframe{display:none}.comment-likes-widget,.entry-content .post-likes-widget,.post-likes-widget{border-width:0;margin:0}.comment-likes-widget-placeholder,.post-likes-widget-placeholder{border-width:0;margin:0;position:relative}.comment-likes-widget-placeholder{display:flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;height:18px;position:absolute}.comment-likes-widget-placeholder:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='%232ea2cc' d='m12 2 2.582 6.953L22 9.257l-5.822 4.602L18.18 21 12 16.89 5.82 21l2.002-7.14L2 9.256l7.418-.304'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:16px 16px;color:#2ea2cc;content:"";display:inline-block;height:16px;padding-right:5px;position:relative;top:3px;width:16px}.post-likes-widget-placeholder .button{display:none}.comment-likes-widget-placeholder .loading,.post-likes-widget-placeholder .loading{color:#999;font-size:12px}.comment-likes-widget-placeholder .loading{align-self:center;color:#4e4e4e;margin-top:4px;padding-left:5px}div.sharedaddy.sd-like-enabled .sd-like h3{display:none}div.sharedaddy.sd-like-enabled .sd-like .post-likes-widget{float:none;position:absolute;top:0;width:100%}.comment-likes-widget{width:100%}.cs-rating,.pd-rating{display:block!important}.sd-gplus .sd-title{display:none}@media print{.jetpack-likes-widget-wrapper{display:none}}
+/*# sourceURL=https://www.spotseven.de/wp-content/plugins/jetpack/_inc/build/likes/style.min.css */
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.spotseven.de/wp-content/plugins/tablepress/css/build/default.css?ver=3.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='sharedaddy-css' href='https://c0.wp.com/p/jetpack/15.5/modules/sharedaddy/sharing.css' type='text/css' media='all' />
+<link rel='stylesheet' id='social-logos-css' href='https://c0.wp.com/p/jetpack/15.5/_inc/social-logos/social-logos.min.css' type='text/css' media='all' />
+<script type="text/javascript" src="https://c0.wp.com/c/6.9.1/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.9.1/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.spotseven.de/wp-content/plugins/papercite/js/papercite.js?ver=6.9.1" id="papercite-js"></script>
+<link rel="https://api.w.org/" href="https://www.spotseven.de/index.php?rest_route=/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.spotseven.de/index.php?rest_route=/wp/v2/pages/508" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.spotseven.de/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.1" />
+<link rel="canonical" href="https://www.spotseven.de/?page_id=508" />
+<link rel='shortlink' href='https://wp.me/P2DCPK-8c' />
+	<style>img#wpstats{display:none}</style>
+		<meta name="description" content="**Summary** The ACM Genetic and Evolutionary Computation Conference (GECCO) highlights cutting-edge research on topics like genetic algorithms and evolutionary machine learning. Its “Evolutionary Computation in Practice” track features experienced speakers offering insights on forming industry-academia partnerships, managing real-world optimization projects, and applying proven project management principles. The track is jointly organized by Richard Schulz and&hellip;" />
+	<style type="text/css">
+			.site-title a,
+		.site-description {
+			color: #dd3333;
+		}
+		</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Evolutionary Computation in Practice at ACM GECCO" />
+<meta property="og:url" content="https://www.spotseven.de/?page_id=508" />
+<meta property="og:description" content="**Summary** The ACM Genetic and Evolutionary Computation Conference (GECCO) highlights cutting-edge research on topics like genetic algorithms and evolutionary machine learning. Its “Evolutionary C…" />
+<meta property="article:published_time" content="2024-11-01T14:44:35+00:00" />
+<meta property="article:modified_time" content="2025-07-12T15:00:52+00:00" />
+<meta property="og:site_name" content="spotseven.de" />
+<meta property="og:image" content="https://www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png" />
+<meta property="og:image:width" content="962" />
+<meta property="og:image:height" content="960" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:text:title" content="Evolutionary Computation in Practice at ACM GECCO" />
+<meta name="twitter:image" content="https://www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="icon" href="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_icon_223.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_icon_223.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_icon_223.png?fit=180%2C180&#038;ssl=1" />
+<meta name="msapplication-TileImage" content="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_icon_223.png?fit=270%2C270&#038;ssl=1" />
+<style id='jetpack-block-tiled-gallery-inline-css' type='text/css'>
+.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__item img,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__item img{border-radius:50%}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row{flex-grow:1;width:100%}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-1 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-1 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-1 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-1 .tiled-gallery__col{width:100%}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-2 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-2 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-2 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-2 .tiled-gallery__col{width:calc(50% - 2px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-3 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-3 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-3 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-3 .tiled-gallery__col{width:calc(33.33333% - 2.66667px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-4 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-4 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-4 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-4 .tiled-gallery__col{width:calc(25% - 3px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-5 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-5 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-5 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-5 .tiled-gallery__col{width:calc(20% - 3.2px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-6 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-6 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-6 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-6 .tiled-gallery__col{width:calc(16.66667% - 3.33333px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-7 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-7 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-7 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-7 .tiled-gallery__col{width:calc(14.28571% - 3.42857px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-8 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-8 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-8 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-8 .tiled-gallery__col{width:calc(12.5% - 3.5px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-9 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-9 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-9 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-9 .tiled-gallery__col{width:calc(11.11111% - 3.55556px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-10 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-10 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-10 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-10 .tiled-gallery__col{width:calc(10% - 3.6px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-11 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-11 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-11 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-11 .tiled-gallery__col{width:calc(9.09091% - 3.63636px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-12 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-12 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-12 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-12 .tiled-gallery__col{width:calc(8.33333% - 3.66667px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-13 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-13 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-13 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-13 .tiled-gallery__col{width:calc(7.69231% - 3.69231px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-14 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-14 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-14 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-14 .tiled-gallery__col{width:calc(7.14286% - 3.71429px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-15 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-15 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-15 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-15 .tiled-gallery__col{width:calc(6.66667% - 3.73333px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-16 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-16 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-16 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-16 .tiled-gallery__col{width:calc(6.25% - 3.75px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-17 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-17 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-17 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-17 .tiled-gallery__col{width:calc(5.88235% - 3.76471px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-18 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-18 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-18 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-18 .tiled-gallery__col{width:calc(5.55556% - 3.77778px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-19 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-19 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-19 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-19 .tiled-gallery__col{width:calc(5.26316% - 3.78947px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__row.columns-20 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__row.columns-20 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__row.columns-20 .tiled-gallery__col,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__row.columns-20 .tiled-gallery__col{width:calc(5% - 3.8px)}.wp-block-jetpack-tiled-gallery .is-style-circle .tiled-gallery__item img,.wp-block-jetpack-tiled-gallery .is-style-square .tiled-gallery__item img,.wp-block-jetpack-tiled-gallery.is-style-circle .tiled-gallery__item img,.wp-block-jetpack-tiled-gallery.is-style-square .tiled-gallery__item img{aspect-ratio:1}.wp-block-jetpack-tiled-gallery .is-style-columns .tiled-gallery__item,.wp-block-jetpack-tiled-gallery .is-style-rectangular .tiled-gallery__item,.wp-block-jetpack-tiled-gallery.is-style-columns .tiled-gallery__item,.wp-block-jetpack-tiled-gallery.is-style-rectangular .tiled-gallery__item{display:flex}.wp-block-jetpack-tiled-gallery .has-rounded-corners-1 .tiled-gallery__item img{border-radius:1px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-2 .tiled-gallery__item img{border-radius:2px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-3 .tiled-gallery__item img{border-radius:3px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-4 .tiled-gallery__item img{border-radius:4px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-5 .tiled-gallery__item img{border-radius:5px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-6 .tiled-gallery__item img{border-radius:6px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-7 .tiled-gallery__item img{border-radius:7px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-8 .tiled-gallery__item img{border-radius:8px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-9 .tiled-gallery__item img{border-radius:9px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-10 .tiled-gallery__item img{border-radius:10px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-11 .tiled-gallery__item img{border-radius:11px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-12 .tiled-gallery__item img{border-radius:12px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-13 .tiled-gallery__item img{border-radius:13px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-14 .tiled-gallery__item img{border-radius:14px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-15 .tiled-gallery__item img{border-radius:15px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-16 .tiled-gallery__item img{border-radius:16px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-17 .tiled-gallery__item img{border-radius:17px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-18 .tiled-gallery__item img{border-radius:18px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-19 .tiled-gallery__item img{border-radius:19px}.wp-block-jetpack-tiled-gallery .has-rounded-corners-20 .tiled-gallery__item img{border-radius:20px}.tiled-gallery__gallery{display:flex;flex-wrap:wrap;padding:0;width:100%}.tiled-gallery__row{display:flex;flex-direction:row;justify-content:center;margin:0;width:100%}.tiled-gallery__row+.tiled-gallery__row{margin-top:4px}.tiled-gallery__col{display:flex;flex-direction:column;justify-content:center;margin:0}.tiled-gallery__col+.tiled-gallery__col{margin-inline-start:4px}.tiled-gallery__item{flex-grow:1;justify-content:center;margin:0;overflow:hidden;padding:0;position:relative}.tiled-gallery__item.filter__black-and-white{filter:grayscale(100%)}.tiled-gallery__item.filter__sepia{filter:sepia(100%)}.tiled-gallery__item.filter__1977{position:relative}.tiled-gallery__item.filter__1977 img{width:100%;z-index:1}.tiled-gallery__item.filter__1977:before{z-index:2}.tiled-gallery__item.filter__1977:after,.tiled-gallery__item.filter__1977:before{content:"";display:block;height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%}.tiled-gallery__item.filter__1977:after{z-index:3}.tiled-gallery__item.filter__1977{filter:contrast(1.1) brightness(1.1) saturate(1.3)}.tiled-gallery__item.filter__1977:after{background:#f36abc4d;mix-blend-mode:screen}.tiled-gallery__item.filter__clarendon{position:relative}.tiled-gallery__item.filter__clarendon img{width:100%;z-index:1}.tiled-gallery__item.filter__clarendon:before{z-index:2}.tiled-gallery__item.filter__clarendon:after,.tiled-gallery__item.filter__clarendon:before{content:"";display:block;height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%}.tiled-gallery__item.filter__clarendon:after{z-index:3}.tiled-gallery__item.filter__clarendon{filter:contrast(1.2) saturate(1.35)}.tiled-gallery__item.filter__clarendon:before{background:#7fbbe333;mix-blend-mode:overlay}.tiled-gallery__item.filter__gingham{position:relative}.tiled-gallery__item.filter__gingham img{width:100%;z-index:1}.tiled-gallery__item.filter__gingham:before{z-index:2}.tiled-gallery__item.filter__gingham:after,.tiled-gallery__item.filter__gingham:before{content:"";display:block;height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%}.tiled-gallery__item.filter__gingham:after{z-index:3}.tiled-gallery__item.filter__gingham{filter:brightness(1.05) hue-rotate(-10deg)}.tiled-gallery__item.filter__gingham:after{background:#e6e6fa;mix-blend-mode:soft-light}.tiled-gallery__item+.tiled-gallery__item{margin-top:4px}.tiled-gallery__item:focus-within{box-shadow:0 0 0 2px #3858e9;overflow:visible}.tiled-gallery__item>img{background-color:#0000001a}.tiled-gallery__item>a,.tiled-gallery__item>a>img,.tiled-gallery__item>img{display:block;height:auto;margin:0;max-width:100%;object-fit:cover;object-position:center;padding:0;width:100%}.is-email .tiled-gallery__gallery{display:block}
+/*# sourceURL=https://www.spotseven.de/wp-content/plugins/jetpack/_inc/blocks/tiled-gallery/view.css?minify=false */
+</style>
+<link rel='stylesheet' id='jetpack-swiper-library-css' href='https://c0.wp.com/p/jetpack/15.5/_inc/blocks/swiper.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-carousel-css' href='https://c0.wp.com/p/jetpack/15.5/modules/carousel/jetpack-carousel.css' type='text/css' media='all' />
+
+</head>
+
+<body class="wp-singular page-template-default page page-id-508 wp-custom-logo wp-theme-rebalance has-custom-header author-hidden">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="col-width header-wrap">
+							<a href="https://www.spotseven.de/" class="site-header-image-link" title="spotseven.de" rel="home">
+					<img src="https://www.spotseven.de/wp-content/uploads/2025/12/cropped-IMG_8416.jpeg" class="site-header-image" width="1140" height="222" alt="" />
+				</a>
+						<div class="site-heading">
+				<div class="site-branding">
+					<a href="https://www.spotseven.de/" class="custom-logo-link" rel="home"><img width="118" height="80" src="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_logo_223-1.png?fit=118%2C80&amp;ssl=1" class="custom-logo" alt="spotseven.de" decoding="async" data-attachment-id="1052" data-permalink="https://www.spotseven.de/?attachment_id=1052" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_logo_223-1.png?fit=118%2C80&amp;ssl=1" data-orig-size="118,80" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cropped-spotseven_logo_223-1.png" data-image-description="&lt;p&gt;https://www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_logo_223-1.png&lt;/p&gt;
+" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_logo_223-1.png?fit=118%2C80&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/cropped-spotseven_logo_223-1.png?fit=118%2C80&amp;ssl=1" /></a>											<p class="site-title"><a href="https://www.spotseven.de/" rel="home">spotseven.de</a></p>
+									</div><!-- .site-branding -->
+							</div><!-- .site-heading -->
+		</div>
+		<div class="col-width sub-header-wrap">
+
+							<p class="site-description">Optimization, Machine Learning, Artificial Intelligence</p>
+			
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" data-close-text="Close">Menu</button>
+				<div class="menu-main-menu-container"><ul id="header-menu" class="menu"><li id="menu-item-461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-461"><a href="https://spotseven.de">Startseite</a></li>
+<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584"><a href="https://www.spotseven.de/?page_id=581">Promotion/PhD</a></li>
+<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="https://www.spotseven.de/?page_id=415">SPOT</a></li>
+<li id="menu-item-1066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1066"><a href="https://thk-ai.de">THK-AI Research Cluster</a></li>
+<li id="menu-item-1092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1092"><a href="https://www.spotseven.de/?page_id=1091">SPOTSeven Optimization Challenge 2025/26</a></li>
+<li id="menu-item-1068" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1068"><a href="https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/institut-fuer-data-science-engineering-and-analytics_54523.php">Institute IDE+A</a></li>
+<li id="menu-item-988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988"><a href="https://www.spotseven.de/?page_id=985">Impressum / Datenschutzerklärung</a></li>
+</ul></div>			</nav><!-- #site-navigation -->
+			
+		</div><!-- .col-width -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content clear">
+		<div class="col-width">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-508" class="post-508 page type-page status-publish hentry ">
+	<header class="entry-header">
+		<h1 class="entry-title">Evolutionary Computation in Practice at ACM GECCO</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>July 16, 2025</strong></p>
+
+
+
+<div data-carousel-extra='{&quot;blog_id&quot;:1,&quot;permalink&quot;:&quot;https://www.spotseven.de/?page_id=508&quot;}'  class="wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular"><div class="has-rounded-corners-10"><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:100.00000%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="962" data-permalink="https://www.spotseven.de/?attachment_id=962" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/hri.png?fit=400%2C140&amp;ssl=1" data-orig-size="400,140" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="hri" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/hri.png?fit=400%2C140&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/hri.png?fit=400%2C140&amp;ssl=1" data-attachment-id="962" data-permalink="https://www.spotseven.de/?attachment_id=962" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/hri.png?fit=400%2C140&amp;ssl=1" data-orig-size="400,140" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="hri" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/hri.png?fit=400%2C140&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/hri.png?fit=400%2C140&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 1 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/hri.png?strip=info&#038;w=400&#038;ssl=1 400w" alt="" data-height="140" data-id="962" data-link="https://idea.gm.th-koeln.de/?attachment_id=962" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/hri.png" data-width="400" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/hri.png?ssl=1" data-amp-layout="responsive"/></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:100.00000%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="963" data-permalink="https://www.spotseven.de/?attachment_id=963" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?fit=722%2C196&amp;ssl=1" data-orig-size="722,196" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="RWTH_Logo_3.svg" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?fit=722%2C196&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?fit=722%2C196&amp;ssl=1" data-attachment-id="963" data-permalink="https://www.spotseven.de/?attachment_id=963" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?fit=722%2C196&amp;ssl=1" data-orig-size="722,196" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="RWTH_Logo_3.svg" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?fit=722%2C196&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_.png?fit=722%2C196&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 2 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_-500x136.png?strip=info&#038;w=600&#038;ssl=1 600w,https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_-500x136.png?strip=info&#038;w=722&#038;ssl=1 722w" alt="" data-height="196" data-id="963" data-link="https://idea.gm.th-koeln.de/?attachment_id=963" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_-500x136.png" data-width="722" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/RWTH_Logo_3.svg_-500x136.png?ssl=1" data-amp-layout="responsive"/></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:42.75645%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="958" data-permalink="https://www.spotseven.de/?attachment_id=958" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=962%2C960&amp;ssl=1" data-orig-size="962,960" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="profile_picture_roman_kalkreuth" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=750%2C748&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=962%2C960&amp;ssl=1" data-attachment-id="958" data-permalink="https://www.spotseven.de/?attachment_id=958" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=962%2C960&amp;ssl=1" data-orig-size="962,960" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="profile_picture_roman_kalkreuth" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=750%2C748&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=962%2C960&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 3 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth-500x500.png?strip=info&#038;w=600&#038;ssl=1 600w,https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth-500x500.png?strip=info&#038;w=900&#038;ssl=1 900w,https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth-500x500.png?strip=info&#038;w=962&#038;ssl=1 962w" alt="" data-height="960" data-id="958" data-link="https://idea.gm.th-koeln.de/?attachment_id=958" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth-500x500.png" data-width="962" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth-500x500.png?ssl=1" data-amp-layout="responsive"/></figure><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="955" data-permalink="https://www.spotseven.de/?attachment_id=955" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-orig-size="480,480" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="XBM_photo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-attachment-id="955" data-permalink="https://www.spotseven.de/?attachment_id=955" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-orig-size="480,480" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="XBM_photo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 4 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/XBM_photo.jpeg?strip=info&#038;w=480&#038;ssl=1 480w" alt="" data-height="480" data-id="955" data-link="https://idea.gm.th-koeln.de/?attachment_id=955" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/XBM_photo.jpeg" data-width="480" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/XBM_photo.jpeg?ssl=1" data-amp-layout="responsive"/></figure></div><div class="tiled-gallery__col" style="flex-basis:57.24355%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="991" data-permalink="https://www.spotseven.de/?attachment_id=991" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-orig-size="427,640" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Kaji" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-attachment-id="991" data-permalink="https://www.spotseven.de/?attachment_id=991" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-orig-size="427,640" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Kaji" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 5 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/Kaji-334x500.jpeg?strip=info&#038;w=427&#038;ssl=1 427w" alt="" data-height="640" data-id="991" data-link="https://idea.gm.th-koeln.de/?attachment_id=991" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/Kaji-334x500.jpeg" data-width="427" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/Kaji-334x500.jpeg?ssl=1" data-amp-layout="responsive"/></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:57.12769%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="961" data-permalink="https://www.spotseven.de/?attachment_id=961" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/continental.jpeg?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="continental" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/continental.jpeg?fit=200%2C200&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/continental.jpeg?fit=200%2C200&amp;ssl=1" data-attachment-id="961" data-permalink="https://www.spotseven.de/?attachment_id=961" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/continental.jpeg?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="continental" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/continental.jpeg?fit=200%2C200&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/continental.jpeg?fit=200%2C200&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 6 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/continental.jpeg?strip=info&#038;w=200&#038;ssl=1 200w" alt="" data-height="200" data-id="961" data-link="https://idea.gm.th-koeln.de/?attachment_id=961" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/continental.jpeg" data-width="200" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/continental.jpeg?ssl=1" data-amp-layout="responsive"/></figure></div><div class="tiled-gallery__col" style="flex-basis:42.87231%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="952" data-permalink="https://www.spotseven.de/?attachment_id=952" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-orig-size="480,640" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="anjum" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-attachment-id="952" data-permalink="https://www.spotseven.de/?attachment_id=952" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-orig-size="480,640" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="anjum" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 7 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/anjum-375x500.jpeg?strip=info&#038;w=480&#038;ssl=1 480w" alt="" data-height="640" data-id="952" data-link="https://idea.gm.th-koeln.de/?attachment_id=952" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/anjum-375x500.jpeg" data-width="480" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/anjum-375x500.jpeg?ssl=1" data-amp-layout="responsive"/></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:12.40445%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="509" data-permalink="https://www.spotseven.de/?attachment_id=509" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/GECCO-2025-LOGO.png?fit=1000%2C876&amp;ssl=1" data-orig-size="1000,876" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="GECCO 2025 LOGO" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/GECCO-2025-LOGO.png?fit=750%2C657&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/GECCO-2025-LOGO.png?fit=1000%2C876&amp;ssl=1" data-attachment-id="509" data-permalink="https://www.spotseven.de/?attachment_id=509" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/GECCO-2025-LOGO.png?fit=1000%2C876&amp;ssl=1" data-orig-size="1000,876" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="GECCO 2025 LOGO" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/GECCO-2025-LOGO.png?fit=750%2C657&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2024/11/GECCO-2025-LOGO.png?fit=1000%2C876&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 8 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2024/11/GECCO-2025-LOGO-500x438.png?strip=info&#038;w=600&#038;ssl=1 600w,https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2024/11/GECCO-2025-LOGO-500x438.png?strip=info&#038;w=900&#038;ssl=1 900w,https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2024/11/GECCO-2025-LOGO-500x438.png?strip=info&#038;w=1000&#038;ssl=1 1000w" alt="" data-height="876" data-id="509" data-link="https://idea.gm.th-koeln.de/?attachment_id=509" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2024/11/GECCO-2025-LOGO-500x438.png" data-width="1000" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2024/11/GECCO-2025-LOGO-500x438.png?ssl=1" data-amp-layout="responsive"/></figure></div><div class="tiled-gallery__col" style="flex-basis:87.59555%"><figure class="tiled-gallery__item"><img decoding="async" data-attachment-id="993" data-permalink="https://www.spotseven.de/?attachment_id=993" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/center_logo.png?fit=336%2C40&amp;ssl=1" data-orig-size="336,40" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="center_logo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/center_logo.png?fit=336%2C40&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/center_logo.png?fit=336%2C40&amp;ssl=1" data-attachment-id="993" data-permalink="https://www.spotseven.de/?attachment_id=993" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/center_logo.png?fit=336%2C40&amp;ssl=1" data-orig-size="336,40" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="center_logo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/center_logo.png?fit=336%2C40&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/center_logo.png?fit=336%2C40&amp;ssl=1" role="button" tabindex="0" aria-label="Open image 9 of 9 in full-screen"srcset="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/center_logo.png?strip=info&#038;w=336&#038;ssl=1 336w" alt="" data-height="40" data-id="993" data-link="https://idea.gm.th-koeln.de/?attachment_id=993" data-url="https://idea.gm.th-koeln.de/wp-content/uploads/2025/07/center_logo.png" data-width="336" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/center_logo.png?ssl=1" data-amp-layout="responsive"/></figure></div></div></div></div></div>
+
+
+
+<p>The <a href="https://gecco-2025.sigevo.org/HomePage">ACM Genetic and Evolutionary Computation Conference (GECCO)</a> presents the latest high-quality results in genetic and evolutionary computation since 1999. Topics include: genetic algorithms, genetic programming, swarm intelligence, complex systems, evolutionary combinatorial optimization and metaheuristics, evolutionary machine learning, learning for evolutionary computation, evolutionary multiobjective optimization, evolutionary numerical optimization, neuroevolution, real world applications, search-based software engineering, theory, benchmarking, reproducibility, hybrids and more.</p>
+
+
+
+<p>In the&nbsp;<em>Evolutionary Computation in Practice</em>&nbsp;(ECiP) track, well-known speakers with outstanding reputation in academia and industry present background and insider information on how to establish reliable cooperation with industrial partners. They actually run companies or are involved in cooperation between academia and industry.&nbsp;<br>If you attend, you will learn multiple ways to extend EC practice beyond the approaches found in textbooks. Experts in real-world optimization with decades of experience share their approaches to creating successful projects for real-world clients. Some of what they do is based on sound project management principles, and some is specific to our type of optimization projects. If you are working in academia and are interested in managing industrial projects, you will receive valuable hints for your own research projects.</p>
+
+
+
+<p>The &#8220;Evolutionary Computation in Practice&#8221; Track will be organized by <a href="https://orcid.org/0009-0007-0834-9927">Richard Schulz</a> and <a href="https://www.linkedin.com/in/thomas-bartz-beielstein-3157b541/">Prof. Dr. Thomas Bartz-Beielstein</a>.</p>
+
+
+
+<p><strong>ECiP @GECCOConf 2025</strong></p>
+
+
+
+<p>In 2025, ECiP will be an in-person event. We will do our best to enable opportunities for establishing contacts among participants.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Program (Overview)</strong></h2>
+
+
+
+<p>Time: 12:00 – 13:30 (UTC+2)<br>Date: July, 16th 2025</p>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><tbody><tr><td>Session</td><td>Speaker</td><td>Title</td><td>Affiliation</td></tr><tr><td>S-1: 12:00-12:20</td><td>Dr. Roman Kalkreuth</td><td>On the antagonism between foundations and applications in graph-based genetic programming</td><td>RWTH Aachen</td></tr><tr><td>S-2: 12:20-12:40</td><td>Dr. Farha Anjum Khan</td><td>Robust Contextual Preferential Bayesian Optimization for Real-World Applications with Biased Data and Minimal Expert Involvemen</td><td>Continental-Corporation</td></tr><tr><td>S-3: 12:40-13:00</td><td>Dr. Xavier Bonet-Monroig</td><td>Quantum (computing) needs you! Quantum (computing) wants you!</td><td>Honda Research Institute Europe</td></tr><tr><td>S-4: 13:00-13:20</td><td>Hirotaka Kaji</td><td>Application of Quantum Annealing to Optimize Parts Storage Arrangement in a Logistics Center</td><td>Frontier Research Center, Toyota Motor Corporation</td></tr><tr><td>13:20-13:30</td><td>Discussion</td><td></td><td></td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading">Abstracts and Bios</h2>
+
+
+
+<h3 class="wp-block-heading">S-1: On the antagonism between foundations and applications in graph-based genetic programming</h3>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img data-recalc-dims="1" fetchpriority="high" decoding="async" width="962" height="960" data-attachment-id="958" data-permalink="https://www.spotseven.de/?attachment_id=958" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=962%2C960&amp;ssl=1" data-orig-size="962,960" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="profile_picture_roman_kalkreuth" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=750%2C748&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?fit=962%2C960&amp;ssl=1" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=962%2C960&#038;ssl=1" alt="" class="wp-image-958" style="width:150px" srcset="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?w=962&amp;ssl=1 962w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=750%2C748&amp;ssl=1 750w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=500%2C500&amp;ssl=1 500w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=768%2C766&amp;ssl=1 768w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=720%2C719&amp;ssl=1 720w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=560%2C559&amp;ssl=1 560w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/profile_picture_roman_kalkreuth.png?resize=50%2C50&amp;ssl=1 50w" sizes="(max-width: 962px) 100vw, 962px" /></figure>
+
+
+
+<p><strong>Abstract:</strong><br>Various advanced methods for genetic variation have been proposed for graph-based genetic programming in recent years that can significantly enhance the search performance. However, these methods have not achieved any practical relevance yet. In the meantime, however, a relatively simple 1+lambda search strategy, originally proposed as the base algorithm for the graph-based genetic programming variant cartesian genetic programming, has been successfully applied to various real-world problems. A quite contrasting development that gives certainly cause for reflection on the antagonism between foundations and applications in this field.</p>
+
+
+
+<p><strong>Bio:</strong><br><a href="https://www.linkedin.com/in/dr-roman-kalkreuth-99427322b/">Roman Kalkreuth</a> is currently an assistant professor at RWTH Aachen University in Germany. Primarily, his research focuses on the analysis and development of algorithms for graph-based genetic programming. From 2015 until 2022, he was a research associate of the Computational Intelligence Research Group of Professor Guenter Rudolph at TU Dortmund University (Germany). Roman Kalkreuth defended his PhD thesis in July 2021 and then took up a postdoctoral researcher position within Professor Rudolph’s group. From October 2022 to June 2023, he worked in the Natural Computing Research Group of Professor Dr. Thomas Bäck at the Leiden Institute of Advanced Computer Science, which is part of Leiden University. He joined Laboratoire d’Informatique de Paris 6 (LIP6) of Sorbonne University in Paris as a postdoctoral researcher under supervision of Carola Doerr from June 2023 until March 2024. He then took up an assistant professor position at RWTH Aachen University, which started in April 2024.</p>
+
+
+
+<h3 class="wp-block-heading">S-2: Robust Contextual Preferential Bayesian Optimization for Real-World Applications with Biased Data and Minimal Expert Involvement</h3>
+
+
+
+<figure class="wp-block-image size-thumbnail is-resized"><img data-recalc-dims="1" decoding="async" width="375" height="500" data-attachment-id="952" data-permalink="https://www.spotseven.de/?attachment_id=952" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-orig-size="480,640" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="anjum" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?fit=480%2C640&amp;ssl=1" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/anjum-375x500.jpeg?resize=375%2C500&#038;ssl=1" alt="" class="wp-image-952" style="width:150px" srcset="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?resize=375%2C500&amp;ssl=1 375w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/anjum.jpeg?w=480&amp;ssl=1 480w" sizes="(max-width: 375px) 100vw, 375px" /></figure>
+
+
+
+<p><strong>Abstract:</strong><br>Solving real-world optimization problems is often hindered by unknown objectives and biased data. While Preferential Bayesian Optimization (PBO) offers a promising framework, existing approaches typically rely on predefined utility functions, interactive learning, or full Pareto front estimation; each demanding costly expert involvement.<br>We propose a novel offline method to learn interpretable utility functions using expert knowledge and historical data. By incorporating coarse prior information about the utility space and modeling uncertainty through a full Bayesian posterior, our approach reduces sample complexity and propagates uncertainty throughout the optimization process. <br>Evaluated across four domains, our method consistently outperforms standard Gaussian Process models and Bayesian Optimization with Preference Exploration (BOPE), even under biased sampling: achieving robust, high-quality results without repeated expert input.<br><br><strong>Bio:</strong><br>Dr. <a href="https://www.linkedin.com/in/dr-farha-anjum-khan-617b0813/?originalSubdomain=in">Farha Anjum Khan</a> is a researcher working at the intersection of Interactive Machine Learning and Human-Centered AI, with a background in physics. Her work explores how human feedback can guide machine learning systems, particularly through preferential Bayesian Optimization. She applies these methods in domains such as automotive systems, adaptive interfaces, and sensor-driven environments. Farha is especially interested in building AI systems that are not only effective but also transparent, inclusive, and grounded in real-world impact.</p>
+
+
+
+<h3 class="wp-block-heading">S-3: Quantum (computing) needs you! Quantum (computing) wants you!</h3>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img data-recalc-dims="1" decoding="async" width="480" height="480" data-attachment-id="955" data-permalink="https://www.spotseven.de/?attachment_id=955" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-orig-size="480,480" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="XBM_photo" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?fit=480%2C480&amp;ssl=1" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/XBM_photo.jpeg?resize=480%2C480&#038;ssl=1" alt="" class="wp-image-955" style="width:150px" srcset="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?w=480&amp;ssl=1 480w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/XBM_photo.jpeg?resize=50%2C50&amp;ssl=1 50w" sizes="(max-width: 480px) 100vw, 480px" /></figure>
+
+
+
+<p><strong>Abstract:</strong><br>In this talk I will try to convince you that the quantum computing community is in urgent need for your help, the evolutionary and optimization community. I will start with a basic introduction of quantum computation, with special attention to what makes them strictly more powerful than classical computers (with caveats). Next, I will show how poorly classical optimization algorithms have been used in the field, and our attempt at solving this issue. Then, I will present several parts of the quantum computing pipeline where evolutionary optimization can be of assistance. I will finish the talk with a cry for help, in an attempt to make everyone in the evolutionary computation and optimization community interested in the hard problems we are facing with quantum computers.</p>
+
+
+
+<p><strong>Bio:</strong><br><a href="https://www.linkedin.com/in/xavier-bonet-monroig-7853a798/">Xavier Bonet-Monroig</a> is a Senior Scientist at Honda Research Institute Europe, with the goal of finding novel applications of quantum computing from near-term to fault-tolerant quantum hardware. His scientific interest lay at the intersection of quantum physics and computer science, using tools from both fields to search for quantum advantage with existing quantum computers. Prior to joining HRI, he was awarded a research grant by the NWO to continue as research scientist at the Applied Quantum Algorithms group at Leiden University (the Netherlands). Xavi&#8217;s academic background includes a MSc in Physics, a PhD in theoretical physics from the Institut-Lorentz also from Leiden University.</p>
+
+
+
+<h3 class="wp-block-heading">S-4: Application of Quantum Annealing to Optimize Parts Storage Arrangement in a Logistics Center</h3>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="427" height="640" data-attachment-id="991" data-permalink="https://www.spotseven.de/?attachment_id=991" data-orig-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-orig-size="427,640" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Kaji" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" data-large-file="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?fit=427%2C640&amp;ssl=1" src="https://i0.wp.com/idea.gm.th-koeln.de/wp-content/uploads/2025/07/Kaji.jpeg?resize=427%2C640&#038;ssl=1" alt="" class="wp-image-991" style="width:150px" srcset="https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?w=427&amp;ssl=1 427w, https://i0.wp.com/www.spotseven.de/wp-content/uploads/2025/07/Kaji.jpeg?resize=334%2C500&amp;ssl=1 334w" sizes="auto, (max-width: 427px) 100vw, 427px" /></figure>
+
+
+
+<p><strong>Abstract:</strong><br>Recent advancements in quantum computing, particularly in quantum annealing, have shown promise for solving real-world combinatorial optimization problems. This study explores the use of quantum-classical hybrid computation to optimize the storage arrangement of parts in a logistics center, aiming to reduce the travel distance for workers during picking operations. Although there are limitations to the variables that quantum annealing can handle, the quantum-classical hybrid approach demonstrates significantly shorter computation times and better solutions compared to the classical solver for subproblems with around 10,000 variables.</p>
+
+
+
+<p><strong>Bio:</strong><br><a href="https://ieeexplore.ieee.org/author/37086454795">Hirotaka Kaji</a> received the Ph.D. degree in informatics from Kyoto University, Japan, in 2008. He worked for a manufacturing company from 1998 to 2009 and has been a researcher with Toyota Motor Corporation, Japan, since 2009. His research interests include machine learning, evolutionary computation, and physiological signal processing.</p>
+
+
+
+<h2 class="wp-block-heading">About GECCO</h2>
+
+
+
+<p><a href="https://gecco-2025.sigevo.org/Program">GECCO Schedule at a Glance</a></p>
+
+
+
+<p></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Teilen mit:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-facebook-508"
+				class="share-facebook sd-button share-icon"
+				href="https://www.spotseven.de/?page_id=508&#038;share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-508"
+				>
+				<span id="sharing-facebook-508" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-x"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-x-508"
+				class="share-x sd-button share-icon"
+				href="https://www.spotseven.de/?page_id=508&#038;share=x"
+				target="_blank"
+				aria-labelledby="sharing-x-508"
+				>
+				<span id="sharing-x-508" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-38996744-508-699ac6ba94b82' data-src='https://widgets.wp.com/likes/?ver=15.5#blog_id=38996744&amp;post_id=508&amp;origin=www.spotseven.de&amp;obj_id=38996744-508-699ac6ba94b82' data-name='like-post-frame-38996744-508-699ac6ba94b82' data-title='Like or Reblog'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="https://www.spotseven.de/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></aside><aside id="block-3" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div></div>
+</aside><aside id="block-4" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained"></div></div>
+</aside><aside id="block-5" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div></div>
+</aside><aside id="block-6" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div></div>
+</aside></div><!-- #secondary -->
+
+			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info">
+					<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+					<br>
+					Theme: Rebalance by <a href="http://wordpress.com/themes/rebalance/" rel="designer">WordPress.com</a>.				</div><!-- .site-info -->
+			</footer><!-- #colophon -->
+
+		</div><!-- .col-width -->
+	</div><!-- #content -->
+
+</div><!-- #page -->
+
+		<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" href="#" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https://www.spotseven.de/?page_id=508":508};
+	</script>
+				<script type="text/javascript" id="jetpack-portfolio-theme-supports-js-after">
+/* <![CDATA[ */
+const jetpack_portfolio_theme_supports = false
+//# sourceURL=jetpack-portfolio-theme-supports-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.spotseven.de/wp-content/themes/rebalance/js/columnlist.js?ver=20151120" id="columnlist-js"></script>
+<script type="text/javascript" id="rebalance-navigation-js-extra">
+/* <![CDATA[ */
+var rebalanceScreenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=rebalance-navigation-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.spotseven.de/wp-content/themes/rebalance/js/navigation.js?ver=20151112" id="rebalance-navigation-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.9.1/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.9.1/wp-includes/js/masonry.min.js" id="masonry-js"></script>
+<script type="text/javascript" id="rebalance-theme-scripts-js-extra">
+/* <![CDATA[ */
+var Rebalance = {"is_rtl":"0"};
+//# sourceURL=rebalance-theme-scripts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.spotseven.de/wp-content/themes/rebalance/js/scripts.js?ver=20151130" id="rebalance-theme-scripts-js"></script>
+<script type="text/javascript" src="https://www.spotseven.de/wp-content/themes/rebalance/js/skip-link-focus-fix.js?ver=20151112" id="rebalance-skip-link-focus-fix-js"></script>
+<script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", {"v":"ext","blog":"38996744","post":"508","tz":"1","srv":"www.spotseven.de","j":"1:15.5"} ]);
+_stq.push([ "clickTrackerInit", "38996744", "508" ]);
+//# sourceURL=jetpack-stats-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202608.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="jetpack-blocks-assets-base-url-js-before">
+/* <![CDATA[ */
+var Jetpack_Block_Assets_Base_Url="https://www.spotseven.de/wp-content/plugins/jetpack/_inc/blocks/";
+//# sourceURL=jetpack-blocks-assets-base-url-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.9.1/wp-includes/js/dist/dom-ready.min.js" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.9.1/wp-includes/js/dist/vendor/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="https://www.spotseven.de/wp-content/plugins/jetpack/_inc/blocks/tiled-gallery/view.js?minify=false&amp;ver=15.5" id="jetpack-block-tiled-gallery-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"https://www.spotseven.de/wp-content/plugins/jetpack/_inc/blocks/swiper.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https://www.spotseven.de/wp-admin/admin-ajax.php","nonce":"a7e7b433de","display_exif":"1","display_comments":"0","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","image_label":"Open image in full-screen.","download_original":"View full size \u003Cspan class=\"photo-size\"\u003E{0}\u003Cspan class=\"photo-size-times\"\u003E\u00d7\u003C/span\u003E{1}\u003C/span\u003E","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https://www.spotseven.de/wp-login.php?redirect_to=https%3A%2F%2Fwww.spotseven.de%2F%3Fpage_id%3D508","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+//# sourceURL=jetpack-carousel-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/15.5/_inc/build/carousel/jetpack-carousel.min.js" id="jetpack-carousel-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/15.5/_inc/build/likes/queuehandler.min.js" id="jetpack_likes_queuehandler-js"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+//# sourceURL=sharing-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/15.5/_inc/build/sharedaddy/sharing.min.js" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+/* <![CDATA[ */
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-x' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-x' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomx', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+//# sourceURL=sharing-js-js-after
+/* ]]> */
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.spotseven.de/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.spotseven.de/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20260222#ver=20260222' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	
+</body>
+</html>

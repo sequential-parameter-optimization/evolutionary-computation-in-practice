@@ -21,24 +21,28 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz.
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<img src="figures/speaker/profile_picture_roman_kalkreuth.png.webp" class="speaker-photo">
 <span class="speaker-name">Dr. Roman Kalkreuth</span>
 <span class="speaker-affil">RWTH Aachen, Germany</span>
 <div class="talk-info">On the antagonism between foundations and applications in graph-based genetic programming</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/anjum.jpeg.webp" class="speaker-photo">
 <span class="speaker-name">Dr. Farha Anjum Khan</span>
 <span class="speaker-affil">Continental-Corporation</span>
 <div class="talk-info">Robust Contextual Preferential Bayesian Optimization for Real-World Applications with Biased Data</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/XBM_photo.jpeg.webp" class="speaker-photo">
 <span class="speaker-name">Dr. Xavier Bonet-Monroig</span>
 <span class="speaker-affil">Honda Research Institute Europe</span>
 <div class="talk-info">Quantum (computing) needs you! Quantum (computing) wants you!</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/Kaji.jpeg.webp" class="speaker-photo">
 <span class="speaker-name">Hirotaka Kaji</span>
 <span class="speaker-affil">Frontier Research Center, Toyota Motor Corporation</span>
 <div class="talk-info">Application of Quantum Annealing to Optimize Parts Storage Arrangement in a Logistics Center</div>
@@ -103,12 +107,60 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
 :::
 
 ::: {.speaker-card}
-<span class="speaker-name">Danial Yazdani</span>
-<span class="speaker-affil">University of Technology Sydney, Australia</span>
+<span class="speaker-name">Simon Ratcliffe</span>
+<span class="speaker-affil">School of Computer and Mathematical Sciences, The University of Adelaide</span>
+<div class="talk-info">Six million compute minutes solving billion dollar problems - a successful GA deployed industrially</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bartz-Beielstein</span>
+<span class="speaker-affil">THK-AI Research Cluster, TH Köln, Germany</span>
+<div class="talk-info">Simplifying Hyperparameter Tuning for Industrial Applications with spotPython: Examples from PyTorch, Scikit-Learn, and River</div>
+:::
+
+
+:::
+
+## 2022 Boston (hybrid)
+
+
+Organizers: Thomas Bartz-Beielstein, TH Köln and Bogdan Filipic, Jožef Stefan Institute
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Giovanni Iacca</span>
+<span class="speaker-affil">University of Trento, Italy</span>
+<div class="talk-info">Soft skills and soft computing: when presenting the solutions of an optimization problem becomes harder than finding them</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Jamal Toutouh</span>
+<span class="speaker-affil">University of Trento, Italy</span>
+<div class="talk-info">Evolutionary Algorithms Supported Decision Making for Sustainable Cities</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Jörg Stork</span>
+<span class="speaker-affil">TH Köln, Germany</span>
+<div class="talk-info">Jumping in at the deep end: from university to industry</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Eike Permin and Lina Castillo</span>
+<span class="speaker-affil">TH Köln, Germany</span>
+<div class="talk-info">Consider the lathe – Why manufacturing provides an interesting playground for algorithms</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Bogdan Filipic</span>
+<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
 *Organizer*
 :::
 
 :::
+
+
 
 ## 2022–2021: Machine Learning Hybrids
 
