@@ -107,6 +107,7 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/simon_ratcliffe.jpeg" class="speaker-photo">
 <span class="speaker-name">Simon Ratcliffe</span>
 <span class="speaker-affil">School of Computer and Mathematical Sciences, The University of Adelaide</span>
 <div class="talk-info">Six million compute minutes solving billion dollar problems - a successful GA deployed industrially</div>
@@ -129,6 +130,7 @@ Organizers: Thomas Bartz-Beielstein, TH Köln and Bogdan Filipic, Jožef Stefan 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<img src="figures/speaker/giovanni_iacca.jpeg" class="speaker-photo">
 <span class="speaker-name">Giovanni Iacca</span>
 <span class="speaker-affil">University of Trento, Italy</span>
 <div class="talk-info">Soft skills and soft computing: when presenting the solutions of an optimization problem becomes harder than finding them</div>
@@ -147,15 +149,10 @@ Organizers: Thomas Bartz-Beielstein, TH Köln and Bogdan Filipic, Jožef Stefan 
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/lina_castillo.jpeg" class="speaker-photo">
 <span class="speaker-name">Eike Permin and Lina Castillo</span>
 <span class="speaker-affil">TH Köln, Germany</span>
 <div class="talk-info">Consider the lathe – Why manufacturing provides an interesting playground for algorithms</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Bogdan Filipic</span>
-<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
-*Organizer*
 :::
 
 :::
@@ -344,14 +341,20 @@ html`<div class="gallery-grid">
 ```
 
 
-## 2010
+## 2010 Portland, USA
+
+Evolutionary Computation in Practice Chairs:
+
+* Jörn Mehnen (Cranfield Universit, UK)
+* Thomas Bartz-Beielstein (Cologne Univ. of Applied Sciences, Germany)
+* David Davis (VGO Associates, USA)
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
-<span class="speaker-name">Michael Affenzeller</span>
-<span class="speaker-affil">UAS Upper Austria</span>
-<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
+<span class="speaker-name">Jorn Mehnen</span>
+<span class="speaker-affil">Cranfield University, UK</span>
+<div class="talk-info">EC in Design</div>
 :::
 
 ::: {.speaker-card}
@@ -363,7 +366,12 @@ html`<div class="gallery-grid">
 ::: {.speaker-card}
 <span class="speaker-name">Erik Goodman</span>
 <span class="speaker-affil">Michigan State University</span>
-<div class="talk-info">Introducing Academic EC Tech to Industry</div>
+<div class="talk-info">Managing an EC project for success, Emerging Technologies</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Jorn Mehnen, Thomas Bartz-Beielstein, Thomas Baeck, Erik Goodman</span>
+<div class="talk-info">Ask the Experts: EC questions from the audience (Open panel discussion)</div>
 :::
 
 :::
