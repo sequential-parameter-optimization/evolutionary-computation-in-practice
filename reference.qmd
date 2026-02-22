@@ -8,11 +8,15 @@ title: "ECiP Speakers & Talks"
 The *Evolutionary Computation in Practice (ECiP)* track at GECCO has functioned for over fifteen years as a specialized forum for bridging the gap between theoretical innovation and industrial application. While broader academic tracks prioritize peer-reviewed proofs, ECiP focuses on the operational complexities of real-world optimization. It brings together experts who manage corporations, lead large-scale industrial projects, and navigate the intricate landscape of academia-industry partnerships to share high-level insights that extend beyond textbook methodologies.
 
 
-## 2025: Foundations and Applications
+## 2025 Málaga, Spain
 
 The 2025 program highlights the relationship between academic foundations and industrial relevance, exploring why certain simpler strategies often outperform complex methods in practice.
 
-Organizers: Thomas Bartz-Beielstein, Richard Schulz.
+
+Evolutionary Computation Track Chairs:
+
+* Thomas Bartz-Beielstein, IDE+A, TH Köln, Germany
+* Richard Schulz, IDE+A, TH Köln, Germany
 
 
 ::: {.speaker-grid}
@@ -48,7 +52,7 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz.
 :::
 
 
-## Impressions from GECCO ECiP 2025
+### Impressions from GECCO ECiP 2025
 
 ```{ojs}
 //| echo: false
@@ -83,24 +87,44 @@ html`<div class="gallery-grid">
 ```
 
 
-## 2024: Energy and Optimization
+## 2024: Melbourne, Australia
+
+![](figures/logos/GECCO%202024%20LOGO%20resized.png){width="30%"}
+
 
 The 2024 track emphasized evolutionary computation in the energy domain, particularly focusing on PV systems and dynamic optimization.
 
-Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
+Evolutionatry Computation Track Chairs:
+
+* Thomas Bartz-Beielstein, IDE+A, TH Köln, Germany
+* Richard Schulz, IDE+A, TH Köln, Germany
+* Danial Yazdani, University of Technology Sydney, Australia
+
+The Randomised Optimisation Algorithms Research Network: Objectives and Opportunities
+Carlos M. Fonseca, Bogdan Filipiˇc
+Six million compute minutes solving billion dollar problems – a successful GA deployed industrially
+Simon Ratcliffe
+Automated Machine Learning
+Steffen Limmer
+Simplifying Hyperparameter Tuning for Industrial Applications with spotPython: Examples from
+PyTorch, Scikit-Learn, and River
+Thomas Bartz-Beielstein
+
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
-<span class="speaker-name">Joao Soares</span>
-<span class="speaker-affil">Polytechnic of Porto, Portugal</span>
-<div class="talk-info">Industrial Challenge: Energy Domain Optimization</div>
+<img src="figures/speaker/carlos_fonseca.jpeg" class="speaker-photo">
+<span class="speaker-name">Carlos M. Fonseca and Bogdan Filipi</span>
+<span class="speaker-affil">Polytechnic of Porto, Portugal and Jožef Stefan Institute, Slovenia</span>
+<div class="talk-info">The Randomised Optimisation Algorithms Research Network: Objectives and Opportunities</div>
 :::
 
 ::: {.speaker-card}
-<span class="speaker-name">Fernando Lezama</span>
-<span class="speaker-affil">Polytechnic of Porto, Portugal</span>
-<div class="talk-info">Industrial Challenge: PV System Placement</div>
+<img src="figures/speaker/steffen_limmer.jpeg" class="speaker-photo">
+<span class="speaker-name">Steffen Limmer</span>
+<span class="speaker-affil">Siemens AG, Germany</span>
+<div class="talk-info">Automated Machine Learning</div>
 :::
 
 ::: {.speaker-card}
@@ -111,6 +135,7 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/thomas_bartz_beielstein.jpeg" class="speaker-photo">
 <span class="speaker-name">Thomas Bartz-Beielstein</span>
 <span class="speaker-affil">THK-AI Research Cluster, TH Köln, Germany</span>
 <div class="talk-info">Simplifying Hyperparameter Tuning for Industrial Applications with spotPython: Examples from PyTorch, Scikit-Learn, and River</div>
@@ -119,10 +144,21 @@ Organizers: Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani.
 
 :::
 
+
+## 2023 Lisbon, Portugal
+
+![](figures/logos/GECCO%202023%20LOGO.png){width="30%"}
+
+
 ## 2022 Boston (hybrid)
 
+![](figures/logos/GECCO%202022%20BOSTON%20logo.png){width="30%"}
 
-Organizers: Thomas Bartz-Beielstein, TH Köln and Bogdan Filipic, Jožef Stefan Institute
+
+Evolutionary Computation Track Chairs:
+
+* Thomas Bartz-Beielstein, TH Köln
+* Bogdan Filipic, Jožef Stefan Institute
 
 ::: {.speaker-grid}
 
@@ -155,41 +191,59 @@ Organizers: Thomas Bartz-Beielstein, TH Köln and Bogdan Filipic, Jožef Stefan 
 :::
 
 
+## 2021 Lille, France
 
-## 2022–2021: Machine Learning Hybrids
-
-This era focused on the emergence of machine learning hybrids for search and optimization, and reverse-engineering core common sense.
-
-::: {.speaker-grid}
-
-::: {.speaker-card}
-<span class="speaker-name">Meinolf Sellmann</span>
-<span class="speaker-affil">InsideOpt (CTO)</span>
-<div class="talk-info">Modern Hybrids: Machine Learning for Search and Optimization</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Joshua Tenenbaum</span>
-<span class="speaker-affil">MIT, USA</span>
-<div class="talk-info">Reverse-engineering core common sense with the tools of probabilistic programs</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Marc Mézard</span>
-<span class="speaker-affil">École Normale Supérieure, France</span>
-<div class="talk-info">Statistical Physics and Statistical Inference</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Bogdan Filipic</span>
-<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
-*Organizer*
-:::
-
-:::
+![](figures/logos/gecco2021_logo.png){width="30%"}
 
 
-## Impressions from GECCO ECiP 2018 (Kyoto, Japan)
+Evolutionary Computation Track Chairs:
+
+* Thomas Bartz-Beielstein, TH Köln, Germany
+* Bogdan Filipic, Jožef Stefan Institute, Slovenia
+* Sowmya Chandrasekaran, TH Köln, Germany
+
+## 2020 Cancun, Mexico
+
+![](figures/logos/GECCO%20LOGO_2020.png){width="30%"}
+
+
+No Evolutionary Computation Track, but Industrial Challenge
+
+
+Organizers:
+
+* Frederik Rehbach, TH Köln, Germany
+* Thomas Bartz-Beielstein, TH Köln, Germany
+
+
+The industrial challenge is posed in cooperation with an industry partner of the institute. This year’s competition partially relies on a test suite that provides expensive computer simulation-based optimization problems and provides an easy evaluation interface that will be used for the setup of our challenge. Our industry partner is willing to publish one of their CFD simulations - the optimization of a gas distribution system (GDS) in a large-scale electrostatic precipitator - as a public challenge. The task in the first track is to find an optimal configuration for the gas distribution system.
+
+
+## 2019 Prague, Czech Republic
+
+![](figures/logos/GECCO%202019%20logo.png){width="30%"}
+
+
+Evolutionary Computation Track Chairs:
+
+* Thomas Bartz-Beielstein, TH Köln, Germany
+* Bogdan Filipic, Jozef Stefan Institute, Slovenia
+* Jörg Stork, TH Köln, Germany
+* Erik Goodman, Michigan State University, USA
+
+
+## 2018 Kyoto, Japan
+
+![](figures/logos/logo%20GECCO%202018-low%20res.gif){width="30%"}
+
+Evolutionary Computation Track Chairs:
+
+* Thomas Bartz-Beielstein, TH Köln, Germany
+* Bogdan Filipic, Jozef Stefan Institute, Slovenia
+* Shigeru Obayashi, Tohoku University, Japan
+
+
+### Impressions from GECCO ECiP 2018 (Kyoto, Japan)
 
 ```{ojs}
 //| echo: false
@@ -200,7 +254,7 @@ allImages18 = [
 "IMG_3102.jpeg", "IMG_3110.jpeg", "IMG_3118.jpeg", "IMG_3126.jpeg", "IMG_3137.jpeg", "IMG_3145.jpeg", "IMG_3153.jpeg", "IMG_3162.jpeg", "IMG_3170.jpeg", "IMG_3183.jpeg", "IMG_3191.jpeg", "IMG_3201.jpeg", "IMG_3209.jpeg", "IMG_3219.jpeg", "IMG_3228.jpeg",
 "IMG_3103.jpeg", "IMG_3111.jpeg", "IMG_3119.jpeg", "IMG_3130.jpeg", "IMG_3138.jpeg", "IMG_3146.jpeg", "IMG_3154.jpeg", "IMG_3163.jpeg", "IMG_3171.jpeg", "IMG_3184.jpeg", "IMG_3192.jpeg", "IMG_3202.jpeg", "IMG_3210.jpeg", "IMG_3221.jpeg",
 "IMG_3104.jpeg", "IMG_3112.jpeg", "IMG_3120.jpeg", "IMG_3131.jpeg", "IMG_3139.jpeg", "IMG_3147.jpeg", "IMG_3155.jpeg", "IMG_3164.jpeg", "IMG_3172.jpeg", "IMG_3185.jpeg", "IMG_3193.jpeg", "IMG_3203.jpeg", "IMG_3213.jpeg", "IMG_3222.jpeg",
-"IMG_3105.jpeg", "IMG_3113.jpeg", "IMG_3121.mov", "IMG_3132.jpeg", "IMG_3140.jpeg", "IMG_3148.jpeg", "IMG_3156.jpeg", "IMG_3165.jpeg", "IMG_3173.jpeg", "IMG_3186.jpeg", "IMG_3194.jpeg", "IMG_3204.jpeg", "IMG_3214.jpeg", "IMG_3223.jpeg", "IMG_3106.jpeg", " IMG_3114.jpeg", "IMG_3122.jpeg", "IMG_3133.jpeg", "IMG_3141.jpeg", "IMG_3149.jpeg", "IMG_3157.jpeg", "IMG_3166.jpeg", "IMG_3175.jpeg", "IMG_3187.jpeg", "IMG_3197.jpeg", "IMG_3205.jpeg", "IMG_3215.jpeg", "IMG_3224.jpeg",
+"IMG_3105.jpeg", "IMG_3113.jpeg", "IMG_3121.mov", "IMG_3132.jpeg", "IMG_3140.jpeg", "IMG_3148.jpeg", "IMG_3156.jpeg", "IMG_3165.jpeg", "IMG_3173.jpeg", "IMG_3186.jpeg", "IMG_3194.jpeg", "IMG_3204.jpeg", "IMG_3214.jpeg", "IMG_3223.jpeg", "IMG_3106.jpeg", "IMG_3114.jpeg", "IMG_3122.jpeg", "IMG_3133.jpeg", "IMG_3141.jpeg", "IMG_3149.jpeg", "IMG_3157.jpeg", "IMG_3166.jpeg", "IMG_3175.jpeg", "IMG_3187.jpeg", "IMG_3197.jpeg", "IMG_3205.jpeg", "IMG_3215.jpeg", "IMG_3224.jpeg",
 "IMG_3107.jpeg", "IMG_3115.jpeg", "IMG_3123.jpeg", "IMG_3134.jpeg", "IMG_3142.jpeg", "IMG_3150.jpeg", "IMG_3158.jpeg", "IMG_3167.jpeg", "IMG_3176.jpeg", "IMG_3188.jpeg", "IMG_3198.jpeg", "IMG_3206.jpeg", "IMG_3216.jpeg", "IMG_3225.jpeg"
 ]
 
@@ -223,42 +277,31 @@ html`<div class="gallery-grid">
 
 
 
-## 2019–2017: Globalization and Diversity
 
-The maturation of surrogate-assisted optimization and the visualization of benchmark diversity marked this period.
 
-::: {.speaker-grid}
+## 2017 Berlin, Germany
 
-::: {.speaker-card}
-<span class="speaker-name">Markus Wagner</span>
-<span class="speaker-affil">University of Adelaide, Australia</span>
-<div class="talk-info">Optimising Wave Energy Converters</div>
-:::
+Track Chairs: 
 
-::: {.speaker-card}
-<span class="speaker-name">Kate Smith-Miles</span>
-<span class="speaker-affil">University of Melbourne, Australia</span>
-<div class="talk-info">Visualising diversity of benchmark instances</div>
-:::
+* Anna Esparcia Alcazar
+* Thomas Bartz-Beielstein
+* Jörn Mehnen
 
-::: {.speaker-card}
-<span class="speaker-name">Frederik Rehbach</span>
-<span class="speaker-affil">TH Köln, Germany</span>
-<div class="talk-info">Industrial Challenge: Online Event Detection</div>
-:::
 
-:::
+More: [http://gecco-2017.sigevo.org/index.html/EC%2bin%2bPractice.html](http://gecco-2017.sigevo.org/index.html/EC%2bin%2bPractice.html)
+
 
 
 ## 2016 Denver, USA
 
-Track: Evolutionary Computation in Practice (ECiP)
-Chairs: 
+Track Chairs: 
 
 * Anna Esparcia Alcazar
 * Thomas Bartz-Beielstein
 * Erik Goodman
 
+
+More: [http://gecco-2016.sigevo.org/index.html/EC%2bin%2bPractice.html](http://gecco-2016.sigevo.org/index.html/EC%2bin%2bPractice.html)
 
 ::: {.speaker-grid}
 
@@ -354,8 +397,93 @@ Chairs:
 :::
 
 
+## 2015 Madrid, Spain
 
-## Impressions from GECCO ECiP 2012 (Philadelphia, USA)
+![](figures/logos/logo-2015.jpg){width="30%"}
+
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
+<span class="speaker-name">Jörn Mehnen, Thomas Bartz-Beielstein, Anna Esparcia Alcazar, Erik Goodman</span>
+<span class="speaker-affil">Cranfield University, UK</span>
+<div class="talk-info">Getting a job. What to do and what not to do</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/erik_goodman.jpeg" class="speaker-photo">
+<span class="speaker-name">Erik Goodman</span>
+<span class="speaker-affil">Michigan State University, USA</span>
+<div class="talk-info">Red Cedar Technology</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/carlos_coello_coello.jpeg" class="speaker-photo">
+<span class="speaker-name">Carlos Coello</span>
+<span class="speaker-affil">CINVESTAV-IPN, Mexico</span>
+<div class="talk-info">Evolutionary Multi-Objective Optimization in Real-World Applications</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/emilia_tantar.jpeg" class="speaker-photo">
+<span class="speaker-name">Emilia Tantar</span>
+<span class="speaker-affil"></span>
+<div class="talk-info">Programmable Communication Networks</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
+<span class="speaker-name">Jörn Mehnen</span>
+<span class="speaker-affil">Cranfield University, UK</span>
+<div class="talk-info">Multi-objective real-time optimisation for machine tools</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/arthur_kordon.jpeg" class="speaker-photo">
+<span class="speaker-name">Arthur Kordon</span>
+<span class="speaker-affil"></span>
+<div class="talk-info">New Challenges in Applying EC in Industry</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/anna_esparcia_alcazar.jpeg" class="speaker-photo">
+<span class="speaker-name">Anna Esparcia Alcazar</span>
+<span class="speaker-affil">University of Manchester, UK</span>
+<div class="talk-info">Past difficulties and new hopes to link EC in academia and industry</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/katya_vladislavleva.jpeg" class="speaker-photo">
+<span class="speaker-name">Katya Vladislavleva</span>
+<span class="speaker-affil"></span>
+<div class="talk-info">TBA</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Jörn Mehnen, Thomas Bartz-Beielstein, Thomas Baeck, Erik Goodman</span>
+<div class="talk-info">Ask the Experts: EC questions from the audience (Open panel discussion)</div>
+:::
+
+:::
+
+## 2014 Vancouver, Canada
+
+![](figures/logos/top_2014.gif){width="30%"}
+
+
+
+## 2013 Amsterdam, Netherlands
+
+![](figures/logos/index_r1_c1_2013.jpg){width="30%"}
+
+
+## 2012 Philadelphia, USA
+
+![](figures/logos/gecco-logo_2012.jpg){width="30%"}
+
+
+### Impressions from GECCO ECiP 2012 (Philadelphia, USA)
 
 ```{ojs}
 //| echo: false
@@ -383,7 +511,24 @@ html`<div class="gallery-grid">
 ```
 
 
-## Impressions from GECCO ECiP 2011
+
+
+## 2011 Dublin, Ireland
+
+![](figures/logos/gecco2011-logo.gif){width="30%"}
+
+More: [https://www.sigevo.org/gecco-2011/ecp.html](https://www.sigevo.org/gecco-2011/ecp.html)
+
+
+Evolutionary Computation in Practice Chairs:
+
+* David Davis, VGO Associates
+* Jörn Mehnen, Cranfield University
+* Thomas Bartz-Beielstein, Cologne University of Applies Sciences
+
+
+
+### Impressions from GECCO ECiP 2011
 
 ```{ojs}
 //| echo: false
@@ -410,13 +555,20 @@ html`<div class="gallery-grid">
 ```
 
 
-## 2010 Portland, USA
+
+## 2010, Portland (Oregon), USA
+
+![](figures/logos/top-logo_2010.jpg){width="30%"}
+
+More: [https://www.sigevo.org/gecco-2010/ecp.html](https://www.sigevo.org/gecco-2010/ecp.html)
+
 
 Evolutionary Computation in Practice Chairs:
 
 * Jörn Mehnen (Cranfield Universit, UK)
 * Thomas Bartz-Beielstein (Cologne Univ. of Applied Sciences, Germany)
 * David Davis (VGO Associates, USA)
+
 
 ::: {.speaker-grid}
 
@@ -448,7 +600,7 @@ Evolutionary Computation in Practice Chairs:
 
 :::
 
-## Impressions from GECCO ECiP 2010
+### Impressions from GECCO ECiP 2010
 
 ```{ojs}
 //| echo: false
@@ -477,52 +629,57 @@ html`<div class="gallery-grid">
 
 
 
+## 2009, Montreal, Canada
 
-## 2008–2009: Establishing the Interface
+![](figures/logos/gecco-logo09.jpg){width="30%"}
 
-The foundational years that established the Industrial Challenge and built the interface between academia and industry.
+More: [https://www.sigevo.org/gecco-2009/ecp.html](https://www.sigevo.org/gecco-2009/ecp.html)
 
-::: {.speaker-grid}
+Evolutionary Computation in Practice Chairs:
 
-::: {.speaker-card}
-<img src="figures/speaker/david_davis.jpeg" class="speaker-photo">
-<span class="speaker-name">David Davis</span>
-<span class="speaker-affil">VGO Associates</span>
-<div class="talk-info">Statistics for EC: A Visual Approach</div>
-:::
+* Thomas Bartz-Beielstein, Cologne University of Applies Sciences
+* David Davis, VGO Associates
+* Jörn Mehnen, Cranfield University
 
-::: {.speaker-card}
-<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
-<span class="speaker-name">Joern Mehnen</span>
-<span class="speaker-affil">Cranfield University, UK</span>
-<div class="talk-info">Logistics and Manufacturing Applications</div>
-:::
 
-::: {.speaker-card}
-<span class="speaker-name">Michael Affenzeller</span>
-<span class="speaker-affil">UAS Upper Austria</span>
-<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
-:::
+The Evolutionary Computation in Practice (ECP) track at Genetic and Evolutionary Computation Conference (GECCO) is dedicated to the discussion of issues related to practical application of Evolutionary Computation. For the past four years, members from industry, governmental agencies and other public sectors have participated in presentations and discussions describing how evolution-related technologies are being used to solve real-world problems. Moreover, subjects on bridging academic training and real-world usage are also addressed.
 
-::: {.speaker-card}
-<span class="speaker-name">Thomas Bäck</span>
-<span class="speaker-affil">Leiden University / divis</span>
-<div class="talk-info">Intelligent Industry Solutions</div>
-:::
+We invite you to present work that employs evolution-related technologies to solve real-world problems. We are accepting one to two page abstracts for review, with the following themes:
 
-::: {.speaker-card}
-<span class="speaker-name">Erik Goodman</span>
-<span class="speaker-affil">Michigan State University</span>
-<div class="talk-info">Introducing Academic EC Tech to Industry</div>
-:::
+* Real-world application success story;
+* Real-world application lessons learned;
+* Academic case study in real-world applications;
+* Expectations of academic training from industry;
 
-:::
+The subject domains include, but not limited to the following:
+
+* Biomedical;
+* Design;
+* Energy and Resources;
+* Finance;
+* Government and Military;
+* Academic training for real-world applications;
+· Computer Graphics and Gaming;
+
+The applied technology can be any evolution-related algorithms or its hybrid with other techniques. For a list of evolution-related technologies, please refer to GECCO Tracks. Examples of other technologies are agent-based modeling, simulated annealing, tabu search, neural networks, fuzzy logic, statistical modeling, and decision trees.
 
 
 
 
+## 2008 Atlanta, USA
 
-## Impressions from GECCO ECiP 2008
+
+![](figures/logos/logo08.jpg){width="30%"}
+
+Evolutionary Computation in Practice Chairs:
+
+* David Davis (VGO Associates, USA)
+* Jörn Mehnen (Cranfield University, UK)
+
+
+
+
+### Impressions from GECCO ECiP 2008
 
 ```{ojs}
 //| echo: false
@@ -547,6 +704,132 @@ html`<div class="gallery-grid">
   `).join('')}
 </div>`
 ```
+
+
+## 2007 London, UK
+
+![](figures/logos/logo_2007.gif){width="30%"}
+
+
+Evolutionary Computation In Practice Chairs:
+
+* David Davis, VGO Associates
+* Rajkumar Roy, Cranfield University
+
+
+
+
+## 2006 Seattle, USA
+
+Evolutionary Computation In Practice Chair:
+
+* Cem Baydar, Accenture
+* Tina Yu, Memorial University
+
+
+
+
+## 2005 Washington, USA
+
+
+![](figures/logos/logo_2005.jpg){width="30%"}
+
+Organizers:
+
+* Tina Yu (ChevronTexaco Information Technology Company)
+* Cem Baydar (Accenture)
+
+Advisory Committee:
+
+* David Davis, NuTech Solutions
+* Rajkumar Roy, Cranfield University
+* Mark Jakiela, Washington University in St. Louis
+
+More: [https://www.sigevo.org/gecco-2005/ecp.html](https://www.sigevo.org/gecco-2005/ecp.html)
+
+
+For the past three years, Evolutionary Computation in Industry (ECI) track at Genetic and Evolutionary Computation Conference (GECCO) has invited many managers, technology scouts and practitioners to participate in presentations and discussions describing how evolution-related technologies are being used to solve real-world problems.
+In 2005, we will continue this tradition of project presentations and panel discussions from members in industry. Additionally, we want to expand our scope to include presentations by representatives from governmental agencies, non-profit organizations and others in the public sectors. Moreover, a new topic on bridging academic training and real-world usage of evolution-related technologies is introduced. To reflect these changes, we rename the track as Evolutionary Computation in Practice (ECP), indicating that it will become a forum to discuss issues related to practical application of Evolutionary Computation.
+
+We invite you to present work that employs evolution-related technologies to solve real-world problems. We are accepting one to two page abstracts for review, with the following themes:
+
+* Real-world application success story;
+* Real-world application lessons learned;
+* Academic case study in real-world applications;
+* Expectations of academic training from industry;
+
+The subject domains include, but not limited to the following:
+
+* Biomedical;
+* Design;
+* Energy and Resource;
+* Finance;
+* Government and Military;
+* Academic training for real-world applications;
+
+The applied technology can be any evolution-related algorithms or its hybrid with other techniques. For a list of evolution-related technologies, please navigate this website. Examples of other technologies are simulated annealing, tabu search, neural network, fuzzy logic, statistical modeling, and decision trees.
+
+## 2004 Seattle, USA
+
+![](figures/logos/gecco-logo_2004.gif){width="30%"}
+
+More: [https://www.isgec.org/gecco-2004/eci.html](https://www.isgec.org/gecco-2004/eci.html)
+
+The Evolutionary Computation in Industry sessions are organized this year by
+
+* David Davis (NuTech Solutions)
+* Rajkumar Roy (Cranfield University)
+* Mark Jakiela (Washington University in St. Louis)
+
+For the third year, GECCO in 2004 will have a series of sessions entitled "Evolutionary Computation in Industry". The Evolutionary Computation in Industry sessions are tutorial-style and presenters are invited, but all GECCO participants are invited to attend. The ECI sessions are on June 28-30 (Monday - Wednesday) during the main part of GECCO conference. The detailed program is provide below.
+
+Each session focuses on a different topic related to applications of evolutionary algorithms. The presentations are designed for attendees such as managers, technology scouts, and industrial practitioners, who are seeking less technical presentations on the ways that evolutionary applications can make a difference. Presenters in these sessions are experts in applications and in describing the way that good evolutionary computation projects are planned and executed.
+
+
+
+## 2003 Chicago, USA: "Evolutionary Computing in Industry"
+
+![](figures/logos/gecco-logo-small_2003.gif){width="30%"}
+
+This year’s GECCO includes, for the second year, a track on Evolutionary Computation in Industry (ECI). The presentations in this track will be of most use to managers, technology scouts, and other individuals interested in assessing the potential of evolutionary algorithms to solve their industrial optimization problems.
+The goal of the presenters in this track is to tell you about the realities and possibilities of evolutionary computation applications and to describe successful industrial applications, rather than to focus on technical details and the particular approaches taken.
+There are six sessions in the Evolutionary Computation in Industry track:
+
+* The first session contains an introduction to evolutionary computation in industry, including two presentations describing successful industrial projects.
+* The second session concerns evolutionary computation and design, and includes three presentations describing the solution of design problems using evolutionary algorithms.
+* The third session concerns evolutionary computation and data mining. The session will focus on the newly-evolving field of classifier systems and their application to learning generalizations and rules from databases and simulations.
+* The fourth session concerns innovative uses of evolutionary algorithms, and will showcase the state of the art in various domains.
+* The fifth session concerns evolutionary computation and logistics, and includes talks showing a variety of ways in which evolutionary algorithms can be combined with other algorithms to produce cutting-edge solutions to real problems.
+* The sixth session concerns lessons learned in evolutionary computation applications, and includes two presentations detailing the things to do and not to when applying an evolutionary algorithm application in a practical setting. The session will conclude with a brief discussion planning for next year’s Evolutionary Computation in Industry track.
+
+
+## 2002 New York, USA: "Evolutionary Computing in Industry"
+
+![](figures/logos/geccologo_2002.gif){width="30%"}
+
+
+Organizers:
+
+* David Davis 
+* Rajkumar Roy 
+
+GECCO Track: ECI (invitation only track)
+
+Deadline for submission: 1st May 2002
+Submit the final manuscript to: Dr. David Davis
+
+Max size of the paper: 8 pages
+Format of the paper: GECCO standard.
+Publication: A seperate proceedings for the track, and it will be distributed to all the participants of GECCO. But this book will not have ISBN number.
+
+This special track provides a forum for practitioners to present their experiences on the application of evolutionary algorithms in industry. These papers will be evaluated by a separate program committee and published in a separate volume that will be distributed to the conference attendees.
+
+
+Please notice: ECI Scheduling and Logistics session can be seen at: [http://www.cs.nott.ac.uk/~gxk/gecco/2002/logistics.html](http://www.cs.nott.ac.uk/~gxk/gecco/2002/logistics.html)
+
+
+Traditional research papers should be submitted to the RWA deme.
+
 
 
 
@@ -604,3 +887,107 @@ The following external archives provide additional depth into the track's evolut
 
 :::
 
+
+
+# TO BE DELETED:
+
+## 2008–2009: Establishing the Interface
+
+The foundational years that established the Industrial Challenge and built the interface between academia and industry.
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<img src="figures/speaker/david_davis.jpeg" class="speaker-photo">
+<span class="speaker-name">David Davis</span>
+<span class="speaker-affil">VGO Associates</span>
+<div class="talk-info">Statistics for EC: A Visual Approach</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
+<span class="speaker-name">Joern Mehnen</span>
+<span class="speaker-affil">Cranfield University, UK</span>
+<div class="talk-info">Logistics and Manufacturing Applications</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Michael Affenzeller</span>
+<span class="speaker-affil">UAS Upper Austria</span>
+<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Thomas Bäck</span>
+<span class="speaker-affil">Leiden University / divis</span>
+<div class="talk-info">Intelligent Industry Solutions</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Erik Goodman</span>
+<span class="speaker-affil">Michigan State University</span>
+<div class="talk-info">Introducing Academic EC Tech to Industry</div>
+:::
+
+:::
+
+
+
+## 2019–2017: Globalization and Diversity
+
+The maturation of surrogate-assisted optimization and the visualization of benchmark diversity marked this period.
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Markus Wagner</span>
+<span class="speaker-affil">University of Adelaide, Australia</span>
+<div class="talk-info">Optimising Wave Energy Converters</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Kate Smith-Miles</span>
+<span class="speaker-affil">University of Melbourne, Australia</span>
+<div class="talk-info">Visualising diversity of benchmark instances</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Frederik Rehbach</span>
+<span class="speaker-affil">TH Köln, Germany</span>
+<div class="talk-info">Industrial Challenge: Online Event Detection</div>
+:::
+
+:::
+
+
+## 2022–2021: Machine Learning Hybrids
+
+This era focused on the emergence of machine learning hybrids for search and optimization, and reverse-engineering core common sense.
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Meinolf Sellmann</span>
+<span class="speaker-affil">InsideOpt (CTO)</span>
+<div class="talk-info">Modern Hybrids: Machine Learning for Search and Optimization</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Joshua Tenenbaum</span>
+<span class="speaker-affil">MIT, USA</span>
+<div class="talk-info">Reverse-engineering core common sense with the tools of probabilistic programs</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Marc Mézard</span>
+<span class="speaker-affil">École Normale Supérieure, France</span>
+<div class="talk-info">Statistical Physics and Statistical Inference</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Bogdan Filipic</span>
+<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
+*Organizer*
+:::
+
+:::
