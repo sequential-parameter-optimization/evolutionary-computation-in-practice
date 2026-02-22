@@ -170,12 +170,14 @@ Evolutionary Computation Track Chairs:
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/jamal_toutouh.jpeg" class="speaker-photo">
 <span class="speaker-name">Jamal Toutouh</span>
-<span class="speaker-affil">University of Trento, Italy</span>
+<span class="speaker-affil">Massachusetts Inst. of Technology, University of Málaga</span>
 <div class="talk-info">Evolutionary Algorithms Supported Decision Making for Sustainable Cities</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/joerg_stork.jpeg" class="speaker-photo">
 <span class="speaker-name">Jörg Stork</span>
 <span class="speaker-affil">TH Köln, Germany</span>
 <div class="talk-info">Jumping in at the deep end: from university to industry</div>
@@ -400,6 +402,12 @@ More: [http://gecco-2016.sigevo.org/index.html/EC%2bin%2bPractice.html](http://g
 ## 2015 Madrid, Spain
 
 ![](figures/logos/logo-2015.jpg){width="30%"}
+
+Track Chairs:
+
+* Thomas Bartz-Beielstein, TH Köln, Germany
+* Jörn Mehnen, Cranfield University, UK
+
 
 
 ::: {.speaker-grid}
@@ -721,7 +729,7 @@ Evolutionary Computation In Practice Chairs:
 
 ## 2006 Seattle, USA
 
-Evolutionary Computation In Practice Chair:
+Evolutionary Computation In Practice Chairs:
 
 * Cem Baydar, Accenture
 * Tina Yu, Memorial University
@@ -729,7 +737,7 @@ Evolutionary Computation In Practice Chair:
 
 
 
-## 2005 Washington, USA
+## 2005 Washington, USA (Renamed to ECiP)
 
 
 ![](figures/logos/logo_2005.jpg){width="30%"}
@@ -781,8 +789,7 @@ The Evolutionary Computation in Industry sessions are organized this year by
 * Rajkumar Roy (Cranfield University)
 * Mark Jakiela (Washington University in St. Louis)
 
-For the third year, GECCO in 2004 will have a series of sessions entitled "Evolutionary Computation in Industry". The Evolutionary Computation in Industry sessions are tutorial-style and presenters are invited, but all GECCO participants are invited to attend. The ECI sessions are on June 28-30 (Monday - Wednesday) during the main part of GECCO conference. The detailed program is provide below.
-
+The Evolutionary Computation in Industry sessions are tutorial-style and presenters are invited, but all GECCO participants are invited to attend. 
 Each session focuses on a different topic related to applications of evolutionary algorithms. The presentations are designed for attendees such as managers, technology scouts, and industrial practitioners, who are seeking less technical presentations on the ways that evolutionary applications can make a difference. Presenters in these sessions are experts in applications and in describing the way that good evolutionary computation projects are planned and executed.
 
 
@@ -815,14 +822,7 @@ Organizers:
 
 GECCO Track: ECI (invitation only track)
 
-Deadline for submission: 1st May 2002
-Submit the final manuscript to: Dr. David Davis
-
-Max size of the paper: 8 pages
-Format of the paper: GECCO standard.
-Publication: A seperate proceedings for the track, and it will be distributed to all the participants of GECCO. But this book will not have ISBN number.
-
-This special track provides a forum for practitioners to present their experiences on the application of evolutionary algorithms in industry. These papers will be evaluated by a separate program committee and published in a separate volume that will be distributed to the conference attendees.
+Publication: A seperate proceedings for the track, and it will be distributed to all the participants of GECCO. This special track provides a forum for practitioners to present their experiences on the application of evolutionary algorithms in industry. These papers will be evaluated by a separate program committee and published in a separate volume that will be distributed to the conference attendees.
 
 
 Please notice: ECI Scheduling and Logistics session can be seen at: [http://www.cs.nott.ac.uk/~gxk/gecco/2002/logistics.html](http://www.cs.nott.ac.uk/~gxk/gecco/2002/logistics.html)
@@ -835,7 +835,7 @@ Traditional research papers should be submitted to the RWA deme.
 
 ## The ECiP Track: Organizational Continuity and Mission
 
-The stability of the ECiP track over the previous fifteen years is a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a leadership role in industrial optimization, exemplifies the dual identity required to lead such a forum. The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group has provided a robust institutional anchor, including the management of the Industrial Challenge since 2011.
+The stability of the track over more than two decades is a product of consistent leadership and a clearly defined mission. Originally established in 2002 as Evolutionary Computation in Industry (ECI) by David Davis and Rajkumar Roy, the track was renamed in 2006 to Evolutionary Computation in Practice (ECiP), a designation it has retained ever since. Since 2009, Thomas Bartz-Beielstein has served as a central figure in the track's organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a leadership role in industrial optimization, exemplifies the dual identity required to lead such a forum.
 
 The primary mission of ECiP is to provide a venue where distinguished speakers present the "behind-the-scenes" of establishing reliable cooperation with industrial partners. The track targets researchers interested in managing industrial projects, offering valuable hints often omitted from textbook methodologies. This focus on real-world process and project management distinguishes ECiP from the Real World Applications (RWA) track, which focuses more on the results themselves.
 
@@ -846,6 +846,11 @@ The organizational structure has evolved to reflect the global nature of the GEC
 | 2023–2025 | Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani | IDE+A, TH Köln; University of Technology Sydney |
 | 2021–2022 | Thomas Bartz-Beielstein, Bogdan Filipic, Sowmya Chandrasekaran | TH Köln; Jozef Stefan Institute, Slovenia |
 | 2011–2020 | Thomas Bartz-Beielstein, Joern Mehnen, David Davis | TH Köln; Cranfield University; VGO Associates |
+| 2009–2010 | Thomas Bartz-Beielstein, Joern Mehnen, David Davis | TH Köln; Cranfield University; Nutech Solutions |
+| 2008 | David Davis, Joern Mehnen | VGO Associates; Cranfield University |
+| 2007 | David Davis, Rajkumar Roy | Nutech Solutions; Cranfield University |
+| 2005–2006 | Cem Baydar, Tina Yu | Accenture; ChevronTexaco |
+| 2002–2004 | David Davis, Rajkumar Roy, Mark Jakiela | Nutech Solutions; Cranfield University; Washington University |
 
 ## Archives & References
 
@@ -887,107 +892,3 @@ The following external archives provide additional depth into the track's evolut
 
 :::
 
-
-
-# TO BE DELETED:
-
-## 2008–2009: Establishing the Interface
-
-The foundational years that established the Industrial Challenge and built the interface between academia and industry.
-
-::: {.speaker-grid}
-
-::: {.speaker-card}
-<img src="figures/speaker/david_davis.jpeg" class="speaker-photo">
-<span class="speaker-name">David Davis</span>
-<span class="speaker-affil">VGO Associates</span>
-<div class="talk-info">Statistics for EC: A Visual Approach</div>
-:::
-
-::: {.speaker-card}
-<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
-<span class="speaker-name">Joern Mehnen</span>
-<span class="speaker-affil">Cranfield University, UK</span>
-<div class="talk-info">Logistics and Manufacturing Applications</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Michael Affenzeller</span>
-<span class="speaker-affil">UAS Upper Austria</span>
-<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Thomas Bäck</span>
-<span class="speaker-affil">Leiden University / divis</span>
-<div class="talk-info">Intelligent Industry Solutions</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Erik Goodman</span>
-<span class="speaker-affil">Michigan State University</span>
-<div class="talk-info">Introducing Academic EC Tech to Industry</div>
-:::
-
-:::
-
-
-
-## 2019–2017: Globalization and Diversity
-
-The maturation of surrogate-assisted optimization and the visualization of benchmark diversity marked this period.
-
-::: {.speaker-grid}
-
-::: {.speaker-card}
-<span class="speaker-name">Markus Wagner</span>
-<span class="speaker-affil">University of Adelaide, Australia</span>
-<div class="talk-info">Optimising Wave Energy Converters</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Kate Smith-Miles</span>
-<span class="speaker-affil">University of Melbourne, Australia</span>
-<div class="talk-info">Visualising diversity of benchmark instances</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Frederik Rehbach</span>
-<span class="speaker-affil">TH Köln, Germany</span>
-<div class="talk-info">Industrial Challenge: Online Event Detection</div>
-:::
-
-:::
-
-
-## 2022–2021: Machine Learning Hybrids
-
-This era focused on the emergence of machine learning hybrids for search and optimization, and reverse-engineering core common sense.
-
-::: {.speaker-grid}
-
-::: {.speaker-card}
-<span class="speaker-name">Meinolf Sellmann</span>
-<span class="speaker-affil">InsideOpt (CTO)</span>
-<div class="talk-info">Modern Hybrids: Machine Learning for Search and Optimization</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Joshua Tenenbaum</span>
-<span class="speaker-affil">MIT, USA</span>
-<div class="talk-info">Reverse-engineering core common sense with the tools of probabilistic programs</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Marc Mézard</span>
-<span class="speaker-affil">École Normale Supérieure, France</span>
-<div class="talk-info">Statistical Physics and Statistical Inference</div>
-:::
-
-::: {.speaker-card}
-<span class="speaker-name">Bogdan Filipic</span>
-<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
-*Organizer*
-:::
-
-:::
