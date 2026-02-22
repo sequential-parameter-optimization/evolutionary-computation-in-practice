@@ -1,5 +1,5 @@
 ---
-title: "ECiP Speakers & Talks"
+title: "ECiP Speakers & Talks: 2002 - 2025"
 ---
 
 
@@ -17,6 +17,9 @@ Evolutionary Computation Track Chairs:
 
 * Thomas Bartz-Beielstein, IDE+A, TH Köln, Germany
 * Richard Schulz, IDE+A, TH Köln, Germany
+
+
+### Speakers & Talks
 
 
 ::: {.speaker-grid}
@@ -111,6 +114,8 @@ PyTorch, Scikit-Learn, and River
 Thomas Bartz-Beielstein
 
 
+### Speakers & Talks
+
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
@@ -159,6 +164,9 @@ Evolutionary Computation Track Chairs:
 
 * Thomas Bartz-Beielstein, TH Köln
 * Bogdan Filipic, Jožef Stefan Institute
+
+
+### Speakers & Talks
 
 ::: {.speaker-grid}
 
@@ -305,6 +313,8 @@ Track Chairs:
 
 More: [http://gecco-2016.sigevo.org/index.html/EC%2bin%2bPractice.html](http://gecco-2016.sigevo.org/index.html/EC%2bin%2bPractice.html)
 
+### Speakers & Talks
+
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
@@ -408,6 +418,8 @@ Track Chairs:
 * Thomas Bartz-Beielstein, TH Köln, Germany
 * Jörn Mehnen, Cranfield University, UK
 
+
+### Speakers & Talks
 
 
 ::: {.speaker-grid}
@@ -577,6 +589,8 @@ Evolutionary Computation in Practice Chairs:
 * Thomas Bartz-Beielstein (Cologne Univ. of Applied Sciences, Germany)
 * David Davis (VGO Associates, USA)
 
+
+### Speakers & Talks
 
 ::: {.speaker-grid}
 
