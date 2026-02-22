@@ -5,10 +5,7 @@ title: "ECiP Speakers & Talks"
 
 # Evolutionary Computation in Practice (ECiP)
 
-The *Evolutionary Computation in Practice (ECiP)* track at GECCO has served for over fifteen years as a specialized forum for bridging the gap between theoretical innovation and industrial application. Unlike traditional academic tracks, ECiP focuses on the qualitative and managerial complexities of real-world optimization, bringing together experts who lead large-scale industrial projects and navigate the intricate landscape of academia-industry partnerships.
-
-
-The Genetic and Evolutionary Computation Conference (GECCO), as the premier venue for research in the field of natural computation, has long recognized the necessity of bridging the chasm between theoretical innovation and industrial application. Central to this mission is the Evolutionary Computation in Practice (ECiP) track, which has functioned for over fifteen years as a specialized forum for the dissemination of high-level insights into the operationalization of evolutionary algorithms in real-world contexts. Unlike the broader academic tracks that prioritize peer-reviewed full papers and theoretical proofs, the ECiP track focuses on the qualitative and managerial complexities of industrial collaboration, bringing together experts who manage corporations, lead large-scale optimization projects, and navigate the intricate landscape of academia-industry partnerships.
+The *Evolutionary Computation in Practice (ECiP)* track at GECCO has functioned for over fifteen years as a specialized forum for bridging the gap between theoretical innovation and industrial application. While broader academic tracks prioritize peer-reviewed proofs, ECiP focuses on the operational complexities of real-world optimization. It brings together experts who manage corporations, lead large-scale industrial projects, and navigate the intricate landscape of academia-industry partnerships to share high-level insights that extend beyond textbook methodologies.
 
 
 ## 2025: Foundations and Applications
@@ -252,35 +249,107 @@ The maturation of surrogate-assisted optimization and the visualization of bench
 
 :::
 
-## 2016: Industry Challenges
 
-A focus on the challenges of deploying evolutionary computation in the steel industry and other heavy industrial sectors.
+## 2016 Denver, USA
+
+Track: Evolutionary Computation in Practice (ECiP)
+Chairs: 
+
+* Anna Esparcia Alcazar
+* Thomas Bartz-Beielstein
+* Erik Goodman
+
 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<img src="figures/speaker/thomas_bartz_beielstein.jpeg" class="speaker-photo">
 <span class="speaker-name">Thomas Bartz-Beielstein</span>
 <span class="speaker-affil">TH Köln, Germany</span>
 <div class="talk-info">Surrogate Model-based Optimization in Practice</div>
 :::
 
+
 ::: {.speaker-card}
-<span class="speaker-name">Maizura Mokhtar</span>
-<span class="speaker-affil">Cranfield University / Tata Steel</span>
-<div class="talk-info">Optimising a Waste Heat Recovery System using MOEA</div>
+<span class="speaker-name">Maizura Mokhtar, Ian Hunt, Stephen Burns and Dave Ross</span>
+<span class="speaker-affil">University of Melbourne, Australia</span>
+<div class="talk-info">Optimising a Waste Heat Recovery System using Multi-Objective Evolutionary Algorithm</div>
+:::
+
+
+::: {.speaker-card}
+<img src="figures/speaker/una_may.jpeg" class="speaker-photo">
+<span class="speaker-name">Erik Hemberg, Ignacio Arnaldo and Una-May O’Reilly</span>
+<span class="speaker-affil">MIT, USA</span>
+<div class="talk-info">Multi-Line Batch Scheduling by Similarity</div>
 :::
 
 ::: {.speaker-card}
-<span class="speaker-name">Bogdan Filipic</span>
-<span class="speaker-affil">Jozef Stefan Institute, Slovenia</span>
-<div class="talk-info">Challenges of Deploying EC in Steel Industry</div>
+<span class="speaker-name">Abdel-Rahman Hedar, Majid Almaraashi and Alaa Abdel-Hakim</span>
+<span class="speaker-affil">King Fahd University of Petroleum and Minerals, Saudi Arabia</span>
+<div class="talk-info">Granular-Based Dimension Reduction for Solar Radiation Prediction Using Adaptive Memory Programming</div>
 :::
 
 ::: {.speaker-card}
+<span class="speaker-name">Silvino Fernández, Pablo Valledor, Diego Díaz, Eneko Malatsetxebarria and Miguel Iglesias</span>
+<span class="speaker-affil">ArcelorMittal, Spain</span>
+<div class="talk-info">Criticality of Response Time in the usage of Metaheuristics in Industry</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Silvino Fernández, Pablo Valledor</span>
+<span class="speaker-affil">ArcelorMittal, Spain</span>
+<div class="talk-info">System demonstration, ArcelorMittal Scheduling and Tuning suite</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/carlos_coello_coello.jpeg" class="speaker-photo">
 <span class="speaker-name">Carlos A. Coello Coello</span>
 <span class="speaker-affil">CINVESTAV-IPN, Mexico</span>
-<div class="talk-info">EMO in Real-World Applications</div>
+<div class="talk-info">Evolutionary Multi-Objective Optimization in Real-World Applications</div>
 :::
+
+::: {.speaker-card}
+<img src="figures/speaker/anna_esparcia_alcazar.jpeg" class="speaker-photo">
+<span class="speaker-name">Anna Esparcia Alcazar</span>
+<span class="speaker-affil">University of Manchester, UK</span>
+<div class="talk-info">EC in industry: the quest for the Holy Grail – from Brain Computer Interfaces to automated testing with TESTAR</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/michael_affenzeller.jpeg" class="speaker-photo">
+<span class="speaker-name">Michael Affenzeller</span>
+<span class="speaker-affil">University of Applied Sciences Upper Austria, Austria</span>
+<div class="talk-info">Heuristic Optimization in Production and Logistics</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/thomas_baeck.jpeg" class="speaker-photo">
+<span class="speaker-name">Thomas Bäck</span>
+<span class="speaker-affil">Leiden University/divis, Germany</span>
+<div class="talk-info">Industrial Challenge: Online Event Detection</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/felipe_campelo.jpeg" class="speaker-photo">
+<span class="speaker-name">Felipe Campelo</span>
+<span class="speaker-affil">University of Adelaide, Australia</span>
+<div class="talk-info">EAs for aeronautical optimization – some results and challenges</div>
+:::
+
+::: {.speaker-card}
+<img src="figures/speaker/erik_goodman.jpeg" class="speaker-photo">
+<span class="speaker-name">Erik Goodman</span>
+<span class="speaker-affil">Michigan State University, USA</span>
+<div class="talk-info">How to Introduce Academic-developed EC Technology to Industry</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Anna Esparcia Alcazar, Thomas Bäck, Thomas Bartz-Beielstein, Felipe Campelo, Silvino Fernández, Erik Goodman, Thomas Stützle</span>
+<span class="speaker-affil">Panel Discussion</span>
+<div class="talk-info">Panel Discussion</div>
+:::
+
 
 :::
 
@@ -352,18 +421,21 @@ Evolutionary Computation in Practice Chairs:
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
 <span class="speaker-name">Jorn Mehnen</span>
 <span class="speaker-affil">Cranfield University, UK</span>
 <div class="talk-info">EC in Design</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/thomas_baeck.jpeg" class="speaker-photo">
 <span class="speaker-name">Thomas Bäck</span>
 <span class="speaker-affil">Leiden University / divis</span>
 <div class="talk-info">Intelligent Industry Solutions</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/erik_goodman.jpeg" class="speaker-photo">
 <span class="speaker-name">Erik Goodman</span>
 <span class="speaker-affil">Michigan State University</span>
 <div class="talk-info">Managing an EC project for success, Emerging Technologies</div>
@@ -413,12 +485,14 @@ The foundational years that established the Industrial Challenge and built the i
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<img src="figures/speaker/david_davis.jpeg" class="speaker-photo">
 <span class="speaker-name">David Davis</span>
 <span class="speaker-affil">VGO Associates</span>
 <div class="talk-info">Statistics for EC: A Visual Approach</div>
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/joern_mehnen.jpeg" class="speaker-photo">
 <span class="speaker-name">Joern Mehnen</span>
 <span class="speaker-affil">Cranfield University, UK</span>
 <div class="talk-info">Logistics and Manufacturing Applications</div>
@@ -478,10 +552,17 @@ html`<div class="gallery-grid">
 
 ## The ECiP Track: Organizational Continuity and Mission
 
-The stability of the ECiP track over the previous fifteen years is largely a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a shareholder role in a private optimization firm, exemplifies the dual identity required to lead such a track. The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group at TH Köln has provided a robust institutional anchor for the track's activities, including the management of the Industrial Challenge, which has run annually since 2011.
-The primary mission of ECiP is to provide a venue where well-known speakers with outstanding reputations present background information on establishing reliable cooperation with industrial partners. The track targets researchers in academia who are interested in managing industrial projects, offering them valuable hints that extend beyond textbook methodologies. This focus on real-world optimization and project management principles distinguishes ECiP from the Real World Applications (RWA) track, which is more focused on the presentation of peer-reviewed results than on the process of cooperation.
+The stability of the ECiP track over the previous fifteen years is a product of consistent leadership and a clearly defined mission. Since at least 2008, Thomas Bartz-Beielstein has served as a central figure in the track’s organization. His background, spanning both a professorship in Applied Mathematics at TH Köln and a leadership role in industrial optimization, exemplifies the dual identity required to lead such a forum. The involvement of the IDE+A (Intelligent Decision Support and Applied Research) group has provided a robust institutional anchor, including the management of the Industrial Challenge since 2011.
 
+The primary mission of ECiP is to provide a venue where distinguished speakers present the "behind-the-scenes" of establishing reliable cooperation with industrial partners. The track targets researchers interested in managing industrial projects, offering valuable hints often omitted from textbook methodologies. This focus on real-world process and project management distinguishes ECiP from the Real World Applications (RWA) track, which focuses more on the results themselves.
 
+The organizational structure has evolved to reflect the global nature of the GECCO community. While leadership has remained constant, the track has been enriched by co-organizers bringing diverse regional and technical expertise:
+
+| Era | Key Organizers | Affiliations and Focus |
+|-----|----------------|--------------------------|
+| 2023–2025 | Thomas Bartz-Beielstein, Richard Schulz, Danial Yazdani | IDE+A, TH Köln; University of Technology Sydney |
+| 2021–2022 | Thomas Bartz-Beielstein, Bogdan Filipic, Sowmya Chandrasekaran | TH Köln; Jozef Stefan Institute, Slovenia |
+| 2011–2020 | Thomas Bartz-Beielstein, Joern Mehnen, David Davis | TH Köln; Cranfield University; VGO Associates |
 
 ## Archives & References
 
