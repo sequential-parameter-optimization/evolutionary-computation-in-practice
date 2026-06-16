@@ -16,7 +16,7 @@ The Evolutionary Computation in Practice (ECiP) track at GECCO brings together w
 
 ---
 
-## 📅 ECiP at GECCO 2026
+## 🕔 ECiP at GECCO 2026
 
 ECiP 2026 will take place at **GECCO 2026** in San Antonio de Belén, Alajuela, Costa Rica (July 13–17, 2026).
 
