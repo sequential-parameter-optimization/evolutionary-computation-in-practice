@@ -24,7 +24,25 @@ ECiP 2026 will take place at **GECCO 2026** in San Antonio de Belén, Alajuela, 
 - **Format:** A single one-hour session — the closing session of the day
 - **Program:** Four presentations (15 minutes each, including discussion)
 
-The detailed program will be announced here soon.
+### Confirmed Speakers
+
+::: {.speaker-grid}
+
+::: {.speaker-card}
+<span class="speaker-name">Nicolás Álvarez Gil</span>
+<span class="speaker-affil">Senior Researcher, Mathematical Optimization — ArcelorMittal Global R&D, Spain</span>
+<div class="talk-info">Title to be announced</div>
+:::
+
+::: {.speaker-card}
+<span class="speaker-name">Ryoki Hamano</span>
+<span class="speaker-affil">CyberAgent, Inc., Japan</span>
+<div class="talk-info">Title to be announced</div>
+:::
+
+:::
+
+Further speakers and talk titles will be announced here soon.
 
 ---
 
