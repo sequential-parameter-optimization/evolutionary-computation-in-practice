@@ -87,7 +87,7 @@ GECCO is sponsored by the Association for Computing Machinery Special Interest G
 <div style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap; margin-top: 2rem;">
   <img src="https://gecco-2024.sigevo.org/acm_black_hightagline.png" alt="ACM SIGEVO" style="height: 50px; box-shadow: none; border-radius: 0;"/>
   <a href="https://twitter.com/GeccoConf"><img src="https://img.shields.io/twitter/follow/GeccoConf?style=social" alt="Follow on Twitter" style="box-shadow: none;"/></a>
-  <a href="https://www.linkedin.com/events/gecco20247068155716271796224/"><img src="https://img.shields.io/badge/LinkedIn-Join%20us-blue?logo=linkedin" alt="Join on LinkedIn" style="box-shadow: none;"/></a>
+  <a href="https://www.linkedin.com/company/sigevo-gecco"><img src="https://img.shields.io/badge/LinkedIn-Follow%20us-blue?logo=linkedin" alt="Follow on LinkedIn" style="box-shadow: none;"/></a>
 </div>
 
 ---
