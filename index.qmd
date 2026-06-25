@@ -36,9 +36,10 @@ ECiP 2026 will take place at [**GECCO 2026**](https://gecco-2026.sigevo.org/) in
 :::
 
 ::: {.speaker-card}
+<img src="figures/speaker/ryoki_hamano.jpeg" class="speaker-photo">
 <span class="speaker-name">Ryoki Hamano</span>
-<span class="speaker-affil">CyberAgent, Inc., Japan</span>
-<div class="talk-info">Title to be announced</div>
+<span class="speaker-affil">Research Scientist — CyberAgent AI Lab, Japan</span>
+<div class="talk-info">Evolutionary Computation in an Industrial AI Lab: Applications, Research, and Open Tools</div>
 :::
 
 :::
@@ -47,6 +48,12 @@ ECiP 2026 will take place at [**GECCO 2026**](https://gecco-2026.sigevo.org/) in
 <summary><strong>Talk details — Nicolás Álvarez Gil</strong></summary>
 <p><strong>Abstract.</strong> This talk presents practical experiences in applying evolutionary computation (EC) to real-world optimization problems within the steel industry at ArcelorMittal. It focuses on challenges such as handling complex and dynamic constraints, balancing multiple conflicting objectives, and delivering robust solutions under tight industrial timelines. The presentation will cover the full lifecycle of optimization projects, from problem understanding and model design to algorithm development, validation with real data, and integration into user-friendly decision-support tools. Special attention will be given to the need for tailored EC approaches to bridge the gap between academic methods and industrial requirements, as well as to the long-term maintenance and adaptability of deployed solutions.</p>
 <p><strong>About the speaker.</strong> Nicolás Álvarez is a Senior Researcher in the Mathematical Optimization team at ArcelorMittal Global R&D in Asturias, Spain. His work focuses on applying operations research and advanced optimization techniques to industrial problems, including production planning and scheduling, logistics, inventory management, supply chain optimization, and network design. He has extensive experience in developing decision-support tools that integrate advanced algorithms into real industrial environments, with a strong focus on bridging the gap between academic research and practical applications. He is also involved in the organization of the IAM workshop at GECCO (Industrial Applications of Metaheuristics). In addition to his work in industry, he has served as an Adjunct Professor at the University of Oviedo, teaching courses related to optimization and operations research.</p>
+</details>
+
+<details class="talk-details">
+<summary><strong>Talk details — Ryoki Hamano</strong></summary>
+<p><strong>Abstract.</strong> This talk presents how evolutionary computation is practiced at CyberAgent AI Lab through three complementary activities: applications, research, and open tools. On the application side, it introduces a real-world combinatorial optimization problem in game-balance tuning, where a genetic algorithm with an embedding-based mutation operator searches for high-scoring team configurations before new content is added. On the research and tooling side, it discusses work on CMA-ES, including the open-source cmaes Python library and recent methods for mixed-variable black-box optimization. The talk shares lessons on making evolutionary computation useful in industry while contributing reusable methods and tools to the wider community.</p>
+<p><strong>About the speaker.</strong> Ryoki Hamano is a Research Scientist at CyberAgent AI Lab, Japan. He received his Ph.D. in Informatics from Yokohama National University in 2024. His research focuses on black-box optimization, especially CMA-ES and mixed-variable optimization involving continuous, integer, and categorical variables. His papers on mixed-variable black-box optimization received Best Paper Nominations in the ENUM track at GECCO 2022 and GECCO 2025. Some of these methods have been implemented in open-source optimization tools, including the cmaes Python library and Optuna.</p>
 </details>
 
 Further speakers and talk titles will be announced here soon.
