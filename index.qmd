@@ -29,9 +29,10 @@ ECiP 2026 will take place at **GECCO 2026** in San Antonio de Belén, Alajuela, 
 ::: {.speaker-grid}
 
 ::: {.speaker-card}
+<img src="figures/speaker/nicolas_alvarez_gil.jpeg" class="speaker-photo">
 <span class="speaker-name">Nicolás Álvarez Gil</span>
 <span class="speaker-affil">Senior Researcher, Mathematical Optimization — ArcelorMittal Global R&D, Spain</span>
-<div class="talk-info">Title to be announced</div>
+<div class="talk-info">Applying Evolutionary Computation to Real-World Steel Problems: Challenges Beyond Theory</div>
 :::
 
 ::: {.speaker-card}
@@ -41,6 +42,12 @@ ECiP 2026 will take place at **GECCO 2026** in San Antonio de Belén, Alajuela, 
 :::
 
 :::
+
+<details class="talk-details">
+<summary><strong>Talk details — Nicolás Álvarez Gil</strong></summary>
+<p><strong>Abstract.</strong> This talk presents practical experiences in applying evolutionary computation (EC) to real-world optimization problems within the steel industry at ArcelorMittal. It focuses on challenges such as handling complex and dynamic constraints, balancing multiple conflicting objectives, and delivering robust solutions under tight industrial timelines. The presentation will cover the full lifecycle of optimization projects, from problem understanding and model design to algorithm development, validation with real data, and integration into user-friendly decision-support tools. Special attention will be given to the need for tailored EC approaches to bridge the gap between academic methods and industrial requirements, as well as to the long-term maintenance and adaptability of deployed solutions.</p>
+<p><strong>About the speaker.</strong> Nicolás Álvarez is a Senior Researcher in the Mathematical Optimization team at ArcelorMittal Global R&D in Asturias, Spain. His work focuses on applying operations research and advanced optimization techniques to industrial problems, including production planning and scheduling, logistics, inventory management, supply chain optimization, and network design. He has extensive experience in developing decision-support tools that integrate advanced algorithms into real industrial environments, with a strong focus on bridging the gap between academic research and practical applications. He is also involved in the organization of the IAM workshop at GECCO (Industrial Applications of Metaheuristics). In addition to his work in industry, he has served as an Adjunct Professor at the University of Oviedo, teaching courses related to optimization and operations research.</p>
+</details>
 
 Further speakers and talk titles will be announced here soon.
 
