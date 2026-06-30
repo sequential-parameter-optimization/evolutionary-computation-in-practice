@@ -46,6 +46,13 @@ ECiP 2026 will take place at [**GECCO 2026**](https://gecco-2026.sigevo.org/) in
 <div class="talk-info">Evolutionary Computation in an Industrial AI Lab: Applications, Research, and Open Tools</div>
 :::
 
+::: {.speaker-card}
+<img src="figures/speaker/alberto_tonda.jpeg" class="speaker-photo">
+<span class="speaker-name">Alberto Tonda</span>
+<span class="speaker-affil">Senior Researcher (Directeur de Recherche) — INRAE, Université Paris-Saclay, France</span>
+<div class="talk-info">Title to be announced</div>
+:::
+
 :::
 
 <details class="talk-details">
