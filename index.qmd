@@ -22,7 +22,7 @@ ECiP 2026 will take place at [**GECCO 2026**](https://gecco-2026.sigevo.org/) in
 
 - **When:** Thursday, July 16, 2026, 17:00–18:00 (5:00–6:00 pm)
 - **Format:** A single one-hour session — the closing session of the day
-- **Program:** Four presentations (15 minutes each, including discussion)
+- **Program:** Three presentations (15 minutes each, including discussion) and a closing discussion
 - **Organizers:**
     - Thomas Bartz-Beielstein, IDE+A, TH Köln, Germany
     - Daniel Hernández, Tecnológico Nacional de México/IT Tijuana, Mexico
@@ -72,8 +72,6 @@ ECiP 2026 will take place at [**GECCO 2026**](https://gecco-2026.sigevo.org/) in
 <p><strong>Abstract.</strong> The characterization and control of food and biomass transformation can be extremely complex. These industrial processes typically include several co-occurring physical, chemical, and biological phenomena, which defy traditional modeling methodologies, for example those based on systems of ordinary differential equations. For such challenging tasks, evolutionary computation can be an invaluable resource for both characterizing and controlling transformation processes. This talk will present a few selected examples where evolutionary-based techniques were successfully employed to tackle practical problems in the food and biomass transformation industry.</p>
 <p><strong>About the speaker.</strong> Alberto Tonda received his Ph.D. degree in Computer Science Engineering from Politecnico di Torino, Italy, in 2011. Currently, he is a Senior Permanent Researcher (DR) at the National Institute of Research for Agriculture, Food, and the Environment (INRAE), and Université Paris-Saclay, France, where he co-leads the research team EKINOCS (Expert Knowledge INtegration and Complex Systems). His research interests include explainable AI, evolutionary optimization, and machine learning, with main applications in food science and biology. He led COST Action CA15118 FoodMC, a 4-year European networking project on in-silico modelling in food science, and participated in several national and European projects. He published over 50 contributions in peer-reviewed journals, and over 100 conference papers. He was part of the program committee of 10 conferences of the domain, and he is currently an editorial board member of the journal Genetic Programming and Evolvable Machines.</p>
 </details>
-
-Further speakers and talk titles will be announced here soon.
 
 ---
 
